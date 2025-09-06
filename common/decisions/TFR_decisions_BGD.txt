@@ -6390,6 +6390,7 @@ BGD_Interference_in_Thailand = {
 			set_country_flag = Thai_End_of_interference
 		}
 	}
+}
 
 	The_Thai_Civil_War = {
 		priority = 1
@@ -6573,11 +6574,15 @@ BGD_Interference_in_Thailand = {
 			}
 			add_war_support = 0.1
 			hidden_effect = {
-				set_temp_variable = {
-					var = income_var_temp
-					value = -10
-				}
-				add_income_with_inflation = yes
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -10
+			}
+			add_income = yes
+			hidden_effect = {
 			}
 		}
 	}
@@ -6636,13 +6641,17 @@ BGD_Interference_in_Thailand = {
 			}
 			add_war_support = 0.1
 			hidden_effect = {
+			}
+		}
+			complete_effect = {
 				set_temp_variable = {
 					var = income_var_temp
 					value = -10
 				}
-				add_income_with_inflation = yes
+				add_income = yes
+				hidden_effect = {
+				}
 			}
-		}
 	}
 
 	Thai_Encourage_criticism_of_the_king = { #鼓动抨击泰王
@@ -6698,13 +6707,17 @@ BGD_Interference_in_Thailand = {
 			}
 			add_war_support = 0.1
 			hidden_effect = {
+			}
+		}
+		complete_effect = {
 				set_temp_variable = {
 					var = income_var_temp
 					value = -10
 				}
-				add_income_with_inflation = yes
+				add_income = yes
+				hidden_effect = {
+				}
 			}
-		}
 	}
 
 	Thai_Encourage_criticism_of_the_military_government = { #鼓动抨击军政府
@@ -6760,13 +6773,17 @@ BGD_Interference_in_Thailand = {
 			}
 			add_war_support = 0.1
 			hidden_effect = {
+			}
+		}
+		complete_effect = {
 				set_temp_variable = {
 					var = income_var_temp
 					value = -10
 				}
-				add_income_with_inflation = yes
+				add_income = yes
+				hidden_effect = {
+				}
 			}
-		}
 	}
 
 	Thai_Condemning_Thailand_in_international_forums = { #在国际场合谴责泰国
@@ -6857,13 +6874,17 @@ BGD_Interference_in_Thailand = {
 				min = 0
 			}
 			hidden_effect = {
+			}
+		}
+		complete_effect = {
 				set_temp_variable = {
 					var = income_var_temp
 					value = -5
 				}
-				add_income_with_inflation = yes
+				add_income = yes
+				hidden_effect = {
+				}
 			}
-		}
 	}
 
 	Thai_Sponsoring_students = { #资助学生
@@ -6910,13 +6931,17 @@ BGD_Interference_in_Thailand = {
 				min = 0
 			}
 			hidden_effect = {
+			}
+		}
+		complete_effect = {
 				set_temp_variable = {
 					var = income_var_temp
 					value = -35
 				}
-				add_income_with_inflation = yes
+				add_income = yes
+				hidden_effect = {
+				}
 			}
-		}
 	}
 
 	Thai_Distribution_of_equipment = { #发放装备
@@ -6996,13 +7021,17 @@ BGD_Interference_in_Thailand = {
 				}
 			}
 			hidden_effect = {
+			}
+		}
+		complete_effect = {
 				set_temp_variable = {
 					var = income_var_temp
 					value = -15
 				}
-				add_income_with_inflation = yes
+				add_income = yes
+				hidden_effect = {
+				}
 			}
-		}
 	}
 
 
@@ -7087,12 +7116,15 @@ BGD_Interference_in_Thailand = {
 				}
 			}
 			hidden_effect = {
+		}
+	}
+	complete_effect = {
 				set_temp_variable = {
 					var = income_var_temp
 					value = -15
 				}
-				add_income_with_inflation = yes
+				add_income = yes
+				hidden_effect = {
+				}
 			}
-		}
-	}
 }
