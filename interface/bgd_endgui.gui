@@ -1,0 +1,30 @@
+guiTypes = {
+	containerWindowType = {
+		name = "endgui_main"
+		position = { x = 575 y = 275 }
+
+
+		iconType = {
+			name = "endgui_bg"
+			spriteType = "GFX_endgui_bg"
+			position = { x = 0 y = 0 }
+		}
+		buttonType = {
+			name = "endgui_exit_buttom"
+			spriteType = "GFX_endgui_exit_buttom"
+			position = { x = 573 y = 483 }
+			scale = 0.95
+			pdx_tooltip = bgd_unrestricted_diplomacy_tt
+		}
+		instantTextboxType = {
+			name = "endgui_text"
+			font = "VCR02_26"
+			text = end_text
+			position = { x = 20 y = 75 }
+			maxWidth = 720
+			maxHeight = 400
+			fixedsize = no
+			scrollbartype = "standardtext_slider"
+		}
+	}
+}

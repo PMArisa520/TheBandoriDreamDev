@@ -1,0 +1,16 @@
+scripted_gui = {
+	endgui_main = {
+		window_name = endgui_main
+		context_type = player_context
+		visible = {
+			has_country_flag = endgui_startup
+		}
+		effects = {
+			endgui_exit_buttom_click = {
+				clr_country_flag = endgui_startup
+				focus_unlock = yes
+				set_country_flag = unrestricted_diplomacy_flag
+			}
+		}
+	}
+}
