@@ -10,8 +10,8 @@ focus_tree = {
 	default = no
 	focus = {
 		#成立亚洲联盟
-		id = GFX_BGD_created_united_asia
-		icon = GFX_guoce_zhanwei
+		id = created_united_asia
+		icon = GFX_BGD_created_united_asia
 		cost = 3
 		x = 8
 		y = 0
