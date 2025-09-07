@@ -467,4 +467,12 @@ spriteTypes = {
 		name = "GFX_BGD_Butterfly_and_Eagle"
 		texturefile = "gfx\interface\goals\BGD\BGD_Butterfly_and_Eagle.png"
 	}
+	SpriteType = {
+		name = "GFX_BGD_created_united_asia"
+		texturefile = "gfx\interface\goals\BGD\BGD_created_united_asia.png"
+	}
+	SpriteType = {
+		name = "GFX_BGD_the_Starlight_Begins"
+		texturefile = "gfx\interface\goals\BGD\BGD_the_Starlight_Begins.png"
+	}
 }

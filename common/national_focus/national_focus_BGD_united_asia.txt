@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		#成立亚洲联盟
-		id = created_united_asia
+		id = GFX_BGD_created_united_asia
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 8
@@ -614,5 +614,30 @@ focus_tree = {
 	#		country_event = { id = unasia.5 }
 	#	}
 	#}
+
+	focus = {
+		#直至烈焰尽头，星光升起之时
+		id = UNITED_ASIA_the_Starlight_Begins
+		icon = GFX_BGD_the_Starlight_Begins
+		cost = 3
+		prerequisite = {
+			focus = UNITED_ASIA_New_Chapter_for_North_Asia
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_New_Chapter_for_Middle_Asia
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_New_Chapter_for_West_Asia
+		}
+		x = 8
+		y = 12
+		completion_reward = {
+			custom_effect_tooltip = endgui_startup_tt
+			hidden_effect = {
+				set_country_flag = endgui_startup
+				scoped_play_song = "Poppin'Party - ときめきエクスペリエンス！"	
+			}
+		}
+	}
 }
 

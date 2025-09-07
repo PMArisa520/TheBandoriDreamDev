@@ -1216,7 +1216,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			scoped_play_song = "户山香澄-GAW胜利演讲"	
+			#scoped_play_song = "户山香澄-GAW胜利演讲"	
 			white_peace = PRC
 			white_peace = VIN
 			white_peace = PAK
@@ -1511,7 +1511,7 @@ country_event = {
 				else = {
 					puppet = PAK
 				}
-				load_focus_tree = BGD_united_asia
+				#load_focus_tree = BGD_united_asia
 		    }
 		}
 	}
