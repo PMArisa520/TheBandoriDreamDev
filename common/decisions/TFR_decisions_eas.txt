@@ -572,7 +572,7 @@ eas_dongya_waijiao = {
 		}
 			
 		complete_effect = {
-			add_ideas = early_mobilization
+			add_ideas = EAS_zhanwei
 			remove_ideas = PRC_party_commands_the_guns
 		}
 	}
