@@ -2546,3 +2546,16 @@ country_event = {
 		name = bgd.116.a
 	}
 }
+
+country_event = {
+	#Popipa的紧急物资大作战！
+	id = bgd.117
+	title = bgd.117.t
+	desc = bgd.117.d
+	picture = GFX_ksar_2
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.117.a
+	}
+}

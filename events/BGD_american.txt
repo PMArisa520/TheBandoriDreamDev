@@ -50,6 +50,7 @@ country_event = {
 			remove_ideas = ZZZ_chaostic_economy
 			remove_ideas = USN_naval_dictatorship_idea
 			#remove_ideas = USA_battle_for_america_idea
+			load_focus_tree = TFR_tree_USN #加载USN国策树
 		}
 	}
 }
@@ -1022,6 +1023,34 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.28.a
+	}
+	
+}
+
+country_event = {
+	#24岁,事坦克兵(悲)
+	id = usnavy.29
+	title = usnavy.29.t
+	desc = usnavy.29.d
+	picture = GFX_japan_peacekeeper
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.29.a
+	}
+	
+}
+
+country_event = {
+	#志于道，据于德
+	id = usnavy.30
+	title = usnavy.30.t
+	desc = usnavy.30.d
+	picture = GFX_japan_peacekeeper
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.30.a
 	}
 	
 }

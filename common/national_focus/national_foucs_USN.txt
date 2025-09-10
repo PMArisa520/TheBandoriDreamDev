@@ -1,0 +1,18 @@
+focus_tree = {
+    id = TFR_tree_USN
+	country = {
+		base = 0
+	}
+	default = no
+    focus = {
+	    id = USN_TAST_FOUCS
+		icon = GFX_guoce_zhanwei
+		cost = 5
+		x = 7
+		y = 0
+		completion_reward = {
+			add_ideas = EAS_heian_yinying
+			add_country_leader_trait = USN_build_leader
+		}
+	}
+}

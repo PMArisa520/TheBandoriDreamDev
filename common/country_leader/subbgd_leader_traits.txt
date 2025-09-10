@@ -73,4 +73,12 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	USN_build_leader = {
+		random = no
+		political_power_gain = 1.0
+        stability_factor = 0.3
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }	

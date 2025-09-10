@@ -590,3 +590,5 @@ bgd_allied_countries_state: "战友国"
 BGD_Bannde_LDP_effect_tt: "§N国民议会§!席位将发生变化 - §R自民党将失去所有席位§!"
 BGD_parliament_effect_tt: "§N国民议会§!席位将发生变化"
 BGD_economic_actions_tt: "§G解锁§!§Y经济界面§!决议"
+
+USN_build_leader: "可爱的仓鼠？"

@@ -567,6 +567,10 @@ shared_focus = {
 	}
 	completion_reward = {
 		country_event = { id = bgd.91 }
+		country_event = { 
+			id = bgd.117 
+			days = 14
+		}
 		custom_effect_tooltip = BGD_economic_actions_tt
 		unlock_decision_category_tooltip = BGD_jingji_gongzuo
 		unlock_decision_tooltip = BGD_jiashui
