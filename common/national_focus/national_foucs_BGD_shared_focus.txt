@@ -440,6 +440,10 @@ shared_focus = {
 		add_to_variable = { BGD_guomin_fangweijun_navy_carrier_air_attack_factor = 0.1 }
 		add_to_variable = { BGD_guomin_fangweijun_navy_carrier_air_targetting_factor = 0.1 }
 		add_to_variable = { BGD_guomin_fangweijun_navy_carrier_air_agility_factor = 0.1 }
+		country_event = { id = bgd.118}
+		country_event = { id = bgd.119 days = 7}
+		country_event = { id = bgd.120 days = 14}
+		country_event = { id = bgd.121 days = 21}
 	}
 }
 shared_focus = {

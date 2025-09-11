@@ -2559,3 +2559,55 @@ country_event = {
 		name = bgd.117.a
 	}
 }
+
+country_event = {
+	#永远相伴身旁 彼此勾指起誓 一
+	id = bgd.118
+	title = bgd.118.t
+	desc = bgd.118.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.118.a
+	}
+}
+
+country_event = {
+	#永远相伴身旁 彼此勾指起誓 二
+	id = bgd.119
+	title = bgd.119.t
+	desc = bgd.119.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.119.a
+	}
+}
+
+country_event = {
+	#永远相伴身旁 彼此勾指起誓 三
+	id = bgd.120
+	title = bgd.120.t
+	desc = bgd.120.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.120.a
+	}
+}
+
+country_event = {
+	#永远相伴身旁 彼此勾指起誓 四
+	id = bgd.121
+	title = bgd.121.t
+	desc = bgd.121.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.121.a
+	}
+}

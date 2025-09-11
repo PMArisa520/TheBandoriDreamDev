@@ -5,14 +5,420 @@ focus_tree = {
 	}
 	default = no
     focus = {
-	    id = USN_TAST_FOUCS
+		#远方的来客
+	    id = USN_ganshe_start
 		icon = GFX_guoce_zhanwei
-		cost = 5
+		cost = 3
 		x = 7
 		y = 0
 		completion_reward = {
-			add_ideas = EAS_heian_yinying
 			add_country_leader_trait = USN_build_leader
+			add_political_power = 100
+		}
+	}
+	focus = {
+	    id = USN_tast_1
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 5
+		y = 1
+
+		prerequisite = {focus = USN_ganshe_start}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_2
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 7
+		y = 1
+
+		prerequisite = {focus = USN_ganshe_start}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_3
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 9
+		y = 1
+
+		prerequisite = {focus = USN_ganshe_start}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_4
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 5
+		y = 2
+
+		prerequisite = {focus = USN_tast_1}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_5
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 7
+		y = 2
+
+		prerequisite = {focus = USN_tast_2}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_6
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 9
+		y = 2
+
+		prerequisite = {focus = USN_tast_3}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_7
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 7
+		y = 3
+
+		prerequisite = {focus = USN_tast_5}
+		prerequisite = {focus = USN_tast_4}
+		prerequisite = {focus = USN_tast_6}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_8
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 6
+		y = 4
+
+		prerequisite = {focus = USN_tast_7}
+		mutually_exclusive = {focus = USN_tast_9}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_9
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 8
+		y = 4
+
+		prerequisite = {focus = USN_tast_7}
+		mutually_exclusive = {focus = USN_tast_8}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_10
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 4
+		y = 5
+
+		prerequisite = {focus = USN_tast_8}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_11
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 10
+		y = 5
+
+		prerequisite = {focus = USN_tast_9 focus = USN_tast_8}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_12
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 8
+		y = 5
+
+		prerequisite = {focus = USN_tast_8 focus = USN_tast_8}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_13
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 2
+		y = 6
+
+		prerequisite = {focus = USN_tast_10}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_14
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 4
+		y = 6
+
+		prerequisite = {focus = USN_tast_10}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_15
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 6
+		y = 6
+
+		prerequisite = {focus = USN_tast_10}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_16
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 4
+		y = 7
+
+		prerequisite = {focus = USN_tast_13}
+		prerequisite = {focus = USN_tast_14}
+		prerequisite = {focus = USN_tast_15}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_17
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 8
+		y = 6
+
+		prerequisite = {focus = USN_tast_12}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_18
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 12
+		y = 6
+
+		prerequisite = {focus = USN_tast_11}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_19
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 10
+		y = 6
+
+		prerequisite = {focus = USN_tast_12}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_20
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 10
+		y = 7
+
+		prerequisite = {focus = USN_tast_19}
+		prerequisite = {focus = USN_tast_18}
+		prerequisite = {focus = USN_tast_17}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_21
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 5
+		y = 8
+
+		mutually_exclusive = {focus = USN_tast_22}
+		prerequisite = {focus = USN_tast_20}
+		prerequisite = {focus = USN_tast_16}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_22
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 9
+		y = 8
+
+		mutually_exclusive = {focus = USN_tast_22}
+		prerequisite = {focus = USN_tast_20}
+		prerequisite = {focus = USN_tast_16}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_23
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 5
+		y = 9
+
+		prerequisite = {focus = USN_tast_21}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_24
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 8
+		y = 9
+
+		prerequisite = {focus = USN_tast_22}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_25
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 10
+		y = 9
+
+		prerequisite = {focus = USN_tast_22}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_26
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 9
+		y = 10
+
+		prerequisite = {focus = USN_tast_25}
+		prerequisite = {focus = USN_tast_24}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_27
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 5
+		y = 10
+
+		prerequisite = {focus = USN_tast_23}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+	    id = USN_tast_28
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 7
+		y = 11
+
+		prerequisite = {focus = USN_tast_27 focus = USN_tast_26}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
 		}
 	}
 }

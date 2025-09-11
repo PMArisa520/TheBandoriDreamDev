@@ -49,6 +49,7 @@ country_event = {
 			set_country_flag = BGD_EPS
 			remove_ideas = ZZZ_chaostic_economy
 			remove_ideas = USN_naval_dictatorship_idea
+			add_ideas = USN_buxinren_LV5
 			#remove_ideas = USA_battle_for_america_idea
 			load_focus_tree = TFR_tree_USN #加载USN国策树
 		}

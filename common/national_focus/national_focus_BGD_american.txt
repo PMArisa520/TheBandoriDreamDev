@@ -116,14 +116,6 @@ shared_focus = {
 		APA = {
 			owns_state = 1036
 		}
-		ships_in_area = {
-			area = 89
-			size > 9
-		}
-		ships_in_area = {
-			area = 115
-			size > 9
-		}
 	}
 	completion_reward = {
 		BGD = {
