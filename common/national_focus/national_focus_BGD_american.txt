@@ -121,6 +121,7 @@ shared_focus = {
 		BGD = {
 			country_event = { id = usnavy.2 }
 			country_event = { id = usnavy.17 days = 3 }
+			country_event = { id = bgd.122 days = 21}
 		}
 	}
 }

@@ -4,6 +4,9 @@ focus_tree = {
 		base = 0
 	}
 	default = no
+
+	shared_focus = USN_junshi_yantao
+
     focus = {
 		#远方的来客
 	    id = USN_ganshe_start
@@ -14,10 +17,16 @@ focus_tree = {
 		completion_reward = {
 			add_country_leader_trait = USN_build_leader
 			add_political_power = 100
+			add_ideas = BGD_Nakamachi_Arale
+			add_ideas = BGD_Minetsuki_Ritsu
+			add_ideas = BGD_Sengoku_Yuno
+			add_ideas = BGD_Fuji_Miyako
+			add_ideas = BGD_Miyanaga_Nonoka
+			add_ideas = BGD_Kurata_Mashiro
 		}
 	}
 	focus = {
-	    id = USN_tast_1
+	    id = USN_test_1
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
@@ -31,7 +40,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_2
+	    id = USN_test_2
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 7
@@ -45,7 +54,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_3
+	    id = USN_test_3
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
@@ -59,13 +68,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_4
+	    id = USN_test_4
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 2
 
-		prerequisite = {focus = USN_tast_1}
+		prerequisite = {focus = USN_test_1}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -73,13 +82,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_5
+	    id = USN_test_5
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 7
 		y = 2
 
-		prerequisite = {focus = USN_tast_2}
+		prerequisite = {focus = USN_test_2}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -87,13 +96,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_6
+	    id = USN_test_6
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
 		y = 2
 
-		prerequisite = {focus = USN_tast_3}
+		prerequisite = {focus = USN_test_3}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -101,15 +110,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_7
+	    id = USN_test_7
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 7
 		y = 3
 
-		prerequisite = {focus = USN_tast_5}
-		prerequisite = {focus = USN_tast_4}
-		prerequisite = {focus = USN_tast_6}
+		prerequisite = {focus = USN_test_5}
+		prerequisite = {focus = USN_test_4}
+		prerequisite = {focus = USN_test_6}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -117,14 +126,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_8
+	    id = USN_test_8
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 6
 		y = 4
 
-		prerequisite = {focus = USN_tast_7}
-		mutually_exclusive = {focus = USN_tast_9}
+		prerequisite = {focus = USN_test_7}
+		mutually_exclusive = {focus = USN_test_9}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -132,14 +141,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_9
+	    id = USN_test_9
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 8
 		y = 4
 
-		prerequisite = {focus = USN_tast_7}
-		mutually_exclusive = {focus = USN_tast_8}
+		prerequisite = {focus = USN_test_7}
+		mutually_exclusive = {focus = USN_test_8}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -147,13 +156,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_10
+	    id = USN_test_10
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 4
 		y = 5
 
-		prerequisite = {focus = USN_tast_8}
+		prerequisite = {focus = USN_test_8}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -161,13 +170,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_11
+	    id = USN_test_11
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 10
 		y = 5
 
-		prerequisite = {focus = USN_tast_9 focus = USN_tast_8}
+		prerequisite = {focus = USN_test_9 focus = USN_test_8}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -175,13 +184,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_12
+	    id = USN_test_12
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 8
 		y = 5
 
-		prerequisite = {focus = USN_tast_8 focus = USN_tast_8}
+		prerequisite = {focus = USN_test_8 focus = USN_test_8}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -189,13 +198,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_13
+	    id = USN_test_13
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 2
 		y = 6
 
-		prerequisite = {focus = USN_tast_10}
+		prerequisite = {focus = USN_test_10}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -203,13 +212,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_14
+	    id = USN_test_14
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 4
 		y = 6
 
-		prerequisite = {focus = USN_tast_10}
+		prerequisite = {focus = USN_test_10}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -217,13 +226,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_15
+	    id = USN_test_15
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 6
 		y = 6
 
-		prerequisite = {focus = USN_tast_10}
+		prerequisite = {focus = USN_test_10}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -231,15 +240,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_16
+	    id = USN_test_16
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 4
 		y = 7
 
-		prerequisite = {focus = USN_tast_13}
-		prerequisite = {focus = USN_tast_14}
-		prerequisite = {focus = USN_tast_15}
+		prerequisite = {focus = USN_test_13}
+		prerequisite = {focus = USN_test_14}
+		prerequisite = {focus = USN_test_15}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -247,13 +256,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_17
+	    id = USN_test_17
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 8
 		y = 6
 
-		prerequisite = {focus = USN_tast_12}
+		prerequisite = {focus = USN_test_12}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -261,13 +270,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_18
+	    id = USN_test_18
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 12
 		y = 6
 
-		prerequisite = {focus = USN_tast_11}
+		prerequisite = {focus = USN_test_11}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -275,13 +284,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_19
+	    id = USN_test_19
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 10
 		y = 6
 
-		prerequisite = {focus = USN_tast_12}
+		prerequisite = {focus = USN_test_12}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -289,15 +298,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_20
+	    id = USN_test_20
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 10
 		y = 7
 
-		prerequisite = {focus = USN_tast_19}
-		prerequisite = {focus = USN_tast_18}
-		prerequisite = {focus = USN_tast_17}
+		prerequisite = {focus = USN_test_19}
+		prerequisite = {focus = USN_test_18}
+		prerequisite = {focus = USN_test_17}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -305,15 +314,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_21
+	    id = USN_test_21
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 8
 
-		mutually_exclusive = {focus = USN_tast_22}
-		prerequisite = {focus = USN_tast_20}
-		prerequisite = {focus = USN_tast_16}
+		mutually_exclusive = {focus = USN_test_22}
+		prerequisite = {focus = USN_test_20}
+		prerequisite = {focus = USN_test_16}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -321,15 +330,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_22
+	    id = USN_test_22
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
 		y = 8
 
-		mutually_exclusive = {focus = USN_tast_22}
-		prerequisite = {focus = USN_tast_20}
-		prerequisite = {focus = USN_tast_16}
+		mutually_exclusive = {focus = USN_test_22}
+		prerequisite = {focus = USN_test_20}
+		prerequisite = {focus = USN_test_16}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -337,13 +346,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_23
+	    id = USN_test_23
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 9
 
-		prerequisite = {focus = USN_tast_21}
+		prerequisite = {focus = USN_test_21}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -351,13 +360,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_24
+	    id = USN_test_24
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 8
 		y = 9
 
-		prerequisite = {focus = USN_tast_22}
+		prerequisite = {focus = USN_test_22}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -365,13 +374,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_25
+	    id = USN_test_25
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 10
 		y = 9
 
-		prerequisite = {focus = USN_tast_22}
+		prerequisite = {focus = USN_test_22}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -379,14 +388,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_26
+	    id = USN_test_26
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
 		y = 10
 
-		prerequisite = {focus = USN_tast_25}
-		prerequisite = {focus = USN_tast_24}
+		prerequisite = {focus = USN_test_25}
+		prerequisite = {focus = USN_test_24}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -394,13 +403,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_27
+	    id = USN_test_27
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 10
 
-		prerequisite = {focus = USN_tast_23}
+		prerequisite = {focus = USN_test_23}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -408,13 +417,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_tast_28
+	    id = USN_test_28
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 7
 		y = 11
 
-		prerequisite = {focus = USN_tast_27 focus = USN_tast_26}
+		prerequisite = {focus = USN_test_27 focus = USN_test_26}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10

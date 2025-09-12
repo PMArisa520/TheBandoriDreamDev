@@ -2976,4 +2976,100 @@ ideas = {
 				}
 			}		
 	}
+#
+
+	head_minister = {
+			BGD_Nakamachi_Arale = {
+				#picture = BGD_arisa_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				allowed_to_remove = {
+					always = no
+				}
+				visible = {
+					
+				}
+				
+				traits = { 
+					#hos_muhou_gaigejia
+				}
+			}
+	}
+	economic_minister = {
+		    BGD_Minetsuki_Ritsu = {
+				#picture = BGD_saaya_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				visible = {
+
+				}
+				traits = {
+					#eco_jieyue_zhishang
+				}
+			}
+	}
+	foreign_minister = {			
+		    BGD_Sengoku_Yuno = {
+				#picture = BGD_tae_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				visible = {
+
+				}
+				traits = { 
+					#for_tuzi_waijiao
+				}
+			}
+        }
+		interior_minister = {
+		    BGD_Fuji_Miyako = {
+				#picture = BGD_rimi_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				visible = {
+
+				}
+				traits = { 
+					#sec_pingfan_zhiren
+				}
+			}
+		}
+		intelligence_minister = {
+		    BGD_Miyanaga_Nonoka = {
+				#picture = BGD_nanami_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				visible = {
+
+				}
+				traits = { 
+					#int_putong_deshen
+				}
+			}
+		}
+		theorist_minister = {
+		    BGD_Kurata_Mashiro = {
+				#picture = BGD_yukina_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				visible = {
+					
+				}
+				traits = { 
+					#theorist_dingdian_zhiren 
+				}
+			}		
+	}
 }

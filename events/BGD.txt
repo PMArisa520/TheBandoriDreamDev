@@ -2611,3 +2611,21 @@ country_event = {
 		name = bgd.121.a
 	}
 }
+country_event = {
+	#玩家选择扮演的国家
+	id = bgd.122
+	title = bgd.122.t
+	desc = bgd.122.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.122.a
+	}
+	option = {
+		name = bgd.122.b
+		USN = {
+			change_tag_from = BGD
+		}
+	}
+}
