@@ -9,17 +9,16 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			
 		}
 	}
 	option = {
 		name = bgd.1.a
 		add_political_power = 70
 		effect_tooltip = {
-			
 		}
 	}
 }
+
 country_event = {
 	#ppp最终胜利
 	id = bgd.2014
@@ -30,7 +29,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			scoped_play_song = "Poppin'Party - Yes! BanG_Dream!"	
+			scoped_play_song = "Poppin'Party - Yes! BanG_Dream!"
 		}
 	}
 	option = {
@@ -38,6 +37,7 @@ country_event = {
 		custom_effect_tooltip = BGD_ganxie_tt
 	}
 }
+
 country_event = {
 	#东京军事政变
 	id = bgd.1212
@@ -127,21 +127,22 @@ country_event = {
 	option = {
 		name = bgd.1212.a
 		hidden_effect = {
-		news_event = {
-			id = news.1212
-			hours = 12
-		}
-		country_event = {
-			id = bgd.36
-			hours = 72
-		}
-		country_event = {
-			id = bgd.35
-			hours = 168
-		}
+			news_event = {
+				id = news.1212
+				hours = 12
+			}
+			country_event = {
+				id = bgd.36
+				hours = 72
+			}
+			country_event = {
+				id = bgd.35
+				hours = 168
+			}
 		}
 	}
 }
+
 country_event = {
 	#民主阵线成立
 	id = bgd.35
@@ -154,22 +155,22 @@ country_event = {
 		name = bgd.35.a
 		load_oob = ziweidui_minbing_1
 		country_event = {
-		    id = bgd.32
-		    hours = 336
+			id = bgd.32
+			hours = 336
 		}
 		DFJ = {
-		country_event = {
-			id = bgd.37
-			hours = 12
-		}
+			country_event = {
+				id = bgd.37
+				hours = 12
+			}
 		}
 		hidden_effect = {
-		BGD = {
-		news_event = {
-			id = news.1213
-			hours = 6
-		}
-		}
+			BGD = {
+				news_event = {
+					id = news.1213
+					hours = 6
+				}
+			}
 			DFJ = {
 				transfer_state = 1334
 				transfer_state = 536
@@ -196,9 +197,10 @@ country_event = {
 					social_democrat = 10
 				}
 			}
-	    }
+		}
 	}
 }
+
 country_event = {
 	#成立东京军管区
 	id = bgd.36
@@ -234,9 +236,10 @@ country_event = {
 			country_event = {
 				id = bgd.54
 			}
-	    }
+		}
 	}
 }
+
 country_event = {
 	#东京市民赶走自卫队
 	id = bgd.10
@@ -246,36 +249,36 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-	hidden_effect = {
-	white_peace = DFJ
-	set_politics = {
-		ruling_party = social_democrat
-        election_frequency = 48
-		elections_allowed = yes
-		last_election = "2021.10.31"
-	}
-		end_puppet = JAP
-		set_popularities = {
-			libertarian_socialist = 20
-			communist = 11
-			totalitarian_socialist = 5
-			social_democrat = 48
-			social_liberal = 6
-            market_liberal = 5
-			conservative = 3
-			authoritarian_democrat = 2
+		hidden_effect = {
+			white_peace = DFJ
+			set_politics = {
+				ruling_party = social_democrat
+				election_frequency = 48
+				elections_allowed = yes
+				last_election = "2021.10.31"
 			}
-	    }
-	}		    
+			end_puppet = JAP
+			set_popularities = {
+				libertarian_socialist = 20
+				communist = 11
+				totalitarian_socialist = 5
+				social_democrat = 48
+				social_liberal = 6
+				market_liberal = 5
+				conservative = 3
+				authoritarian_democrat = 2
+			}
+		}
+	}
 	option = {
 		name = bgd.10.a
 		set_country_flag = BGD_shenmi_jita_yingxiang
 		set_cosmetic_tag = BGD_ziyou_zhenxian
 		add_ideas = BGD_shenmi_jita_1
 		add_timed_idea = {
-				idea = BGD_jingyan_buzu	
-				days = 400
-		}				
+			idea = BGD_jingyan_buzu
+			days = 400
+		}
 		country_event = {
 			id = bgd.34
 			hours = 24
@@ -288,6 +291,7 @@ country_event = {
 		load_oob = BGD_minbing_1
 	}
 }
+
 country_event = {
 	#胜选之后
 	id = bgd.9
@@ -300,6 +304,7 @@ country_event = {
 		name = bgd.9.a
 	}
 }
+
 country_event = {
 	#人民联合胜选
 	id = bgd.18
@@ -331,9 +336,10 @@ country_event = {
 			election_frequency = 48
 		}
 	}
-			set_country_flag = JAP_general_election_is_over
-			set_country_flag = JAP_cc_won_flag
+	set_country_flag = JAP_general_election_is_over
+	set_country_flag = JAP_cc_won_flag
 }
+
 country_event = {
 	#香澄失踪
 	id = bgd.11
@@ -350,6 +356,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#香澄找到神秘吉他
 	id = bgd.12
@@ -366,6 +373,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#发现古代地点
 	id = bgd.13
@@ -382,6 +390,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#演出
 	id = bgd.14
@@ -398,6 +407,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#号召市民
 	id = bgd.15
@@ -414,6 +424,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#加入阵线
 	id = bgd.31
@@ -429,6 +440,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#自卫队进攻民主阵线
 	id = bgd.32
@@ -441,21 +453,22 @@ country_event = {
 		name = bgd.32.a
 		add_ideas = BGD_mingyun_zhizhan
 		BGD = {
-		news_event = {
-			id = news.1214
-			hours = 6
+			news_event = {
+				id = news.1214
+				hours = 6
+			}
+			declare_war_on = {
+				target = DFJ
+				type = annex_everything
+			}
 		}
 		declare_war_on = {
 			target = DFJ
 			type = annex_everything
 		}
-		}
-	declare_war_on = {
-        target = DFJ
-        type = annex_everything
-    }
 	}
 }
+
 country_event = {
 	#自卫队进攻东京
 	id = bgd.33
@@ -477,12 +490,13 @@ country_event = {
 				days = 10
 			}
 		}
-	declare_war_on = {
-        target = BGD
-        type = annex_everything
-    }
+		declare_war_on = {
+			target = BGD
+			type = annex_everything
+		}
 	}
 }
+
 country_event = {
 	#部分自卫队投诚
 	id = bgd.34
@@ -499,13 +513,14 @@ country_event = {
 		add_state_core = 1341
 		add_state_core = 282
 		JAP = {
-		country_event = {
-			id = bgd.33
-			days = 7
-		}
+			country_event = {
+				id = bgd.33
+				days = 7
+			}
 		}
 	}
 }
+
 country_event = {
 	#民主阵线组建武装
 	id = bgd.37
@@ -521,6 +536,7 @@ country_event = {
 		create_faction = BANGUDF
 	}
 }
+
 country_event = {
 	#香澄演讲
 	id = bgd.38
@@ -533,6 +549,7 @@ country_event = {
 		name = bgd.38.a
 	}
 }
+
 country_event = {
 	#转移海军
 	id = bgd.39
@@ -546,6 +563,7 @@ country_event = {
 		load_oob = BGD_2000_naval_mtg
 	}
 }
+
 country_event = {
 	#和平统一民主阵线
 	id = bgd.40
@@ -556,9 +574,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-		DFJ = {
-			dismantle_faction = yes
-		}
+			DFJ = {
+				dismantle_faction = yes
+			}
 		}
 	}
 	option = {
@@ -572,11 +590,12 @@ country_event = {
 		add_state_core = 1333
 		add_state_core = 1336
 		add_state_core = 1335
-	annex_country = {
-        target = DFJ
-    }
+		annex_country = {
+			target = DFJ
+		}
 	}
 }
+
 country_event = {
 	#内战告终
 	id = bgd.41
@@ -588,13 +607,27 @@ country_event = {
 	option = {
 		name = bgd.41.a
 		set_cosmetic_tag = BGD_linshizhengfu
-		add_to_variable = { BGD_neizhan_feixv_monthly_population = -0.25 }
-		add_to_variable = { BGD_neizhan_feixv_consumer_goods_factor = 0.3 }
-		add_to_variable = { BGD_neizhan_feixv_industrial_capacity_factory = -0.4 }
-		add_to_variable = { BGD_neizhan_feixv_production_speed_buildings_factor = -0.35 }
-		add_to_variable = { BGD_neizhan_feixv_stability_factor = -0.35 }
-		add_to_variable = { BGD_neizhan_feixv_war_support_factor = -0.5 }
-		add_to_variable = { BGD_neizhan_feixv_industrial_capacity_dockyard = -0.4 }
+		add_to_variable = {
+			BGD_neizhan_feixv_monthly_population = -0.25
+		}
+		add_to_variable = {
+			BGD_neizhan_feixv_consumer_goods_factor = 0.3
+		}
+		add_to_variable = {
+			BGD_neizhan_feixv_industrial_capacity_factory = -0.4
+		}
+		add_to_variable = {
+			BGD_neizhan_feixv_production_speed_buildings_factor = -0.35
+		}
+		add_to_variable = {
+			BGD_neizhan_feixv_stability_factor = -0.35
+		}
+		add_to_variable = {
+			BGD_neizhan_feixv_war_support_factor = -0.5
+		}
+		add_to_variable = {
+			BGD_neizhan_feixv_industrial_capacity_dockyard = -0.4
+		}
 		effect_tooltip = {
 			add_ideas = BGD_neizhan_feixv_0
 		}
@@ -613,24 +646,25 @@ country_event = {
 				modifier = BGD_neizhan_feixv
 			}
 			country_event = {
-			id = bgd.47
-		    days = 18
+				id = bgd.47
+				days = 18
+			}
+			country_event = {
+				id = bgd.48
+				days = 20
+			}
+			country_event = {
+				id = bgd.52
+				days = 30
+			}
+			country_event = {
+				id = bgd.58
+				days = 40
+			}
 		}
-		country_event = {
-			id = bgd.48
-			days = 20
-		}
-		country_event = {
-			id = bgd.52
-			days = 30
-		}
-		country_event = {
-			id = bgd.58
-			days = 40
-		}
-	}
 	}
 }
+
 country_event = {
 	#欢迎游玩
 	id = bgd.0
@@ -643,6 +677,7 @@ country_event = {
 		name = bgd.0.a
 	}
 }
+
 country_event = {
 	#重建国家
 	id = bgd.42
@@ -656,6 +691,7 @@ country_event = {
 		add_political_power = 50
 	}
 }
+
 country_event = {
 	#开始制宪
 	id = bgd.43
@@ -667,7 +703,7 @@ country_event = {
 	option = {
 		name = bgd.43.a
 		country_event = {
-			id = bgd.44 
+			id = bgd.44
 			days = 14
 		}
 		add_political_power = 25
@@ -677,6 +713,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#有咲的第二次东京军事政变
 	id = bgd.226
@@ -689,6 +726,7 @@ country_event = {
 		name = bgd.226.a
 	}
 }
+
 country_event = {
 	#确立国体
 	id = bgd.44
@@ -700,11 +738,12 @@ country_event = {
 	option = {
 		name = bgd.44.a
 		country_event = {
-			id = bgd.45 
+			id = bgd.45
 			days = 14
 		}
 	}
 }
+
 country_event = {
 	#和平宪法第九条
 	id = bgd.45
@@ -721,6 +760,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#基本权利与其他杂项
 	id = bgd.46
@@ -737,6 +777,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#大会闭幕
 	id = bgd.49
@@ -757,6 +798,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#首次大选
 	id = bgd.50
@@ -773,13 +815,20 @@ country_event = {
 			days = 15
 		}
 		set_country_flag = cabinet_up
-		set_variable = { popular_support = 79 }
-		set_variable = { party_support = 91 }
-		set_variable = { supernatural_attunement = 55 }
+		set_variable = {
+			popular_support = 79
+		}
+		set_variable = {
+			party_support = 91
+		}
+		set_variable = {
+			supernatural_attunement = 55
+		}
 		set_country_flag = c_var_update
 		custom_effect_tooltip = BGD_shaonv_neige_qiyong_tt
 	}
 }
+
 country_event = {
 	#闪耀党当选
 	id = bgd.51
@@ -791,24 +840,25 @@ country_event = {
 	option = {
 		name = bgd.51.a
 		add_popularity = {
-				ideology = social_democrat
-				popularity = 0.07
-			}
-			set_power_balance = {
-				id = BGD_power_balance
-				left_side = BGD_minzhuzhenxian_side
-				right_side = BGD_shanyaodang_side
-				set_value = 0
-			}
-			country_event = {
-				id = bgd.60
-				days = 7
-			}
-			set_country_flag = BGD_quanli_tianping
-			set_country_flag = BGD_quanli_tianping_1
-			set_country_flag = BGD_shanyaodang_dangxuan
+			ideology = social_democrat
+			popularity = 0.07
+		}
+		set_power_balance = {
+			id = BGD_power_balance
+			left_side = BGD_minzhuzhenxian_side
+			right_side = BGD_shanyaodang_side
+			set_value = 0
+		}
+		country_event = {
+			id = bgd.60
+			days = 7
+		}
+		set_country_flag = BGD_quanli_tianping
+		set_country_flag = BGD_quanli_tianping_1
+		set_country_flag = BGD_shanyaodang_dangxuan
 	}
 }
+
 country_event = {
 	#工农业崩溃
 	id = bgd.47
@@ -829,6 +879,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#经济与社会崩坏
 	id = bgd.48
@@ -849,6 +900,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#极右翼分子抵抗报告
 	id = bgd.52
@@ -862,6 +914,7 @@ country_event = {
 		add_ideas = BGD_heidao_fanlan
 	}
 }
+
 country_event = {
 	#神秘吉他力量变动
 	id = bgd.53
@@ -873,18 +926,19 @@ country_event = {
 	option = {
 		name = bgd.53.a
 		random_list = {
-				40 = {
-					add_ideas = BGD_shenmi_jita_1
-				}
-				30 = {
-					add_ideas = BGD_shenmi_jita_2
-				}
-				30 = {
-					add_ideas = BGD_shenmi_jita_3
-				}
+			40 = {
+				add_ideas = BGD_shenmi_jita_1
 			}
+			30 = {
+				add_ideas = BGD_shenmi_jita_2
+			}
+			30 = {
+				add_ideas = BGD_shenmi_jita_3
+			}
+		}
 	}
 }
+
 country_event = {
 	#切换国家
 	id = bgd.54
@@ -903,6 +957,7 @@ country_event = {
 		name = bgd.54.a
 	}
 }
+
 country_event = {
 	#重建完成
 	id = bgd.55
@@ -916,6 +971,7 @@ country_event = {
 		set_country_flag = reconstruction_completed
 	}
 }
+
 country_event = {
 	#立宪争吵
 	id = bgd.56
@@ -928,6 +984,7 @@ country_event = {
 		name = bgd.56.a
 	}
 }
+
 country_event = {
 	#军事预算问题
 	id = bgd.57
@@ -939,7 +996,7 @@ country_event = {
 	option = {
 		name = bgd.57.a
 		add_ideas = BGD_yvsuan_lujun
-		add_offsite_building = { 
+		add_offsite_building = {
 			type = arms_factory
 			level = 3
 		}
@@ -947,7 +1004,7 @@ country_event = {
 	option = {
 		name = bgd.57.b
 		add_ideas = BGD_yvsuan_haijun
-		add_offsite_building = { 
+		add_offsite_building = {
 			type = dockyard
 			level = 3
 		}
@@ -957,6 +1014,7 @@ country_event = {
 		add_ideas = BGD_yvsuan_kongjun
 	}
 }
+
 country_event = {
 	#继承债务
 	id = bgd.58
@@ -968,16 +1026,16 @@ country_event = {
 	option = {
 		name = bgd.58.a
 		set_temp_variable = {
-				var = debt_var_temp
-				value = 6803
-			}
-			add_debt = yes
+			var = debt_var_temp
+			value = 6803
+		}
+		add_debt = yes
 	}
 	option = {
 		name = bgd.58.b
-		
 	}
 }
+
 country_event = {
 	#民主阵线瓦解
 	id = bgd.59
@@ -992,6 +1050,7 @@ country_event = {
 		clr_country_flag = BGD_quanli_tianping_1
 	}
 }
+
 country_event = {
 	#东亚国崛起
 	id = bgd.1984
@@ -1000,43 +1059,48 @@ country_event = {
 	picture = GFX_bangdream_victory
 	fire_only_once = yes
 	is_triggered_only = yes
-		immediate = {
-			hidden_effect = {
-				every_country = {
-					limit = {
-						has_idea = ETH_chinese_investments
-					}
-					THIS = {
-						remove_ideas = ETH_chinese_investments
-					}
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_idea = ETH_chinese_investments
 				}
-				dismantle_faction = yes
-				set_politics = {
-					ruling_party = totalitarian_socialist
-					elections_allowed = no
+				THIS = {
+					remove_ideas = ETH_chinese_investments
 				}
-				add_popularity = {
-					ideology = totalitarian_socialist
-					popularity = 0.75
+			}
+			dismantle_faction = yes
+			set_politics = {
+				ruling_party = totalitarian_socialist
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.75
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = EAS_dongya_guojiadang_long
+				name = EAS_dongya_guojiadang
+			}
+			set_cosmetic_tag = PRC_dongyaguo
+			create_country_leader = {
+				name = "BGD_shounao_char"
+				desc = "BGD_SHOUNAO_DESC"
+				picture = GFX_portrait_shounao
+				ideology = transhumanism
+				traits = {
 				}
-				set_party_name = {
-					ideology = totalitarian_socialist
-					long_name = EAS_dongya_guojiadang_long
-					name = EAS_dongya_guojiadang
-				}
-				set_cosmetic_tag = PRC_dongyaguo
-				create_country_leader = {
-					name = "BGD_shounao_char"
-					desc = "BGD_SHOUNAO_DESC"
-					picture = GFX_portrait_shounao
-					ideology = transhumanism
-					traits = {}
-				}
-				remove_ideas_with_trait = ZZZ_blank_idea_trait
-				remove_dynamic_modifier = { modifier = PRC_made_in_china_dynamic }
-				remove_dynamic_modifier = { modifier = PRC_chinese_enviroment_dynamic }
+			}
+			remove_ideas_with_trait = ZZZ_blank_idea_trait
+			remove_dynamic_modifier = {
+				modifier = PRC_made_in_china_dynamic
+			}
+			remove_dynamic_modifier = {
+				modifier = PRC_chinese_enviroment_dynamic
 			}
 		}
+	}
 	option = {
 		name = bgd.1984.a
 		add_ideas = EAS_chaoziran_yingxiang
@@ -1052,6 +1116,7 @@ country_event = {
 		load_focus_tree = TFR_tree_eas
 	}
 }
+
 country_event = {
 	#政治简报
 	id = bgd.60
@@ -1070,6 +1135,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#社会党重建
 	id = bgd.61
@@ -1090,11 +1156,12 @@ country_event = {
 			popularity = 0.08
 		}
 		add_power_balance_value = {
-				id = BGD_power_balance
-				value = -0.15
+			id = BGD_power_balance
+			value = -0.15
 		}
 	}
 }
+
 country_event = {
 	#双重彩虹
 	id = bgd.62
@@ -1105,13 +1172,14 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			scoped_play_song = "Poppin'Party - 二重の虹(ダブル レインボウ)"	
+			scoped_play_song = "Poppin'Party - 二重の虹(ダブル レインボウ)"
 		}
 	}
 	option = {
 		name = bgd.62.a
 	}
 }
+
 country_event = {
 	#朝鲜准备南下
 	id = bgd.63
@@ -1126,6 +1194,7 @@ country_event = {
 		name = bgd.63.a
 	}
 }
+
 country_event = {
 	#朝鲜进攻韩国
 	id = bgd.64
@@ -1138,11 +1207,11 @@ country_event = {
 		custom_effect_tooltip = BGD_jingong_tishi_tt
 		add_war_support = 0.05
 		diplomatic_relation = {
-		    country = KOR
+			country = KOR
 			target = BGD
-		    relation = military_access
-		    active = yes
-		}			
+			relation = military_access
+			active = yes
+		}
 		name = bgd.64.a
 		country_event = {
 			id = bgd.67
@@ -1150,6 +1219,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#友谊的华丽乐章
 	id = bgd.65
@@ -1188,6 +1258,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#炸梦行动
 	id = bgd.66
@@ -1199,13 +1270,14 @@ country_event = {
 	option = {
 		name = bgd.66.a
 		hidden_effect = {
-		country_event = {
-			id = bgd.73
-			days = 3
-		}
+			country_event = {
+				id = bgd.73
+				days = 3
+			}
 		}
 	}
 }
+
 country_event = {
 	#东亚国崩溃
 	id = bgd.4981
@@ -1225,12 +1297,15 @@ country_event = {
 			white_peace = BHU
 			white_peace = SRL
 			white_peace = PRK
-			
 			PRC = {
 				load_focus_tree = TFR_tree_prc_after_gaw_bdr
 				set_cosmetic_tag = PRC_chongjian_zhengfu
-				remove_dynamic_modifier = { modifier = PRC_made_in_china_dynamic }
-				remove_dynamic_modifier = { modifier = PRC_chinese_enviroment_dynamic }
+				remove_dynamic_modifier = {
+					modifier = PRC_made_in_china_dynamic
+				}
+				remove_dynamic_modifier = {
+					modifier = PRC_chinese_enviroment_dynamic
+				}
 				set_politics = {
 					ruling_party = social_democrat
 					elections_allowed = yes
@@ -1246,16 +1321,18 @@ country_event = {
 					authoritarian_democrat = 5
 				}
 				set_party_name = {
-			        ideology = social_democrat
-			        long_name = PRC_zhonghua_shanyaodang_long
-			        name = PRC_zhonghua_shanyaodang
-		        }
+					ideology = social_democrat
+					long_name = PRC_zhonghua_shanyaodang_long
+					name = PRC_zhonghua_shanyaodang
+				}
 				create_country_leader = {
 					name = "BGD_APFNO_PRC"
 					desc = "BGD_APFNO_PRC_DESC"
 					picture = GFX_portrait_APFNO
 					ideology = kirakira_dokidoki
-					traits = {rebuild_gov}
+					traits = {
+						rebuild_gov
+					}
 				}
 				set_country_flag = APFNO_member
 				add_ideas = EAS_riben_jingti_zhuyi
@@ -1304,13 +1381,15 @@ country_event = {
 					desc = "BGD_APFNO_VIN_DESC"
 					picture = GFX_portrait_APFNO
 					ideology = kirakira_dokidoki
-					traits = {rebuild_gov}
+					traits = {
+						rebuild_gov
+					}
 				}
 				set_party_name = {
-			        ideology = social_democrat
-			        long_name = VIN_shanyaodang_long
-			        name = VIN_shanyaodang
-		        }
+					ideology = social_democrat
+					long_name = VIN_shanyaodang_long
+					name = VIN_shanyaodang
+				}
 				set_country_flag = APFNO_member
 			}
 			BRM = {
@@ -1335,13 +1414,15 @@ country_event = {
 					desc = "BGD_APFNO_BRM_DESC"
 					picture = GFX_portrait_APFNO
 					ideology = kirakira_dokidoki
-					traits = {rebuild_gov}
+					traits = {
+						rebuild_gov
+					}
 				}
 				set_party_name = {
-			        ideology = social_democrat
-			        long_name = BRM_shanyaodang_long
-			        name = BRM_shanyaodang
-		        }
+					ideology = social_democrat
+					long_name = BRM_shanyaodang_long
+					name = BRM_shanyaodang
+				}
 				set_country_flag = APFNO_member
 			}
 			BHU = {
@@ -1362,10 +1443,10 @@ country_event = {
 					authoritarian_democrat = 5
 				}
 				set_party_name = {
-			        ideology = social_democrat
-			        long_name = BHU_budan_shanyaodang
-			        name = BHU_budan_shanyaodang_long
-		        }
+					ideology = social_democrat
+					long_name = BHU_budan_shanyaodang
+					name = BHU_budan_shanyaodang_long
+				}
 				set_country_flag = APFNO_member
 			}
 			NEP = {
@@ -1377,10 +1458,10 @@ country_event = {
 					election_frequency = 48
 				}
 				set_party_name = {
-			        ideology = social_democrat
-			        long_name = NEP_niboer_shanyaodang
-			        name = NEP_niboer_shanyaodang_long
-		        }
+					ideology = social_democrat
+					long_name = NEP_niboer_shanyaodang
+					name = NEP_niboer_shanyaodang_long
+				}
 				set_popularities = {
 					social_democrat = 50
 					social_liberal = 5
@@ -1393,7 +1474,9 @@ country_event = {
 				set_country_flag = APFNO_member
 			}
 			KOR = {
-				annex_country = { target = PRK }
+				annex_country = {
+					target = PRK
+				}
 				set_country_flag = APFNO_member
 			}
 			PAK = {
@@ -1404,10 +1487,10 @@ country_event = {
 					election_frequency = 48
 				}
 				set_party_name = {
-			        ideology = social_democrat
-			        long_name = PAK_bajisitan_shanyaodang
-			        name = PAK_bajisitan_shanyaodang_long
-		        }
+					ideology = social_democrat
+					long_name = PAK_bajisitan_shanyaodang
+					name = PAK_bajisitan_shanyaodang_long
+				}
 				set_popularities = {
 					social_democrat = 50
 					social_liberal = 5
@@ -1439,8 +1522,8 @@ country_event = {
 				remove_ideas = eadi_member
 			}
 			BGD = {
-			    add_to_faction = PRC
-			    add_to_faction = PAK
+				add_to_faction = PRC
+				add_to_faction = PAK
 				add_to_faction = VIN
 				add_to_faction = LAO
 				add_to_faction = CAM
@@ -1512,14 +1595,18 @@ country_event = {
 					puppet = PAK
 				}
 				#load_focus_tree = BGD_united_asia
-		    }
+			}
 		}
 	}
 	option = {
 		name = bgd.4981.a
-		country_event = { id = bgd.105 days = 3 }
+		country_event = {
+			id = bgd.105
+			days = 3
+		}
 	}
 }
+
 country_event = {
 	#韩国加入亚自组织
 	id = bgd.67
@@ -1542,6 +1629,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#朝鲜加入上集联盟
 	id = bgd.68
@@ -1555,12 +1643,13 @@ country_event = {
 		PRC = {
 			add_to_faction = PRK
 			declare_war_on = {
-                target = BGD
-                type = annex_everything
-            }
+				target = BGD
+				type = annex_everything
+			}
 		}
 	}
 }
+
 country_event = {
 	#民兵问题
 	id = bgd.69
@@ -1584,6 +1673,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#研制米歇尔战甲
 	id = bgd.70
@@ -1597,6 +1687,7 @@ country_event = {
 		add_ideas = BGD_mixieer_zhanjia
 	}
 }
+
 country_event = {
 	#中国夺取钓鱼岛
 	id = bgd.71
@@ -1612,6 +1703,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#查封自民党问题
 	id = bgd.72
@@ -1625,7 +1717,7 @@ country_event = {
 		add_timed_idea = {
 			idea = BGD_youyi_jiduanhua
 			days = 180
-		}	
+		}
 		add_popularity = {
 			ideology = conservative
 			popularity = -0.1
@@ -1652,7 +1744,7 @@ country_event = {
 		add_timed_idea = {
 			idea = BGD_youyi_jizhong
 			days = 180
-		}	
+		}
 		add_popularity = {
 			ideology = conservative
 			popularity = 0.05
@@ -1663,6 +1755,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#炸梦行动成功
 	id = bgd.73
@@ -1678,6 +1771,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#研究超自然力量存在
 	id = bgd.74
@@ -1697,6 +1791,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#揭露超自然力量存在
 	id = bgd.75
@@ -1713,6 +1808,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#新年快乐
 	id = bgd.76
@@ -1729,10 +1825,11 @@ country_event = {
 		name = bgd.76.b
 		add_political_power = 15
 		hidden_effect = {
-			scoped_play_song = "Poppin'Party - クリスマスのうた"	
+			scoped_play_song = "Poppin'Party - クリスマスのうた"
 		}
 	}
 }
+
 country_event = {
 	#大少女乐队时代来临
 	id = bgd.77
@@ -1746,7 +1843,7 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
-			scoped_play_song = "Poppin'Party - ときめきエクスペリエンス！"	
+			scoped_play_song = "Poppin'Party - ときめきエクスペリエンス！"
 		}
 	}
 	option = {
@@ -1754,6 +1851,7 @@ country_event = {
 		add_stability = 0.01
 	}
 }
+
 country_event = {
 	#东亚国实行焦土政策
 	id = bgd.78
@@ -1780,6 +1878,7 @@ country_event = {
 		custom_effect_tooltip = BGD_yuanjiu_pingmin_tt
 	}
 }
+
 country_event = {
 	#庆祝经济奇迹
 	id = bgd.79
@@ -1793,6 +1892,7 @@ country_event = {
 		add_political_power = 50
 	}
 }
+
 country_event = {
 	#顶点之军
 	id = bgd.80
@@ -1808,6 +1908,7 @@ country_event = {
 		navy_experience = 35
 	}
 }
+
 country_event = {
 	#终将到来的一天
 	id = bgd.81
@@ -1822,6 +1923,7 @@ country_event = {
 		add_war_support = 0.01
 	}
 }
+
 country_event = {
 	#偶像的责任
 	id = bgd.82
@@ -1834,6 +1936,7 @@ country_event = {
 		name = bgd.82.a
 	}
 }
+
 country_event = {
 	#有咲难眠的夜晚
 	id = bgd.83
@@ -1846,6 +1949,7 @@ country_event = {
 		name = bgd.83.a
 	}
 }
+
 country_event = {
 	#香澄的梦想
 	id = bgd.84
@@ -1858,6 +1962,7 @@ country_event = {
 		name = bgd.84.a
 	}
 }
+
 country_event = {
 	#加强东亚国
 	id = bgd.85
@@ -1890,6 +1995,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#消除非交战区
 	id = bgd.86
@@ -1900,25 +2006,26 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
-		every_state = { 
-				limit = {
-					is_owned_by = JAP
-					NOT = {
-						OR = {
-							state = 526
-							state = 876
-						}
+		every_state = {
+			limit = {
+				is_owned_by = JAP
+				NOT = {
+					OR = {
+						state = 526
+						state = 876
 					}
 				}
-				remove_dynamic_modifier = {
-					modifier = PRC_non_combat_area
-				}
 			}
+			remove_dynamic_modifier = {
+				modifier = PRC_non_combat_area
+			}
+		}
 	}
 	option = {
 		name = bgd.86.a
 	}
 }
+
 country_event = {
 	#国会改革
 	id = bgd.87
@@ -1933,6 +2040,7 @@ country_event = {
 		add_stability = -0.1
 	}
 }
+
 country_event = {
 	#总统的个人账号
 	id = bgd.88
@@ -1949,6 +2057,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#少女派阀
 	id = bgd.89
@@ -1959,7 +2068,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.89.a
-		set_variable = { zhengce_dianshu = 150 }
+		set_variable = {
+			zhengce_dianshu = 150
+		}
 		set_country_flag = BGD_shaonv_yuedui_paifa
 		unlock_decision_category_tooltip = BGD_shaonv_paifa
 	}
@@ -1995,6 +2106,7 @@ country_event = {
 		add_income_with_inflation = yes
 	}
 }
+
 country_event = {
 	#面包、黄油与闪耀的利率
 	id = bgd.91
@@ -2005,10 +2117,14 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.91.a
-		country_event = { id = bgd.92 days = 7 }
+		country_event = {
+			id = bgd.92
+			days = 7
+		}
 		add_ideas = BGD_RBE_economy
 	}
 }
+
 country_event = {
 	#无形の大手
 	id = bgd.92
@@ -2084,9 +2200,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.97.a
-		country_event = { id = bgd.98 }
+		country_event = {
+			id = bgd.98
+		}
 	}
 }
+
 country_event = {
 	#DQ极右翼议员
 	id = bgd.98
@@ -2097,9 +2216,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.98.a
-		country_event = { id = bgd.99 }
+		country_event = {
+			id = bgd.99
+		}
 	}
 }
+
 country_event = {
 	#DQ极右翼议员
 	id = bgd.99
@@ -2124,7 +2246,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.100.a
-		country_event = { id=bgd.101 days=7 }
+		country_event = {
+			id = bgd.101
+			days = 7
+		}
 	}
 }
 
@@ -2155,7 +2280,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.102.a
-		country_event = { id = bgd.103 days = 7 }
+		country_event = {
+			id = bgd.103
+			days = 7
+		}
 	}
 }
 
@@ -2219,7 +2347,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.106.a
-		country_event = { id = bgd.107 days = 3 }
+		country_event = {
+			id = bgd.107
+			days = 3
+		}
 	}
 }
 
@@ -2301,13 +2432,15 @@ country_event = {
 				desc = "BGD_APFNO_RAJ_DESC"
 				picture = GFX_portrait_APFNO
 				ideology = kirakira_dokidoki
-				traits = {rebuild_gov}
+				traits = {
+					rebuild_gov
+				}
 			}
 			set_party_name = {
-			    ideology = social_democrat
-			    long_name = RAJ_kp_inc_long
-			    name = RAJ_kp_inc
-		    }
+				ideology = social_democrat
+				long_name = RAJ_kp_inc_long
+				name = RAJ_kp_inc
+			}
 			declare_war_on = {
 				target = HUL
 				type = annex_everything
@@ -2409,14 +2542,15 @@ country_event = {
 					desc = "BGD_Mana_DESC"
 					picture = GFX_portrait_Mana
 					ideology = kirakira_dokidoki
-					traits = {}
+					traits = {
+					}
 				}
 				every_state = {
-    			    limit = {
-    			        is_core_of = ETI
-    			    }
-    			    transfer_state_to = ETI
-    			}
+					limit = {
+						is_core_of = ETI
+					}
+					transfer_state_to = ETI
+				}
 			}
 			BGD = {
 				if = {
@@ -2457,9 +2591,9 @@ country_event = {
 	fire_only_once = yes
 	#is_triggered_only = yes
 	trigger = {
-        date > 2025.10.1
+		date > 2025.10.1
 		tag = BGD
-    }
+	}
 	immediate = {
 		BGD_general_election_2025 = yes
 	}
@@ -2499,7 +2633,7 @@ country_event = {
 			state = 1332
 			rotation = 0
 			scale = 0.08
-			min_zoom = 5555.0
+			min_zoom = 5555
 			#visible = scripted_trigger_name ####To do: test if hoi iv renders models properly after some time of active gameplay
 		}
 	}
@@ -2521,6 +2655,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#ksar2
 	id = bgd.115
@@ -2611,6 +2746,7 @@ country_event = {
 		name = bgd.121.a
 	}
 }
+
 country_event = {
 	#玩家选择扮演的国家
 	id = bgd.122
@@ -2627,5 +2763,18 @@ country_event = {
 		USN = {
 			change_tag_from = BGD
 		}
+	}
+}
+
+country_event = {
+	#无权抗告
+	id = bgd.123
+	title = bgd.123.t
+	desc = bgd.123.d
+	picture = GFX_ksar_4
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.123.a
 	}
 }
