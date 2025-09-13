@@ -43,6 +43,23 @@ spriteTypes = {
 		name = "GFX_JMNDF_1"
 		texturefile = "gfx\event_pictures\BGD_JMNDF1.png"
 	}
+	spriteType = {
+		name = "GFX_usnavy_1"
+		texturefile = "gfx\event_pictures\usnavy_1.png"
+	}
+	spriteType = {
+		name = "GFX_usnavy_2"
+		texturefile = "gfx\event_pictures\usnavy_2.png"
+	}
+
+	spriteType = {
+		name = "GFX_taki_1"
+		texturefile = "gfx\event_pictures\taki_1.png"
+	}
+	spriteType = {
+		name = "GFX_taki_2"
+		texturefile = "gfx\event_pictures\taki_2.png"
+	}
 	#CP kasumi x arisa
 	spriteType = {
 		name = "GFX_ksar_1"

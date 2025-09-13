@@ -1055,3 +1055,17 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	#锈迹斑斑的红心
+	id = usnavy.31
+	title = usnavy.31.t
+	desc = usnavy.31.d
+	picture = GFX_usnavy_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.31.a
+	}
+	
+}
