@@ -1,21 +1,19 @@
 ideas = {
-	hidden_ideas ={
+	hidden_ideas = {
 		BGD_RBE_economy = {
 			#picture = BGD_RBE
-			
 			removal_cost = -1
 			#visible = { always = no }
-			
 			modifier = {
-				political_power_gain = 0.25           # 政治力狂飙
-				consumer_goods_factor = -0.45         # 减少消费品工厂
-				factory_output = 0.35                 # 工厂效率极高
+				political_power_gain = 0.25				# 政治力狂飙
+				consumer_goods_factor = -0.45				# 减少消费品工厂
+				factory_output = 0.35				# 工厂效率极高
 				dockyard_output = 0.35
-				construction_speed = 0.30             # 建设速度很快
-				research_speed_factor = 0.20          # 科研进步加速
-				weekly_manpower = 1500                # 人口增长如潮
+				construction_speed = 0.3				# 建设速度很快
+				research_speed_factor = 0.2				# 科研进步加速
+				weekly_manpower = 1500				# 人口增长如潮
 				production_speed_buildings_factor = 0.5
-				resistance_target = -0.15             # 国内安定
+				resistance_target = -0.15				# 国内安定
 				stability_factor = 0.3
 				war_support_factor = 0.2
 			}
@@ -25,7 +23,6 @@ ideas = {
 		BGD_R_Shirakami_idea = {
 			#“白神”计划
 			picture = jingshen_zhanwei
-			
 			modifier = {
 				agency_upgrade_time = 0.1
 				intelligence_agency_defense = 1
@@ -36,37 +33,32 @@ ideas = {
 				defence = 0.25
 				attrition = -0.25
 				military_industrial_organization_research_bonus = 0.25
-    			production_efficiency_cap = 0.2                     # 生产效率上限 +20% (模拟最优生产线管理)
+				production_efficiency_cap = 0.2				# 生产效率上限 +20% (模拟最优生产线管理)
 				production_factory_start_efficiency_factor = 0.15
-    			production_factory_efficiency_gain_factor = 0.2              # 生产资源消耗 -10% (消除浪费)
-    			political_power_gain = 0.25                         # 政治点数获取 +25% (模拟行政效率最大化)
-    			stability_factor = 0.15                             # 稳定度 +15% (模拟舆情精准引导与社会问题预警)
-    			command_power_gain_mult = 0.15           			        # 指挥点数获取 +50% (模拟最优军事资源调配)
-    			planning_speed = 0.5                                # 计划速度 +50% (我方指挥官能更快制定计划)
-				
+				production_factory_efficiency_gain_factor = 0.2				# 生产资源消耗 -10% (消除浪费)
+				political_power_gain = 0.25				# 政治点数获取 +25% (模拟行政效率最大化)
+				stability_factor = 0.15				# 稳定度 +15% (模拟舆情精准引导与社会问题预警)
+				command_power_gain_mult = 0.15				# 指挥点数获取 +50% (模拟最优军事资源调配)
+				planning_speed = 0.5				# 计划速度 +50% (我方指挥官能更快制定计划)
 			}
 		}
 		BGD_R_fuschicho_alloy_idea = {
-       		picture = jingshen_zhanwei
-
-       		modifier = {
-       		    production_speed_buildings_factor = 0.10     # 生产效率上限 +10%
-       		    political_power_gain = 0.25
+			picture = jingshen_zhanwei
+			modifier = {
+				production_speed_buildings_factor = 0.1				# 生产效率上限 +10%
+				political_power_gain = 0.25
 				army_speed_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.25
 				stability_weekly = 0.05
-       		}
-    	}
-
+			}
+		}
 		#ADD
 		BGD_NVIDIA = {
 			picture = nvidia
- 
 			removal_cost = -1
-			
 			modifier = {
-			 	political_power_factor = 0.15
-			 	stability_weekly = 0.005
+				political_power_factor = 0.15
+				stability_weekly = 0.005
 				research_speed_factor = 0.2
 				political_power_gain = 1
 				misc_income = 10
@@ -78,21 +70,18 @@ ideas = {
 		BGD_Liquidation_of_Fascist_War_Criminals = {
 			#肃清法西斯分子
 			picture = jingshen_zhanwei
-			
 			modifier = {
 				social_democrat_drift = 0.05
 				custom_modifier_tooltip = ANTI_FASCIST
-			 	national_socialist_drift = -0.1
+				national_socialist_drift = -0.1
 				nationalist_drift = -0.1
 				authoritarian_democrat_drift = -0.1
 				totalitarian_socialist_drift = -0.1
-				
 			}
 		}
 		BGD_Historical_Responsibility = {
 			#历史的担当
 			picture = jingshen_zhanwei
-			
 			modifier = {
 				improve_relations_maintain_cost = -0.5
 				trade_opinion_factor = 0.2
@@ -101,7 +90,6 @@ ideas = {
 		BGD_The_pain_of_judicial_reform = {
 			#司法改革的阵痛
 			picture = jingshen_zhanwei
-			
 			modifier = {
 				stability_weekly = -0.01
 				war_support_weekly = -0.01
@@ -110,79 +98,65 @@ ideas = {
 		BGD_Justice_for_All = {
 			#全民正义
 			picture = jingshen_zhanwei
-			
 			modifier = {
-				stability_factor = 0.20
-            	war_support_factor = 0.15
-            	political_power_gain = 0.25
-				production_factory_max_efficiency_factor = 0.10
-				industrial_capacity_factory = 0.10
+				stability_factor = 0.2
+				war_support_factor = 0.15
+				political_power_gain = 0.25
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
 				consumer_goods_factor = -0.15
-				production_speed_buildings_factor = 0.20
+				production_speed_buildings_factor = 0.2
 				core_attack_factor = 0.15
-				core_defence_factor = 0.20
-				non_core_manpower = 0.10
-				max_planning = 0.20
+				core_defence_factor = 0.2
+				non_core_manpower = 0.1
+				max_planning = 0.2
 				operative_slot_gain = 1
 				trade_opinions_factor = 0.15
-				intelligence_agency_upgrade_time_factor = -0.20
+				intelligence_agency_upgrade_time_factor = -0.2
 				income_growth_factor = 0.1
 			}
 		}
-
 		BGD_mingyun_zhizhan = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-                surrender_limit = 0.2
+				surrender_limit = 0.2
 			}
 		}
 		BGD_houqin_dongyuan = {
 			picture = jingshen_zhanwei
-				
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = yes
 			}
-	
 			removal_cost = -1
-				
 			modifier = {
 				army_speed_factor = 0.25
-                army_org_regain = 0.15
+				army_org_regain = 0.15
 				supply_consumption_factor = -0.15
 				supply_node_range = 0.15
 			}
 		}
 		BGD_dikang_ziweidui = {
 			picture = jingshen_zhanwei
-				
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = yes
 			}
-	
 			removal_cost = -1
-				
 			modifier = {
 				army_speed_factor = -0.15
-                army_org_regain = -0.15
+				army_org_regain = -0.15
 				army_org_factor = -0.1
 				army_attack_factor = -0.1
 				army_defence_factor = -0.1
@@ -190,113 +164,89 @@ ideas = {
 		}
 		BGD_mengxiang = {
 			picture = jingshen_zhanwei
-			 
-			 allowed = {
-				 always = no
-			 }
- 
-			 allowed_civil_war = {
-				 always = yes
-			 }
- 
-			 removal_cost = -1
-			 
-			 modifier = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
 				army_org_factor = 0.1
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 				army_org_regain = 0.1
-			 }
-		 }
+			}
+		}
 		BGD_mengxiang_1 = {
 			picture = jingshen_zhanwei
-			 
-			 allowed = {
-				 always = no
-			 }
- 
-			 allowed_civil_war = {
-				 always = yes
-			 }
- 
-			 removal_cost = -1
-			 
-			 modifier = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
 				army_org_factor = 0.15
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
 				army_org_regain = 0.15
-			 }
-		 }
+			}
+		}
 		BGD_neizhan_gongshi = {
 			picture = jingshen_zhanwei
-			 
-			 allowed = {
-				 always = no
-			 }
- 
-			 allowed_civil_war = {
-				 always = yes
-			 }
- 
-			 removal_cost = -1
-			 
-			 targeted_modifier = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
 				tag = JAP
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.15
 			}
-		 }
-		 BGD_kira_doki_0 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+		}
+		BGD_kira_doki_0 = {
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 			}
 		}
 		BGD_kira_doki_1 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_factor = 0.05
 				stability_factor = 0.05
 			}
 		}
 		BGD_kira_doki_2 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_factor = 0.05
 				political_power_gain = 0.08
@@ -305,19 +255,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_3 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_factor = 0.05
 				stability_factor = 0.05
@@ -325,19 +271,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_4 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_factor = 0.12
 				political_power_gain = 0.15
@@ -345,43 +287,35 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_5 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-			consumer_goods_factor = 0.1
-			industrial_capacity_factory = 0.1
-			industrial_capacity_dockyard = 0.1
-			industrial_development_monthly = 0.02
-			poverty_development_monthly = 0.015
-			expense_growth_factor = 0.1
-			income_growth_factor = 0.05
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				industrial_development_monthly = 0.02
+				poverty_development_monthly = 0.015
+				expense_growth_factor = 0.1
+				income_growth_factor = 0.05
 			}
 		}
 		BGD_kira_doki_6 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				expense_growth_factor = 0.05
 				poverty_development_monthly = 0.02
@@ -391,19 +325,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_7 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				poverty_development_monthly = 0.015
 				society_development_monthly = 0.015
@@ -415,19 +345,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_8 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				academic_development_monthly = 0.03
 				expense_growth_factor = 0.1
@@ -436,19 +362,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_9 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = 0.05
 				society_development_monthly = 0.015
@@ -456,19 +378,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_10 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.1
@@ -480,19 +398,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_11 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				society_development_monthly = 0.015
 				business_value_factor = 0.05
@@ -502,19 +416,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_12 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				society_development_monthly = 0.025
 				personal_value_factor = 0.05
@@ -525,19 +435,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_13 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				war_support_factor = 0.05
 				stability_factor = 0.05
@@ -545,19 +451,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_14 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				war_support_factor = 0.1
 				stability_factor = 0.15
@@ -568,38 +470,30 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_15 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_gain = 0.1
 				political_power_factor = 0.05
 			}
 		}
 		BGD_kira_doki_16 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_gain = 0.05
 				political_power_factor = 0.05
@@ -608,19 +502,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_17 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_factor = 0.05
 				consumer_goods_factor = -0.03
@@ -629,19 +519,15 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_18 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_gain = 0.05
 				party_popularity_stability_factor = 0.25
@@ -650,61 +536,49 @@ ideas = {
 			}
 		}
 		BGD_kira_doki_19 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_gain = 0.1
 				political_power_factor = 0.1
 			}
 		}
 		BGD_kira_doki_20 = {
-		   name = BGD_kira_doki_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_kira_doki_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-			society_development_monthly = 0.01
-			poverty_development_monthly = 0.01
-			academic_development_monthly = 0.01
-			stability_factor = 0.1
-			war_support_factor = 0.1
-			personal_value_factor = 0.03
-			business_value_factor = 0.03		
+				society_development_monthly = 0.01
+				poverty_development_monthly = 0.01
+				academic_development_monthly = 0.01
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				personal_value_factor = 0.03
+				business_value_factor = 0.03
 			}
 		}
 		BGD_guwu_shibing = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_defence_factor = 0.25
 				army_org_factor = 0.15
@@ -712,18 +586,14 @@ ideas = {
 			}
 		}
 		BGD_jingyan_buzu = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_factor = -0.12
 				political_power_gain = -1
@@ -732,18 +602,14 @@ ideas = {
 			}
 		}
 		BGD_renkou_wenti = {
-		   picture = JAP_declining_population
-			
+			picture = JAP_declining_population
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				monthly_population = -0.65
 				personal_expense_factor = 0.1
@@ -756,36 +622,28 @@ ideas = {
 			}
 		}
 		BGD_renkou_wenti_1 = {
-		   picture = JAP_declining_population
-			
+			picture = JAP_declining_population
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				monthly_population = -0.4
 			}
 		}
 		BGD_neizhan_feixv_0 = {
-		    name = BGD_neizhan_feixv_dynamic
-		   picture = jingshen_zhanwei
-			
+			name = BGD_neizhan_feixv_dynamic
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				monthly_population = -0.25
 				consumer_goods_factor = 0.3
@@ -798,18 +656,14 @@ ideas = {
 		}
 		BGD_neizhan_feixv_1 = {
 			name = BGD_neizhan_feixv_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				monthly_population = 0.05
 				consumer_goods_factor = -0.05
@@ -822,18 +676,14 @@ ideas = {
 		}
 		BGD_neizhan_feixv_3 = {
 			name = BGD_neizhan_feixv_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				consumer_goods_factor = 0.05
 				industrial_capacity_factory = -0.15
@@ -845,52 +695,40 @@ ideas = {
 		}
 		BGD_neizhan_feixv_2 = {
 			name = BGD_neizhan_feixv_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 			}
 		}
 		BGD_guomin_fangweijun_0 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 			}
 		}
 		BGD_guomin_fangweijun_1 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				max_planning_factor = -0.15
 				planning_speed = 0.15
@@ -899,18 +737,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_2 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_org = 3
 				army_org_factor = 0.15
@@ -919,18 +753,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_3 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
@@ -940,18 +770,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_4 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				military_development_monthly = 0.015
 				experience_gain_army_factor = 0.1
@@ -961,18 +787,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_5 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
@@ -980,18 +802,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_6 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_armor_attack_factor = 0.1
 				army_armor_defence_factor = 0.1
@@ -1001,18 +819,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_7 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				supply_consumption_factor = -0.15
 				supply_node_range = 0.15
@@ -1021,18 +835,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_8 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
@@ -1048,18 +858,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_9 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				air_attack_factor = 0.1
 				air_defence_factor = 0.1
@@ -1070,18 +876,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_10 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				air_cas_present_factor = 0.15
 				ground_attack_factor = 0.15
@@ -1089,18 +891,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_11 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				air_mission_efficiency = 0.1
 				air_nav_efficiency = 0.1
@@ -1112,18 +910,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_12 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industrial_capacity_factory = 0.1
 				research_speed_factor = 0.05
@@ -1131,36 +925,28 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_13 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industrial_capacity_dockyard = 0.25
 			}
 		}
 		BGD_guomin_fangweijun_14 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				navy_org_factor = 0.15
 				naval_speed_factor = 0.15
@@ -1174,18 +960,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_15 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				navy_submarine_attack_factor = 0.15
 				convoy_raiding_efficiency_factor = 0.15
@@ -1198,18 +980,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_16 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				navy_anti_air_attack_factor = 0.4
 				fighter_sortie_efficiency = 0.1
@@ -1225,18 +1003,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_17 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				war_support_weekly = 0.005
 				resistance_damage_to_garrison = -0.25
@@ -1249,18 +1023,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_18 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				max_command_power = 120
 				command_power_gain = 0.5
@@ -1271,18 +1041,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_19 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				conscription_factor = 0.25
 				conscription = 0.015
@@ -1290,18 +1056,14 @@ ideas = {
 		}
 		BGD_guomin_fangweijun_20 = {
 			name = BGD_guomin_fangweijun_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				military_development_monthly = 0.03
 				war_support_factor = 0.1
@@ -1318,36 +1080,27 @@ ideas = {
 		}
 		BGD_guomin_jingji_0 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-
 			}
 		}
 		BGD_guomin_jingji_1 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				personal_value_factor = 0.02
 				business_value_factor = 0.02
@@ -1356,18 +1109,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_2 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				business_value_factor = 0.05
 				expense_growth_factor = 0.05
@@ -1379,18 +1128,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_3 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				business_value_factor = 0.05
 				personal_value_factor = 0.05
@@ -1404,18 +1149,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_4 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
@@ -1427,18 +1168,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_5 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				research_speed_factor = 0.1
 				production_factory_max_efficiency_factor = 0.05
@@ -1450,18 +1187,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_6 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				production_lack_of_resource_penalty_factor = -0.25
 				industrial_capacity_factory = 0.05
@@ -1474,18 +1207,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_7 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				personal_value_factor = 0.02
 				business_value_factor = 0.03
@@ -1499,18 +1228,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_8 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				personal_value_factor = 0.05
 				business_value_factor = 0.05
@@ -1523,18 +1248,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_9 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				farming_development_monthly = 0.02
@@ -1545,18 +1266,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_10 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				industrial_development_monthly = 0.01
@@ -1568,18 +1285,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_11 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				industrial_development_monthly = 0.01
@@ -1591,18 +1304,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_12 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				poverty_development_monthly = 0.015
 				farming_development_monthly = 0.025
@@ -1614,18 +1323,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_13 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				farming_development_monthly = 0.035
 				monthly_population = 0.25
@@ -1636,18 +1341,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_14 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industrial_development_monthly = 0.01
 				poverty_development_monthly = 0.01
@@ -1662,18 +1363,14 @@ ideas = {
 		}
 		BGD_guomin_jingji_15 = {
 			name = BGD_guomin_jingji_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industrial_development_monthly = 0.02
 				poverty_development_monthly = 0.02
@@ -1694,36 +1391,27 @@ ideas = {
 		}
 		BGD_yazi_lingdao_0 = {
 			name = BGD_yazi_lingdao_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-
 			}
 		}
 		BGD_yazi_lingdao_1 = {
 			name = BGD_yazi_lingdao_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
@@ -1732,18 +1420,14 @@ ideas = {
 		}
 		BGD_yazi_lingdao_2 = {
 			name = BGD_yazi_lingdao_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				weekly_manpower = 1500
 				war_support_factor = 0.05
@@ -1751,18 +1435,14 @@ ideas = {
 		}
 		BGD_yazi_lingdao_3 = {
 			name = BGD_yazi_lingdao_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
@@ -1772,18 +1452,14 @@ ideas = {
 		}
 		BGD_yazi_lingdao_4 = {
 			name = BGD_yazi_lingdao_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				consumer_goods_factor = -0.03
 				trade_opinion_factor = 0.35
@@ -1793,37 +1469,29 @@ ideas = {
 		}
 		BGD_yazi_lingdao_5 = {
 			name = BGD_yazi_lingdao_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				consumer_goods_factor = -0.05
 				income_growth_factor = 0.1
 			}
 		}
-			BGD_yazi_lingdao_6 = {
+		BGD_yazi_lingdao_6 = {
 			name = BGD_yazi_lingdao_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_gain = 0.05
 				political_power_factor = 0.05
@@ -1832,36 +1500,28 @@ ideas = {
 		}
 		BGD_yazi_lingdao_7 = {
 			name = BGD_yazi_lingdao_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				research_speed_factor = 0.05
 			}
 		}
 		BGD_yazi_lingdao_8 = {
 			name = BGD_yazi_lingdao_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				research_speed_factor = 0.05
 				consumer_goods_factor = -0.05
@@ -1874,18 +1534,14 @@ ideas = {
 		}
 		BGD_yazi_lingdao_9 = {
 			name = BGD_yazi_lingdao_dynamic
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				political_power_factor = 0.05
 				consumer_goods_factor = -0.05
@@ -1894,18 +1550,14 @@ ideas = {
 			}
 		}
 		BGD_shenmi_jita_1 = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = 0.15
 				war_support_factor = 0.15
@@ -1918,18 +1570,14 @@ ideas = {
 			}
 		}
 		BGD_shenmi_jita_2 = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = 0.1
 				war_support_factor = 0.1
@@ -1942,18 +1590,14 @@ ideas = {
 			}
 		}
 		BGD_shenmi_jita_3 = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
@@ -1964,18 +1608,14 @@ ideas = {
 			}
 		}
 		BGD_zhengfu_gaige = {
-		   picture = zhengfu_gaige_jingshen
-			
+			picture = zhengfu_gaige_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = -0.1
 				political_power_gain = 0.15
@@ -1984,18 +1624,14 @@ ideas = {
 			}
 		}
 		BGD_chongjian_wei = {
-		   picture = chongjian_weiyuanhui_jingshen
-			
+			picture = chongjian_weiyuanhui_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industry_repair_factor = 0.45
 				industry_free_repair_factor = 0.5
@@ -2008,18 +1644,14 @@ ideas = {
 			}
 		}
 		BGD_heidao_fanlan = {
-		   picture = right_wing_japan
-			
+			picture = right_wing_japan
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = -0.2
 				political_power_gain = -0.1
@@ -2032,18 +1664,14 @@ ideas = {
 			}
 		}
 		BGD_heidao_fanlan_1 = {
-		   picture = right_wing_japan
-			
+			picture = right_wing_japan
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = -0.1
 				political_power_gain = -0.05
@@ -2055,46 +1683,38 @@ ideas = {
 			}
 		}
 		BGD_zhanji_shengchan = {
-			    picture = yvsuan_kongjun_jingshen
-				
-				allowed = {
-				    always = no
-				}
-
-				allowed_civil_war = {
-				    always = yes
-			    }
-
-			    removal_cost = -1
-				
-				equipment_bonus = {
-					small_plane_airframe = {
-						instant = yes
-						build_cost_ic = -0.25 
-					}
-					medium_plane_airframe = {
-						instant = yes
-						build_cost_ic = -0.25 
-					}
-					large_plane_airframe = {
-						instant = yes
-						build_cost_ic = -0.25 
-					}
-				}
-			}
-		BGD_riben_hewu = {
-		   picture = jingshen_zhanwei
-			
+			picture = yvsuan_kongjun_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
+			}
+		}
+		BGD_riben_hewu = {
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
 			modifier = {
 				political_power_gain = 0.12
 				political_power_factor = 0.08
@@ -2104,80 +1724,64 @@ ideas = {
 			}
 		}
 		BGD_yvsuan_lujun = {
-		   picture = yvsuan_lujun_jingshen
-			
+			picture = yvsuan_lujun_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industrial_capacity_factory = 0.15
 			}
 		}
 		BGD_yvsuan_haijun = {
-		   picture = yvsuan_haijun_jingshen
-			
+			picture = yvsuan_haijun_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industrial_capacity_dockyard = 0.15
 			}
 		}
 		BGD_yvsuan_kongjun = {
-		   picture = yvsuan_kongjun_jingshen
-			
+			picture = yvsuan_kongjun_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			equipment_bonus = {
-					small_plane_airframe = {
-						instant = yes
-						build_cost_ic = -0.15 
-					}
-					medium_plane_airframe = {
-						instant = yes
-						build_cost_ic = -0.15
-					}
-					large_plane_airframe = {
-						instant = yes
-						build_cost_ic = -0.15
-					}
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.15
 				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
 		}
 		BGD_duie_hezuo = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				consumer_goods_factor = -0.05
 				industrial_capacity_dockyard = 0.05
@@ -2185,18 +1789,14 @@ ideas = {
 			}
 		}
 		BGD_duiou_hezuo = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.1
@@ -2204,18 +1804,14 @@ ideas = {
 			}
 		}
 		BGD_duidisan_hezuo = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				political_power_gain = 0.08
@@ -2223,35 +1819,27 @@ ideas = {
 			}
 		}
 		BGD_shanyao_yingxiang = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				social_democrat_drift = 0.15
 			}
 		}
 		BGD_yazi_chengyuan = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
@@ -2273,18 +1861,14 @@ ideas = {
 			}
 		}
 		BGD_shanyao_guojia = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
@@ -2302,18 +1886,14 @@ ideas = {
 			}
 		}
 		BGD_shangdianjie = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_attack_factor = 0.1
 				army_defence_factor = -0.05
@@ -2322,18 +1902,14 @@ ideas = {
 			}
 		}
 		BGD_dongbeiya = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				river_crossing_factor = -0.2
 			}
@@ -2344,18 +1920,14 @@ ideas = {
 			}
 		}
 		BGD_taihai = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				extra_marine_supply_grace = 168
 				invasion_preparation = -0.9
@@ -2363,18 +1935,14 @@ ideas = {
 			}
 		}
 		BGD_ring = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_attack_factor = 0.05
 				max_planning_factor = 0.15
@@ -2382,20 +1950,15 @@ ideas = {
 			}
 		}
 		BGD_pak = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-
 			}
 			targeted_modifier = {
 				tag = PAK
@@ -2404,20 +1967,15 @@ ideas = {
 			}
 		}
 		BGD_nanya = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-
 			}
 			targeted_modifier = {
 				tag = NEP
@@ -2426,18 +1984,14 @@ ideas = {
 			}
 		}
 		BGD_circle = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				terrain_penalty_reduction = 0.3
 				supply_consumption_factor = -0.15
@@ -2446,20 +2000,15 @@ ideas = {
 			}
 		}
 		BGD_miandian = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-
 			}
 			targeted_modifier = {
 				tag = BRM
@@ -2468,20 +2017,15 @@ ideas = {
 			}
 		}
 		BGD_yuenan = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-
 			}
 			targeted_modifier = {
 				tag = VIN
@@ -2490,18 +2034,14 @@ ideas = {
 			}
 		}
 		BGD_space = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				consumer_goods_factor = -0.15
 				industrial_capacity_factory = 0.1
@@ -2511,18 +2051,14 @@ ideas = {
 			}
 		}
 		BGD_space_1 = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				consumer_goods_factor = -0.3
 				industrial_capacity_factory = 0.3
@@ -2535,18 +2071,14 @@ ideas = {
 			}
 		}
 		BGD_houfang_qihuo = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_attack_factor = -0.1
 				army_defence_factor = -0.1
@@ -2564,72 +2096,56 @@ ideas = {
 			}
 		}
 		BGD_ziyou_minbing = {
-		   picture = ziyou_minbing_jingshen
-			
+			picture = ziyou_minbing_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				modifier_army_sub_unit_militia_attack_factor = 0.2
 				modifier_army_sub_unit_militia_defence_factor = 0.2
 			}
 		}
 		BGD_ziyou_minbing_1 = {
-		   picture = ziyou_minbing_jingshen
-			
+			picture = ziyou_minbing_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				modifier_army_sub_unit_militia_attack_factor = 0.25
 				modifier_army_sub_unit_militia_defence_factor = 0.25
 			}
 		}
 		BGD_zhengui_jundui = {
-		   picture = zhiye_jundui_jingshen
-			
+			picture = zhiye_jundui_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				experience_gain_army_unit_factor = 0.2
 				experience_loss_factor = -0.1
 			}
 		}
 		BGD_mixieer_zhanjia = {
-		   picture = mixieer_zhanjia_jingshen
-			
+			picture = mixieer_zhanjia_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_attack_factor = 0.03
 				army_defence_factor = 0.02
@@ -2637,18 +2153,14 @@ ideas = {
 			}
 		}
 		BGD_quanmian_bengkui = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_attack_factor = -0.35
 				army_defence_factor = -0.35
@@ -2662,18 +2174,14 @@ ideas = {
 			}
 		}
 		BGD_jianshou_zhanxian = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_defence_factor = 0.5
 				army_org_factor = 0.25
@@ -2681,18 +2189,14 @@ ideas = {
 			}
 		}
 		BGD_youyi_jizhong = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = -0.1
 				political_power_gain = -0.2
@@ -2702,18 +2206,14 @@ ideas = {
 			}
 		}
 		BGD_youyi_jiduanhua = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = -0.2
 				industrial_capacity_factory = -0.1
@@ -2725,18 +2225,14 @@ ideas = {
 			}
 		}
 		BGD_czrll_baolu = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = -0.1
 				political_power_gain = -0.08
@@ -2746,35 +2242,27 @@ ideas = {
 			}
 		}
 		BGD_xianfa_yueshu = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				custom_modifier_tooltip = SPR_military_disloyalty_tt
 			}
 		}
 		BGD_yuanzhu_pingmin = {
-		   picture = jingshen_zhanwei
-			
+			picture = jingshen_zhanwei
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_speed_factor = -0.15
 				consumer_goods_factor = 0.05
@@ -2782,18 +2270,14 @@ ideas = {
 			}
 		}
 		BGD_lujun_shengchan = {
-		   picture = lujun_shengchan_jingshen
-			
+			picture = lujun_shengchan_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			equipment_bonus = {
 				artillery_equipment = {
 					instant = yes
@@ -2810,18 +2294,14 @@ ideas = {
 			}
 		}
 		BGD_lujun_shengchan_1 = {
-		   picture = lujun_shengchan_jingshen
-			
+			picture = lujun_shengchan_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			equipment_bonus = {
 				artillery_equipment = {
 					instant = yes
@@ -2842,18 +2322,14 @@ ideas = {
 			}
 		}
 		BGD_haijun_shengchan = {
-		   picture = haijun_shengchan_jingshen
-			
+			picture = haijun_shengchan_jingshen
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			equipment_bonus = {
 				ship_hull_cruiser = {
 					instant = yes
@@ -2877,107 +2353,7 @@ ideas = {
 				}
 			}
 		}
-    }
-
-
-
-
-		head_minister = {
-			BGD_arisa = {
-				picture = BGD_arisa_1
-				
-				allowed = {
-					original_tag = BGD
-				}
-				allowed_to_remove = {
-					always = no
-				}
-				visible = {
-					
-				}
-				
-				traits = { 
-					hos_muhou_gaigejia
-				}
-			}
 	}
-	economic_minister = {
-		    BGD_saaya = {
-				picture = BGD_saaya_1
-				
-				allowed = {
-					original_tag = BGD
-				}
-				visible = {
-
-				}
-				traits = {
-					eco_jieyue_zhishang
-				}
-			}
-	}
-	foreign_minister = {			
-		    BGD_tae = {
-				picture = BGD_tae_1
-				
-				allowed = {
-					original_tag = BGD
-				}
-				visible = {
-
-				}
-				traits = { 
-					for_tuzi_waijiao
-				}
-			}
-        }
-		interior_minister = {
-		    BGD_rimi = {
-				picture = BGD_rimi_1
-				
-				allowed = {
-					original_tag = BGD
-				}
-				visible = {
-
-				}
-				traits = { 
-					sec_pingfan_zhiren
-				}
-			}
-		}
-		intelligence_minister = {
-		    BGD_nanami = {
-				picture = BGD_nanami_1
-				
-				allowed = {
-					original_tag = BGD
-				}
-				visible = {
-
-				}
-				traits = { 
-					int_putong_deshen
-				}
-			}
-		}
-		theorist_minister = {
-		    BGD_yukina = {
-				picture = BGD_yukina_1
-				
-				allowed = {
-					original_tag = BGD
-				}
-				visible = {
-					
-				}
-				traits = { 
-					theorist_dingdian_zhiren 
-				}
-			}		
-	}
-#
-
 	head_minister = {
 			BGD_Nakamachi_Arale = {
 				#picture = BGD_arisa_1
@@ -2995,7 +2371,20 @@ ideas = {
 				traits = { 
 					hos_wudi_fadongji
 				}
+		BGD_arisa = {
+			picture = BGD_arisa_1
+			allowed = {
+				original_tag = BGD
 			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+			}
+			traits = {
+				hos_muhou_gaigejia
+			}
+		}
 	}
 	economic_minister = {
 		    BGD_Minetsuki_Ritsu = {
@@ -3071,5 +2460,150 @@ ideas = {
 					theorist_huanjing_zhanfa
 				}
 			}		
+		BGD_saaya = {
+			picture = BGD_saaya_1
+			allowed = {
+				original_tag = BGD
+			}
+			visible = {
+			}
+			traits = {
+				eco_jieyue_zhishang
+			}
+		}
+	}
+	foreign_minister = {
+		BGD_tae = {
+			picture = BGD_tae_1
+			allowed = {
+				original_tag = BGD
+			}
+			visible = {
+			}
+			traits = {
+				for_tuzi_waijiao
+			}
+		}
+	}
+	interior_minister = {
+		BGD_rimi = {
+			picture = BGD_rimi_1
+			allowed = {
+				original_tag = BGD
+			}
+			visible = {
+			}
+			traits = {
+				sec_pingfan_zhiren
+			}
+		}
+	}
+	intelligence_minister = {
+		BGD_nanami = {
+			picture = BGD_nanami_1
+			allowed = {
+				original_tag = BGD
+			}
+			visible = {
+			}
+			traits = {
+				int_putong_deshen
+			}
+		}
+	}
+	theorist_minister = {
+		BGD_yukina = {
+			picture = BGD_yukina_1
+			allowed = {
+				original_tag = BGD
+			}
+			visible = {
+			}
+			traits = {
+				theorist_dingdian_zhiren
+			}
+		}
+	}
+	#
+	head_minister = {
+		BGD_Nakamachi_Arale = {
+			#picture = BGD_arisa_1
+			allowed = {
+				original_tag = USN
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+			}
+			traits = {
+				#hos_muhou_gaigejia
+			}
+		}
+	}
+	economic_minister = {
+		BGD_Minetsuki_Ritsu = {
+			#picture = BGD_saaya_1
+			allowed = {
+				original_tag = USN
+			}
+			visible = {
+			}
+			traits = {
+				#eco_jieyue_zhishang
+			}
+		}
+	}
+	foreign_minister = {
+		BGD_Sengoku_Yuno = {
+			#picture = BGD_tae_1
+			allowed = {
+				original_tag = USN
+			}
+			visible = {
+			}
+			traits = {
+				#for_tuzi_waijiao
+			}
+		}
+	}
+	interior_minister = {
+		BGD_Fuji_Miyako = {
+			#picture = BGD_rimi_1
+			allowed = {
+				original_tag = USN
+			}
+			visible = {
+			}
+			traits = {
+				#sec_pingfan_zhiren
+			}
+		}
+	}
+	intelligence_minister = {
+		BGD_Miyanaga_Nonoka = {
+			#picture = BGD_nanami_1
+			allowed = {
+				original_tag = USN
+			}
+			visible = {
+			}
+			traits = {
+				#int_putong_deshen
+			}
+		}
+	}
+	theorist_minister = {
+		BGD_Kurata_Mashiro = {
+			#picture = BGD_yukina_1
+			allowed = {
+				original_tag = USN
+			}
+			visible = {
+			}
+			traits = {
+				#theorist_dingdian_zhiren 
+			}
+		}
 	}
 }
