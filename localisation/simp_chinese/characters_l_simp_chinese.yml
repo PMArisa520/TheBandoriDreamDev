@@ -93,6 +93,13 @@ BGD_Fuji_Miyako: "藤都子"
 BGD_Miyanaga_Nonoka: "宫永野乃花"
 BGD_Kurata_Mashiro: "仓田真白"
 #
+hos_wudi_fadongji: "无敌发动机"
+eco_kuanrong_limin: "宽容利民"
+for_youxi_juece: "游戏决策"
+sec_qinlao_kexuejia: "勤劳磕学家"
+int_lingrenfeijie_dewang: "令人费解的王"
+theorist_huanjing_zhanfa: "幻境战法"
+#
 eco_jieyue_zhishang: "节约至上" 
 for_tuzi_waijiao: "兔子外交" 
 sec_pingfan_zhiren: "平凡之人" 
@@ -600,3 +607,6 @@ BGD_parliament_effect_tt: "§N国民议会§!席位将发生变化"
 BGD_economic_actions_tt: "§G解锁§!§Y经济界面§!决议"
 
 USN_build_leader: "可爱的仓鼠？"
+USN_Makarapa: "马卡帕拉军事在编研讨会"
+USN_Makarapa_desc: "\n\n\n\n\n£GFX_PRC_npc_category_banner\n\n\n\n\n\n\n\n§Y全国人民代表大会§!是中华人民共和国的最高立法机关。根据中华人民共和国宪法，全国人民代表大会是一个一院制议会，有制定法律，监督国务院、最高法院、专门委员会、最高检察院和中央军事委员会的权利，同时还有选举国家主要官员的职能。虽然很多人批评全国人大只是一个毫无自主权的“橡皮图章”，但是争取2980名人大代表的支持对于通过政府政策至关重要——尤其是考虑到几乎所有的中共高层都在其中。因此，§R获得全国人大的支持就是获得党自己的支持。§!\n\n§Y请记住，当一个派系已经掌权时，其余仍拥有巨大影响力的派系可能会带来麻烦。§!\n\n我们目前的£GFX_approval_rating_texticon §Y支持率§!是§Y[?PRC_approval_rating_var|1%]§!\n\n[USN_A_text]\n[USN_B_text]\n[USN_C_text]\n"
+

@@ -2355,6 +2355,22 @@ ideas = {
 		}
 	}
 	head_minister = {
+			BGD_Nakamachi_Arale = {
+				#picture = BGD_arisa_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				allowed_to_remove = {
+					always = no
+				}
+				visible = {
+					
+				}
+				
+				traits = { 
+					hos_wudi_fadongji
+				}
 		BGD_arisa = {
 			picture = BGD_arisa_1
 			allowed = {
@@ -2371,6 +2387,79 @@ ideas = {
 		}
 	}
 	economic_minister = {
+		    BGD_Minetsuki_Ritsu = {
+				#picture = BGD_saaya_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				visible = {
+
+				}
+				traits = {
+					eco_kuanrong_limin
+				}
+			}
+	}
+	foreign_minister = {			
+		    BGD_Sengoku_Yuno = {
+				#picture = BGD_tae_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				visible = {
+
+				}
+				traits = { 
+					for_youxi_juece
+				}
+			}
+        }
+		interior_minister = {
+		    BGD_Fuji_Miyako = {
+				#picture = BGD_rimi_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				visible = {
+
+				}
+				traits = { 
+					sec_qinlao_kexuejia
+				}
+			}
+		}
+		intelligence_minister = {
+		    BGD_Miyanaga_Nonoka = {
+				#picture = BGD_nanami_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				visible = {
+
+				}
+				traits = { 
+					int_lingrenfeijie_dewang
+				}
+			}
+		}
+		theorist_minister = {
+		    BGD_Kurata_Mashiro = {
+				#picture = BGD_yukina_1
+				
+				allowed = {
+					original_tag = USN
+				}
+				visible = {
+					
+				}
+				traits = { 
+					theorist_huanjing_zhanfa
+				}
+			}		
 		BGD_saaya = {
 			picture = BGD_saaya_1
 			allowed = {

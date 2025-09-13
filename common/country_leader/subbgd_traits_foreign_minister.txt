@@ -10,4 +10,13 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	for_youxi_juece = {
+		random = no
+        political_power_cost = -0.05
+        opinion_gain_monthly_factor = 0.20
+		conscription_factor = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

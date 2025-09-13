@@ -1,0 +1,13 @@
+USN_Makarapa = {
+    icon = GFX_desicion_category_jsdf
+
+    allowed = {
+       tag = USN
+    }
+
+    visible = {
+        has_completed_focus = USN_junshi_yantao
+    }
+
+    priority = 98
+}
