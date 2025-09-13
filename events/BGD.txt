@@ -1048,6 +1048,9 @@ country_event = {
 		name = bgd.59.a
 		set_country_flag = BGD_minzhen_wajie
 		clr_country_flag = BGD_quanli_tianping_1
+		remove_power_balance = {
+			id = BGD_power_balance
+		}
 	}
 }
 
