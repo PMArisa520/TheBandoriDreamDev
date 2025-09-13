@@ -28,6 +28,7 @@ decisions_BGD_usn = {
 		#days_re_enable = 1
 		#cost = 0
 		activation = {
+			NOT = { has_global_flag = USA_american_civil_war_over_global }
 			OR = {
 				any_owned_state = {
 					is_core_of = USA
@@ -43,6 +44,11 @@ decisions_BGD_usn = {
 					}
 				}
 				SIA = {
+					any_owned_state = {
+						is_core_of = USA
+					}
+				}
+				ETI = {
 					any_owned_state = {
 						is_core_of = USA
 					}
@@ -99,23 +105,22 @@ decisions_BGD_usn = {
 		#		is_core_of = USA
 		#	}
 		#}
-		available = {
-		}
 		timeout_effect = {
 			every_state = {
 				limit = {
 					OR = {
-						is_controlled_by = BGD
-						is_controlled_by = RAJ
-						is_controlled_by = BAN
-						is_controlled_by = SIA
-						is_controlled_by = INS
-						is_controlled_by = MAL
-						is_controlled_by = SIG
-						is_controlled_by = AST
-						is_controlled_by = NZL
-						is_controlled_by = PNG
-						is_controlled_by = MAL
+						is_owned_by = BGD
+						is_owned_by = RAJ
+						is_owned_by = BAN
+						is_owned_by = SIA
+						is_owned_by = ETI
+						is_owned_by = INS
+						is_owned_by = MAL
+						is_owned_by = SIG
+						is_owned_by = AST
+						is_owned_by = NZL
+						is_owned_by = PNG
+						is_owned_by = MAL
 					}
 					is_core_of = USA
 				}
@@ -135,17 +140,17 @@ decisions_BGD_usn = {
 			every_state = {
 				limit = {
 					OR = {
-						is_controlled_by = BGD
-						is_controlled_by = RAJ
-						is_controlled_by = BAN
-						is_controlled_by = SIA
-						is_controlled_by = INS
-						is_controlled_by = MAL
-						is_controlled_by = SIG
-						is_controlled_by = AST
-						is_controlled_by = NZL
-						is_controlled_by = PNG
-						is_controlled_by = MAL
+						is_owned_by = BGD
+						is_owned_by = RAJ
+						is_owned_by = BAN
+						is_owned_by = SIA
+						is_owned_by = INS
+						is_owned_by = MAL
+						is_owned_by = SIG
+						is_owned_by = AST
+						is_owned_by = NZL
+						is_owned_by = PNG
+						is_owned_by = MAL
 					}
 					is_core_of = USA
 				}
