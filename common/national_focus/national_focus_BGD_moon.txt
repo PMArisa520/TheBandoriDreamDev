@@ -6,6 +6,7 @@ shared_focus = {
 	y = 6
 	available = {
 		has_country_flag = reconstruction_completed
+		has_idea = BGD_Justice_for_All
 	}
 	completion_reward = {
 		country_event = {

@@ -2778,3 +2778,31 @@ country_event = {
 		name = bgd.123.a
 	}
 }
+
+country_event = {
+	#一秒十二棍
+	id = bgd.124
+	title = bgd.124.t
+	desc = bgd.124.d
+	picture = GFX_taki_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.124.a
+		add_stability = 0.1
+	}
+}
+
+country_event = {
+	#惊喜
+	id = bgd.125
+	title = bgd.125.t
+	desc = bgd.125.d
+	picture = GFX_taki_2
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.125.a
+		add_stability = 0.1
+	}
+}

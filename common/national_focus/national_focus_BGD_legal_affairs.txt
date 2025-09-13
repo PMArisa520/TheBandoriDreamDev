@@ -2,7 +2,7 @@
 shared_focus = {
 	id = BGD_dq_far_right_parliamentarians
 	icon = GFX_BGD_dq_far_right_parliamentarians
-	cost = 10
+	cost = 6
 	x = 1
 	y = 9
 	available = {
@@ -63,6 +63,10 @@ shared_focus = {
 	y = 11
 	completion_reward = {
 		add_stability = 0.05
+		country_event = {
+			id = bgd.124
+			days = 3
+		}
 	}
 	prerequisite = { focus = BGD_judicial_independence_reform }
 }
@@ -98,6 +102,10 @@ shared_focus = {
 	y = 12
 	completion_reward = {
 		add_stability = 0.05
+		country_event = {
+			id = bgd.125
+			days = 3
+		}
 	}
 	prerequisite = { focus = BGD_combat_organized_crime }
 }
