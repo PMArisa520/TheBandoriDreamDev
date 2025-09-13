@@ -1563,7 +1563,7 @@ shared_focus = {
 	available = {
 	}
 	completion_reward = {
-
+		unlock_decision_category_tooltip = USN_Makarapa
 	}
 }
 shared_focus = {

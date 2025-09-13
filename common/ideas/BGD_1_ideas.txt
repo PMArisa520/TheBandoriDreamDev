@@ -2993,7 +2993,7 @@ ideas = {
 				}
 				
 				traits = { 
-					#hos_muhou_gaigejia
+					hos_wudi_fadongji
 				}
 			}
 	}
@@ -3008,7 +3008,7 @@ ideas = {
 
 				}
 				traits = {
-					#eco_jieyue_zhishang
+					eco_kuanrong_limin
 				}
 			}
 	}
@@ -3023,7 +3023,7 @@ ideas = {
 
 				}
 				traits = { 
-					#for_tuzi_waijiao
+					for_youxi_juece
 				}
 			}
         }
@@ -3038,7 +3038,7 @@ ideas = {
 
 				}
 				traits = { 
-					#sec_pingfan_zhiren
+					sec_qinlao_kexuejia
 				}
 			}
 		}
@@ -3053,7 +3053,7 @@ ideas = {
 
 				}
 				traits = { 
-					#int_putong_deshen
+					int_lingrenfeijie_dewang
 				}
 			}
 		}
@@ -3068,7 +3068,7 @@ ideas = {
 					
 				}
 				traits = { 
-					#theorist_dingdian_zhiren 
+					theorist_huanjing_zhanfa
 				}
 			}		
 	}

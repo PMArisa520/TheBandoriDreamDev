@@ -9,4 +9,14 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	int_lingrenfeijie_dewang = {
+		random = no
+		operative_slot = 1
+		intelligence_agency_defense = 0.70
+		decryption_power_factor = 0.10
+        intel_network_gain_factor = -0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
