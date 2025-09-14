@@ -246,6 +246,7 @@ BGD_yaoqing_yinni_desc: "印尼虾！"
 BGD_yaoqing_feilvbing: "邀请菲律宾加入亚太自由国家组织"
 BGD_yaoqing_aoxin: "邀请澳大利亚，新西兰与巴布亚加入亚太自由国家组织"
 BGD_yaoqing_yindu: "邀请印度与孟加拉加入亚太自由国家组织"
+BGD_Invite_Korea: "邀请韩国加入亚太自由国家组织"
 BGD_Intervention_in_India: "紧急介入§Y印度§!局势"
 BGD_host_non_nuclear_negotiations: "主持§Y印§!§G巴§!无核化谈判"
 BGD_jiena_nanmin: "接纳中国难民"
@@ -564,6 +565,7 @@ BGD_zhengce_dianhsu_tishi_tt: "要求§p政§!§d策§!§V推§!§G动§!§O力�
 BGD_zhengce_dianhsu_jianshao_tt: "§p政§!§d策§!§V推§!§G动§!§O力§!§C点§!§6数§!减少100"
 BGD_zhengce_dianhsu_zengjia_tt: "§p政§!§d策§!§V推§!§G动§!§O力§!§C点§!§6数§!增加150"
 BGD_zhengce_dianhsu_zengjia_1_tt: "§p政§!§d策§!§V推§!§G动§!§O力§!§C点§!§6数§!增加500,可重复执行"
+BGD_APFNO_Observer: "亚太自由国家组织观察员国"
 debug_decisions_BGD_afterwar: "邦多利之梦debug决议"
 BGD_load_ppp_tree_debug: "读取Poppin'Party内战后国策树"
 BGD_arisa_military_coup_debug: "军事政变"

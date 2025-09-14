@@ -276,3 +276,17 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	#首尔的“安全距离”：韩国拒绝加入亚太自由国家联盟，东京战略构想遇挫
+	id = bdrnews.1225
+	title = bdrnews.1225.t
+	desc = bdrnews.1225.d
+	#picture = GFX_bang_girlsband_party
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = bdrnews.1225.a
+	}
+}

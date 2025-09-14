@@ -101,6 +101,14 @@ spriteTypes = {
 		textureFile = "gfx\interface\factions\status\GFX_APFNO_Member.png"
 	}
 	spriteType = {
+		name = "GFX_idea_APFNO_Leader"
+		textureFile = "gfx\interface\factions\status\GFX_APFNO_Leader.png"
+	}
+	spriteType = {
+		name = "GFX_idea_APFNO_Observer"
+		textureFile = "gfx\interface\factions\status\GFX_APFNO_Observer.png"
+	}
+	spriteType = {
 		name = "GFX_idea_UNE"
 		textureFile = "gfx\interface\factions\status\GFX_UNE_Member.png"
 	}

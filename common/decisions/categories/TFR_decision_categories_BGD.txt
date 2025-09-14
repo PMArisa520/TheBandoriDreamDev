@@ -95,6 +95,7 @@ BGD_Interference_in_Thailand = {
 			has_country_flag = Thai_End_of_interference
 		}
 	}
+    visible_when_empty = yes
 	priority = 97
 }
 

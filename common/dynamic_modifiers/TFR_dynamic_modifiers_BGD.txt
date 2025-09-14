@@ -150,7 +150,7 @@ BGD_guomin_jingji = {
     war_stability_factor = BGD_guomin_jingji_war_stability_factor
 }
 BGD_yazi_lingdao = {
-    icon = GFX_idea_jingshen_zhanwei
+    icon = GFX_idea_APFNO_Leader
     enable = { always = yes }
     stability_factor = BGD_yazi_lingdao_stability_factor
     war_support_factor = BGD_yazi_lingdao_war_support_factor
