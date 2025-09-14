@@ -1,4 +1,4 @@
-defined_text = { #A派系
+defined_text = { #A派
 	name = USN_A_text
 
 	text = {
@@ -9,7 +9,7 @@ defined_text = { #A派系
 	}
 }
 
-defined_text = { #B派系
+defined_text = { #B派
 	name = USN_B_text
 
 	text = {
@@ -20,8 +20,8 @@ defined_text = { #B派系
 	}
 }
 
-defined_text = { #C派系
-	name = USC_C_text
+defined_text = { #C派
+	name = USN_C_text
 
 	text = {
 		trigger = {
@@ -31,3 +31,35 @@ defined_text = { #C派系
 	}
 }
 
+defined_text = { #A派系
+	name = USN_A_status_text
+
+	text = {
+		trigger = {
+			original_tag = USN
+		}
+		localization_key = USN_A_status_okay
+	}
+}
+
+defined_text = { #B派系
+	name = USN_B_status_text
+
+	text = {
+		trigger = {
+			original_tag = USN
+		}
+		localization_key = USN_B_status_okay
+	}
+}
+
+defined_text = { #C派系
+	name = USN_C_status_text
+
+	text = {
+		trigger = {
+			original_tag = USN
+		}
+		localization_key = USN_C_status_okay
+	}
+}
