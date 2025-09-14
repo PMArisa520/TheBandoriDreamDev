@@ -1069,3 +1069,47 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	#（获得debuff）
+	id = usnavy.32
+	title = usnavy.32.t
+	desc = usnavy.32.d
+	picture = GFX_japan_peacekeeper
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.32.a
+		USN = {
+			add_ideas = USN_huiyi_zhengchao
+		}
+	}
+}
+
+country_event = {
+	#（添加游击队debuff）
+	id = usnavy.33
+	title = usnavy.33.t
+	desc = usnavy.33.d
+	picture = GFX_japan_peacekeeper
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.33.a
+		APA = {
+			add_ideas = USN_youji_zhanshu
+		}
+		ATW = {
+			add_ideas = USN_youji_zhanshu
+		}
+		USB = {
+			add_ideas = USN_youji_zhanshu
+		}
+		PTF = {
+			add_ideas = USN_youji_zhanshu
+		}
+		USC = {
+			add_ideas = USN_youji_zhanshu
+		}
+	}
+}

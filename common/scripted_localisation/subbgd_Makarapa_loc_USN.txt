@@ -1,6 +1,5 @@
 defined_text = { #A派
 	name = USN_A_text
-
 	text = {
 		trigger = {
 			original_tag = USN
@@ -8,10 +7,8 @@ defined_text = { #A派
 		localization_key = USN_A_loc
 	}
 }
-
 defined_text = { #B派
 	name = USN_B_text
-
 	text = {
 		trigger = {
 			original_tag = USN
@@ -19,10 +16,8 @@ defined_text = { #B派
 		localization_key = USN_B_loc
 	}
 }
-
 defined_text = { #C派
 	name = USN_C_text
-
 	text = {
 		trigger = {
 			original_tag = USN
@@ -30,10 +25,8 @@ defined_text = { #C派
 		localization_key = USN_C_loc
 	}
 }
-
 defined_text = { #A派系
 	name = USN_A_status_text
-
 	text = {
 		trigger = {
 			original_tag = USN
@@ -41,10 +34,8 @@ defined_text = { #A派系
 		localization_key = USN_A_status_okay
 	}
 }
-
 defined_text = { #B派系
 	name = USN_B_status_text
-
 	text = {
 		trigger = {
 			original_tag = USN
@@ -52,10 +43,8 @@ defined_text = { #B派系
 		localization_key = USN_B_status_okay
 	}
 }
-
 defined_text = { #C派系
 	name = USN_C_status_text
-
 	text = {
 		trigger = {
 			original_tag = USN
@@ -63,3 +52,4 @@ defined_text = { #C派系
 		localization_key = USN_C_status_okay
 	}
 }
+

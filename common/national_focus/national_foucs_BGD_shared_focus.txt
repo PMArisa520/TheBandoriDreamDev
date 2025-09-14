@@ -1565,6 +1565,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		unlock_decision_category_tooltip = USN_Makarapa
+		country_event = {id = usnavy.32}
 	}
 }
 shared_focus = {
@@ -1578,10 +1579,10 @@ shared_focus = {
 	available = {
 	}
 	completion_reward = {
-
 	}
 }
 shared_focus = {
+	#西方战场经验
 	id = USN_wast
 	icon = GFX_guoce_zhanwei
 	mutually_exclusive = {focus = USN_middle}
@@ -1591,10 +1592,18 @@ shared_focus = {
 	x = -7
 	y = 2
 	completion_reward = {
-
+		remove_ideas = USN_huiyi_zhengchao
+		add_ideas = USN_huiyi_zhengchao_A
+		set_temp_variable = {
+				var = USN_influence_A_var_temp
+				value = 0.05
+			}
+			USN_add_influence_A = yes
+		#army_attack_factor = 0.05
 	}
 }
 shared_focus = {
+	#东方战场经验
 	id = USN_east
 	icon = GFX_guoce_zhanwei
 	prerequisite = { focus = USN_junshi_yantao_1 }
@@ -1604,10 +1613,24 @@ shared_focus = {
 	x = -1
 	y = 2
 	completion_reward = {
-
+		remove_ideas = USN_huiyi_zhengchao
+		add_ideas = USN_huiyi_zhengchao_1
+		set_temp_variable = {
+				var = USN_influence_B_var_temp
+				value = 0.05
+			}
+			USN_add_influence_B = yes
+		#army_defence_factor = 0.05
+		add_doctrine_cost_reduction = {
+			cost_reduction = 1
+			uses = 4
+			category = land_doctrine
+			name = USN_east
+		}
 	}
 }
 shared_focus = {
+	#敌后战场经验
 	id = USN_middle
 	icon = GFX_guoce_zhanwei
 	prerequisite = { focus = USN_junshi_yantao_1 }
@@ -1617,7 +1640,13 @@ shared_focus = {
 	x = -4
 	y = 2
 	completion_reward = {
-
+		country_event = {id = usnavy.33}
+		set_temp_variable = {
+				var = USN_influence_C_var_temp
+				value = 0.05
+			}
+			USN_add_influence_C = yes
+		#stability_factor = 0.05
 	}
 }
 shared_focus = {
