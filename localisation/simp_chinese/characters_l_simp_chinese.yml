@@ -608,5 +608,11 @@ BGD_economic_actions_tt: "§G解锁§!§Y经济界面§!决议"
 
 USN_build_leader: "可爱的仓鼠？"
 USN_Makarapa: "马卡帕拉军事在编研讨会"
-USN_Makarapa_desc: "\n\n\n\n\n£GFX_PRC_npc_category_banner\n\n\n\n\n\n\n\n§Y全国人民代表大会§!是中华人民共和国的最高立法机关。根据中华人民共和国宪法，全国人民代表大会是一个一院制议会，有制定法律，监督国务院、最高法院、专门委员会、最高检察院和中央军事委员会的权利，同时还有选举国家主要官员的职能。虽然很多人批评全国人大只是一个毫无自主权的“橡皮图章”，但是争取2980名人大代表的支持对于通过政府政策至关重要——尤其是考虑到几乎所有的中共高层都在其中。因此，§R获得全国人大的支持就是获得党自己的支持。§!\n\n§Y请记住，当一个派系已经掌权时，其余仍拥有巨大影响力的派系可能会带来麻烦。§!\n\n我们目前的£GFX_approval_rating_texticon §Y支持率§!是§Y[?PRC_approval_rating_var|1%]§!\n\n[USN_A_text]\n[USN_B_text]\n[USN_C_text]\n"
+USN_Makarapa_desc: "\n\n\n\n\n£GFX_PRC_npc_category_banner\n\n\n\n\n\n\n\n§Y 马卡拉帕山，这座历经风云的战略高地与军事要塞，承载着光辉的历史，也将成为我们开拓未来的新起点。马卡拉帕军事研讨会即将召开，届时我们将邀请来自各界的顶尖军事专家与学者，共同深入研判国际局势，探讨新兴技术所带来的机遇与挑战。本次会议旨在汲取历史经验，指引未来发展，为持续保持战略优势与卓越作战能力注入新的动力。让我们以智慧与远见，携手塑造新时代的军事格局。§R而现在，会议已经召开，是时候来决定投入资源以证明我们对军中所谓派系的支持了。§!\n\n\n\n[USN_A_text]\n[USN_B_text]\n[USN_C_text]\n"
+USN_A_loc: "\n§Y西方派§!影响力：[USN_A_status_text]"
+USN_B_loc: "\n§C东方派§!影响力：[USN_B_status_text]"
+USN_C_loc: "\n§O游击派§!影响力：[USN_C_status_text]"
+USN_A_status_okay: "§Y[?USN_influence_A_var|=+1%]§!（£attack_texticon [?USN_influence_A_dynamic_var|=+1%]）\n§Y西方派§!联邦海军司令部的资深军官们代表西方派，他们在实战和训练中积累了丰富经验，擅长利用舰艇战斗群与空军力量维持海上秩序与对外威慑。老资历的军官们不仅精通远程打击和纵深防御，还能在危机中迅速部署与协调作战，使西方派成为联邦海军稳固力量的重要支柱。"
+USN_B_status_okay: "§Y[?USN_influence_B_var|=+1%]§!（£defence_texticon [?USN_influence_B_dynamic_var|=+1%]）\n§Y东方派§!联邦海军的年轻军官们倾向东方派，他们擅长利用地形和战略纵深，通过协调正规部队与民间力量构建稳固防御。年轻军官们兼顾整体战略与灵活应变，使东方派在岛屿防御和长线作战中展现出独特优势，同时也为联邦海军注入新思路与活力。"
+USN_C_status_okay: "§Y[?USN_influence_C_var|=+1%]§!（£stability_texticon [?USN_influence_C_dynamic_var|=+1%]）\n§Y游击派§!来自日本本土的闪耀党军官们代表游击派，她们在内战阴影中崛起，擅长在复杂地形中展开非对称作战。通过伏击、骚扰、情报收集和与地方民众网络结合，她们能快速响应局部冲突，发挥游击力量。然而，由于派系年轻且支持者有限，她们仍面临资源不足与认可度不高的挑战。"
 
