@@ -1566,6 +1566,9 @@ shared_focus = {
 	completion_reward = {
 		unlock_decision_category_tooltip = USN_Makarapa
 		country_event = {id = usnavy.32}
+		add_dynamic_modifier = {modifier = USN_influence_A_dynamic}
+		add_dynamic_modifier = {modifier = USN_influence_B_dynamic}
+		add_dynamic_modifier = {modifier = USN_influence_C_dynamic}
 	}
 }
 shared_focus = {
@@ -1579,6 +1582,26 @@ shared_focus = {
 	available = {
 	}
 	completion_reward = {
+		unlock_decision_category = USN_WAST_A
+		unlock_decision_category = USN_EAST_B
+		unlock_decision_category = USN_MIDDIE_C
+		set_temp_variable = {
+				var = USN_influence_A_var_temp
+				value = 0.30
+			}
+			USN_add_influence_A = yes
+			
+			set_temp_variable = {
+				var = USN_influence_B_var_temp
+				value = 0.30
+			}
+			USN_add_influence_B = yes
+
+			set_temp_variable = {
+				var = USN_influence_C_var_temp
+				value = 0.40
+			}
+			USN_add_influence_C = yes
 	}
 }
 shared_focus = {
@@ -1599,7 +1622,6 @@ shared_focus = {
 				value = 0.05
 			}
 			USN_add_influence_A = yes
-		#army_attack_factor = 0.05
 	}
 }
 shared_focus = {
@@ -1620,7 +1642,6 @@ shared_focus = {
 				value = 0.05
 			}
 			USN_add_influence_B = yes
-		#army_defence_factor = 0.05
 		add_doctrine_cost_reduction = {
 			cost_reduction = 1
 			uses = 4
@@ -1646,7 +1667,8 @@ shared_focus = {
 				value = 0.05
 			}
 			USN_add_influence_C = yes
-		#stability_factor = 0.05
+		remove_ideas = USN_huiyi_zhengchao
+		add_ideas = USN_huiyi_zhengchao_1
 	}
 }
 shared_focus = {

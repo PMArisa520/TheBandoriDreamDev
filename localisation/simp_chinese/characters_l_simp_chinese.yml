@@ -623,4 +623,9 @@ USN_add_influence_B_tooltip: "获得§C东方派§!影响力：[?USN_influence_B
 USN_influence_B_tooltip: "§C东方派§!影响力将改变[?USN_influence_B_var_temp|=+1%]。"
 USN_add_influence_C_tooltip: "获得§O游击派§!影响力：[?USN_influence_C_var_temp|=+1%]。"
 USN_influence_C_tooltip: "§O游击派§!影响力将改变[?USN_influence_C_var_temp|=+1%]。"
-
+USN_influence_A_dynamic: "东方派影响力"
+USN_influence_B_dynamic: "西方派影响力"
+USN_influence_C_dynamic: "游击派影响力"
+USN_WAST_A: "增强资深军官影响力"
+USN_EAST_B: "增强年轻军官影响力"
+USN_MIDDIE_C: "增强本部的影响力"

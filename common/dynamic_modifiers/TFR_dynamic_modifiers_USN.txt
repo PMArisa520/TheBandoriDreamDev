@@ -1,0 +1,22 @@
+#####USED
+USN_influence_A_dynamic = {
+	enable = { 
+		always = yes
+	}
+	army_attack_factor = USN_influence_A_dynamic_var
+}
+
+USN_influence_B_dynamic = {
+	enable = { 
+		always = yes
+	}
+	army_defence_factor = USN_influence_B_dynamic_var
+}
+
+USN_influence_C_dynamic = {
+	enable = { 
+		always = yes
+	}
+	stability_factor = USN_influence_C_dynamic_var
+}
+

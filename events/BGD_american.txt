@@ -453,12 +453,6 @@ country_event = {
                         target = USN
 			}
 		}
-		ATW = {
-				declare_war_on ={
-					type = annex_everything
-                    target = USN
-			}
-		}
 		}
 		BGD = {
 			every_country = {
@@ -515,12 +509,6 @@ country_event = {
 				declare_war_on ={
 				type = annex_everything
                         target = USN
-			}
-		}
-		ATW = {
-				declare_war_on ={
-					type = annex_everything
-                    target = USN
 			}
 		}
 		}
