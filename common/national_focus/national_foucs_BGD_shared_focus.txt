@@ -1680,7 +1680,17 @@ shared_focus = {
 	x = -4
 	y = 3
 	completion_reward = {
-
+		effect_tooltip = {
+			add_ideas = USN_lianbang_wuzhuang_1
+		}
+		hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = USN_lianbang_wuzhuang
+			}
+			}
+			add_to_variable = { USN_lianbang_wuzhuang_max_planning_factor = -0.15 }
+			add_to_variable = { USN_lianbang_wuzhuang_planning_speed = 0.15 }
+			add_to_variable = { USN_lianbang_wuzhuang_command_power_gain = 0.1 }
 	}
 }
 shared_focus = {

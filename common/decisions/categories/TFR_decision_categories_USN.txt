@@ -1,5 +1,5 @@
 USN_Makarapa = {
-    icon = GFX_desicion_category_jsdf
+    icon = GFX_gui_ppp_party_small
 
     allowed = {
        tag = USN

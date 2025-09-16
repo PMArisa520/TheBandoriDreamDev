@@ -77,4 +77,9 @@ spriteTypes = {
 		name = "GFX_ksar_4"
 		texturefile = "gfx\event_pictures\ksar_4.png"
 	}
+	spriteType = {
+		name = "GFX_JMNDF_2"
+		texturefile = "gfx\event_pictures\BGD_JMNDF1.png"
+		legacy_lazy_load = no
+	}
 }

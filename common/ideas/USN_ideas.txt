@@ -96,5 +96,135 @@ ideas = {
 				army_attack_factor = -0.10
 			}
 		}
+		USN_lianbang_wuzhuang_0 = {#联邦武装
+			name = USN_lianbang_wuzhuang_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		USN_lianbang_wuzhuang_1 = {
+			name = USN_lianbang_wuzhuang_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				max_planning_factor = -0.20
+				planning_speed = 0.20
+				command_power_gain = 0.1
+			}
+		}
+		USN_lianbang_wuzhuang_2 = {
+			name = USN_lianbang_wuzhuang_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				navy_org_factor = 0.20
+				naval_speed_factor = 0.20
+				#naval_detection = 0.15
+				navy_max_range_factor = 0.20
+				#spotting_chance = 0.15
+				#screening_efficiency = 0.15
+				#positioning = 0.15
+				#naval_coordination = 0.15
+			}
+		}
+		USN_lianbang_wuzhuang_3 = {
+			name = USN_lianbang_wuzhuang_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				sortie_efficiency = 0.20
+				supply_consumption_factor = -0.20
+				supply_node_range = 0.20
+			}
+		}
+		USN_lianbang_wuzhuang_4 = {
+			name = USN_lianbang_wuzhuang_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				coordination_bonus = 0.15
+				initiative_factor = 0.10
+				land_reinforce_rate = 0.09
+			}
+		}
+		USN_lianbang_wuzhuang_5 = {
+			name = USN_lianbang_wuzhuang_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				air_attack_factor = 0.15
+				air_mission_efficiency = 0.15
+				air_escort_efficiency = 0.15
+			}
+		}
+		USN_lianbang_wuzhuang_6 = {
+			name = USN_lianbang_wuzhuang_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.15
+				recon_factor = 0.2
+			}
+		}
+		USN_lianbang_wuzhuang_7 = {
+			name = USN_lianbang_wuzhuang_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				air_agility_factor = 0.15
+				military_development_monthly = 0.02
+				air_superiority_bonus_in_combat = 0.2
+			}
+		}
 	}
 }
