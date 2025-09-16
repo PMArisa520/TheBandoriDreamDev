@@ -1,0 +1,629 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_BDMIO_music_header_bg"
+		textureFile = "gfx/interface/topbar/musicplayer/BDMIO_music_header_bg.png"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BDMIO_1"
+		textureFile = "gfx/interface/ideas/BDMIO_1.png"
+	}
+	spriteType = {
+		name = "GFX_BDMIO_1_background"
+		textureFile = "gfx/interface/BDMIO_1_background.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BDMIO_2"
+		textureFile = "gfx/interface/ideas/BDMIO_2.png"
+	}
+	spriteType = {
+		name = "GFX_BDMIO_2_background"
+		textureFile = "gfx/interface/BDMIO_2_background.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BDMIO_3"
+		textureFile = "gfx/interface/ideas/BDMIO_3.png"
+	}
+	spriteType = {
+		name = "GFX_BDMIO_3_background"
+		textureFile = "gfx/interface/BDMIO_3_background.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BDMIO_4"
+		textureFile = "gfx/interface/ideas/BDMIO_4.png"
+	}
+	spriteType = {
+		name = "GFX_BDMIO_4_background"
+		textureFile = "gfx/interface/BDMIO_4_background.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BDMIO_5"
+		textureFile = "gfx/interface/ideas/BDMIO_5.png"
+	}
+	spriteType = {
+		name = "GFX_BDMIO_5_background"
+		textureFile = "gfx/interface/BDMIO_5_background.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BDMIO_6"
+		textureFile = "gfx/interface/ideas/BDMIO_6.png"
+	}
+	spriteType = {
+		name = "GFX_BDMIO_6_background"
+		textureFile = "gfx/interface/BDMIO_6_background.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BDMIO_7"
+		textureFile = "gfx/interface/ideas/BDMIO_7.png"
+	}
+	spriteType = {
+		name = "GFX_BDMIO_7_background"
+		textureFile = "gfx/interface/BDMIO_7_background.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BDMIO_8"
+		textureFile = "gfx/interface/ideas/BDMIO_8.png"
+	}
+	spriteType = {
+		name = "GFX_BDMIO_8_background"
+		textureFile = "gfx/interface/BDMIO_8_background.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BDMIO_9"
+		textureFile = "gfx/interface/ideas/BDMIO_9.png"
+	}
+	spriteType = {
+		name = "GFX_BDMIO_9_background"
+		textureFile = "gfx/interface/BDMIO_9_background.png"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_11"
+		textureFile = "gfx/interface/technologies/BDMIO_1_11.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_12"
+		textureFile = "gfx/interface/technologies/BDMIO_1_12.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_13"
+		textureFile = "gfx/interface/technologies/BDMIO_1_13.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_21"
+		textureFile = "gfx/interface/technologies/BDMIO_1_21.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_22"
+		textureFile = "gfx/interface/technologies/BDMIO_1_22.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_23"
+		textureFile = "gfx/interface/technologies/BDMIO_1_23.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_31"
+		textureFile = "gfx/interface/technologies/BDMIO_1_31.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_32"
+		textureFile = "gfx/interface/technologies/BDMIO_1_32.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_33"
+		textureFile = "gfx/interface/technologies/BDMIO_1_33.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_41"
+		textureFile = "gfx/interface/technologies/BDMIO_1_41.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_42"
+		textureFile = "gfx/interface/technologies/BDMIO_1_42.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_43"
+		textureFile = "gfx/interface/technologies/BDMIO_1_43.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_51"
+		textureFile = "gfx/interface/technologies/BDMIO_1_51.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_52"
+		textureFile = "gfx/interface/technologies/BDMIO_1_52.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_1_53"
+		textureFile = "gfx/interface/technologies/BDMIO_1_53.png"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_11"
+		textureFile = "gfx/interface/technologies/BDMIO_2_11.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_12"
+		textureFile = "gfx/interface/technologies/BDMIO_2_12.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_13"
+		textureFile = "gfx/interface/technologies/BDMIO_2_13.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_21"
+		textureFile = "gfx/interface/technologies/BDMIO_2_21.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_22"
+		textureFile = "gfx/interface/technologies/BDMIO_2_22.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_23"
+		textureFile = "gfx/interface/technologies/BDMIO_2_23.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_31"
+		textureFile = "gfx/interface/technologies/BDMIO_2_31.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_32"
+		textureFile = "gfx/interface/technologies/BDMIO_2_32.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_33"
+		textureFile = "gfx/interface/technologies/BDMIO_2_33.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_41"
+		textureFile = "gfx/interface/technologies/BDMIO_2_41.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_42"
+		textureFile = "gfx/interface/technologies/BDMIO_2_42.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_43"
+		textureFile = "gfx/interface/technologies/BDMIO_2_43.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_51"
+		textureFile = "gfx/interface/technologies/BDMIO_2_51.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_52"
+		textureFile = "gfx/interface/technologies/BDMIO_2_52.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_2_53"
+		textureFile = "gfx/interface/technologies/BDMIO_2_53.png"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_11"
+		textureFile = "gfx/interface/technologies/BDMIO_3_11.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_12"
+		textureFile = "gfx/interface/technologies/BDMIO_3_12.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_13"
+		textureFile = "gfx/interface/technologies/BDMIO_3_13.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_21"
+		textureFile = "gfx/interface/technologies/BDMIO_3_21.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_22"
+		textureFile = "gfx/interface/technologies/BDMIO_3_22.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_23"
+		textureFile = "gfx/interface/technologies/BDMIO_3_23.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_31"
+		textureFile = "gfx/interface/technologies/BDMIO_3_31.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_32"
+		textureFile = "gfx/interface/technologies/BDMIO_3_32.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_33"
+		textureFile = "gfx/interface/technologies/BDMIO_3_33.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_41"
+		textureFile = "gfx/interface/technologies/BDMIO_3_41.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_42"
+		textureFile = "gfx/interface/technologies/BDMIO_3_42.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_43"
+		textureFile = "gfx/interface/technologies/BDMIO_3_43.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_51"
+		textureFile = "gfx/interface/technologies/BDMIO_3_51.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_52"
+		textureFile = "gfx/interface/technologies/BDMIO_3_52.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_3_53"
+		textureFile = "gfx/interface/technologies/BDMIO_3_53.png"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_11"
+		textureFile = "gfx/interface/technologies/BDMIO_4_11.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_12"
+		textureFile = "gfx/interface/technologies/BDMIO_4_12.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_13"
+		textureFile = "gfx/interface/technologies/BDMIO_4_13.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_21"
+		textureFile = "gfx/interface/technologies/BDMIO_4_21.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_22"
+		textureFile = "gfx/interface/technologies/BDMIO_4_22.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_23"
+		textureFile = "gfx/interface/technologies/BDMIO_4_23.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_31"
+		textureFile = "gfx/interface/technologies/BDMIO_4_31.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_32"
+		textureFile = "gfx/interface/technologies/BDMIO_4_32.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_33"
+		textureFile = "gfx/interface/technologies/BDMIO_4_33.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_41"
+		textureFile = "gfx/interface/technologies/BDMIO_4_41.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_42"
+		textureFile = "gfx/interface/technologies/BDMIO_4_42.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_43"
+		textureFile = "gfx/interface/technologies/BDMIO_4_43.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_51"
+		textureFile = "gfx/interface/technologies/BDMIO_4_51.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_52"
+		textureFile = "gfx/interface/technologies/BDMIO_4_52.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_4_53"
+		textureFile = "gfx/interface/technologies/BDMIO_4_53.png"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_11"
+		textureFile = "gfx/interface/technologies/BDMIO_5_11.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_12"
+		textureFile = "gfx/interface/technologies/BDMIO_5_12.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_13"
+		textureFile = "gfx/interface/technologies/BDMIO_5_13.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_21"
+		textureFile = "gfx/interface/technologies/BDMIO_5_21.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_22"
+		textureFile = "gfx/interface/technologies/BDMIO_5_22.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_23"
+		textureFile = "gfx/interface/technologies/BDMIO_5_23.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_31"
+		textureFile = "gfx/interface/technologies/BDMIO_5_31.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_32"
+		textureFile = "gfx/interface/technologies/BDMIO_5_32.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_33"
+		textureFile = "gfx/interface/technologies/BDMIO_5_33.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_41"
+		textureFile = "gfx/interface/technologies/BDMIO_5_41.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_42"
+		textureFile = "gfx/interface/technologies/BDMIO_5_42.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_43"
+		textureFile = "gfx/interface/technologies/BDMIO_5_43.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_51"
+		textureFile = "gfx/interface/technologies/BDMIO_5_51.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_52"
+		textureFile = "gfx/interface/technologies/BDMIO_5_52.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_5_53"
+		textureFile = "gfx/interface/technologies/BDMIO_5_53.png"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_11"
+		textureFile = "gfx/interface/technologies/BDMIO_6_11.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_12"
+		textureFile = "gfx/interface/technologies/BDMIO_6_12.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_13"
+		textureFile = "gfx/interface/technologies/BDMIO_6_13.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_21"
+		textureFile = "gfx/interface/technologies/BDMIO_6_21.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_22"
+		textureFile = "gfx/interface/technologies/BDMIO_6_22.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_23"
+		textureFile = "gfx/interface/technologies/BDMIO_6_23.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_31"
+		textureFile = "gfx/interface/technologies/BDMIO_6_31.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_32"
+		textureFile = "gfx/interface/technologies/BDMIO_6_32.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_33"
+		textureFile = "gfx/interface/technologies/BDMIO_6_33.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_41"
+		textureFile = "gfx/interface/technologies/BDMIO_6_41.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_42"
+		textureFile = "gfx/interface/technologies/BDMIO_6_42.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_43"
+		textureFile = "gfx/interface/technologies/BDMIO_6_43.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_51"
+		textureFile = "gfx/interface/technologies/BDMIO_6_51.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_52"
+		textureFile = "gfx/interface/technologies/BDMIO_6_52.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_6_53"
+		textureFile = "gfx/interface/technologies/BDMIO_6_53.png"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_11"
+		textureFile = "gfx/interface/technologies/BDMIO_7_11.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_12"
+		textureFile = "gfx/interface/technologies/BDMIO_7_12.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_13"
+		textureFile = "gfx/interface/technologies/BDMIO_7_13.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_21"
+		textureFile = "gfx/interface/technologies/BDMIO_7_21.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_22"
+		textureFile = "gfx/interface/technologies/BDMIO_7_22.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_23"
+		textureFile = "gfx/interface/technologies/BDMIO_7_23.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_31"
+		textureFile = "gfx/interface/technologies/BDMIO_7_31.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_32"
+		textureFile = "gfx/interface/technologies/BDMIO_7_32.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_33"
+		textureFile = "gfx/interface/technologies/BDMIO_7_33.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_41"
+		textureFile = "gfx/interface/technologies/BDMIO_7_41.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_42"
+		textureFile = "gfx/interface/technologies/BDMIO_7_42.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_43"
+		textureFile = "gfx/interface/technologies/BDMIO_7_43.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_51"
+		textureFile = "gfx/interface/technologies/BDMIO_7_51.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_52"
+		textureFile = "gfx/interface/technologies/BDMIO_7_52.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_7_53"
+		textureFile = "gfx/interface/technologies/BDMIO_7_53.png"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_11"
+		textureFile = "gfx/interface/technologies/BDMIO_8_11.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_12"
+		textureFile = "gfx/interface/technologies/BDMIO_8_12.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_13"
+		textureFile = "gfx/interface/technologies/BDMIO_8_13.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_21"
+		textureFile = "gfx/interface/technologies/BDMIO_8_21.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_22"
+		textureFile = "gfx/interface/technologies/BDMIO_8_22.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_23"
+		textureFile = "gfx/interface/technologies/BDMIO_8_23.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_31"
+		textureFile = "gfx/interface/technologies/BDMIO_8_31.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_32"
+		textureFile = "gfx/interface/technologies/BDMIO_8_32.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_33"
+		textureFile = "gfx/interface/technologies/BDMIO_8_33.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_41"
+		textureFile = "gfx/interface/technologies/BDMIO_8_41.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_42"
+		textureFile = "gfx/interface/technologies/BDMIO_8_42.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_43"
+		textureFile = "gfx/interface/technologies/BDMIO_8_43.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_51"
+		textureFile = "gfx/interface/technologies/BDMIO_8_51.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_52"
+		textureFile = "gfx/interface/technologies/BDMIO_8_52.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_8_53"
+		textureFile = "gfx/interface/technologies/BDMIO_8_53.png"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_11"
+		textureFile = "gfx/interface/technologies/BDMIO_9_11.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_12"
+		textureFile = "gfx/interface/technologies/BDMIO_9_12.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_13"
+		textureFile = "gfx/interface/technologies/BDMIO_9_13.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_21"
+		textureFile = "gfx/interface/technologies/BDMIO_9_21.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_22"
+		textureFile = "gfx/interface/technologies/BDMIO_9_22.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_23"
+		textureFile = "gfx/interface/technologies/BDMIO_9_23.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_31"
+		textureFile = "gfx/interface/technologies/BDMIO_9_31.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_32"
+		textureFile = "gfx/interface/technologies/BDMIO_9_32.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_33"
+		textureFile = "gfx/interface/technologies/BDMIO_9_33.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_41"
+		textureFile = "gfx/interface/technologies/BDMIO_9_41.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_42"
+		textureFile = "gfx/interface/technologies/BDMIO_9_42.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_43"
+		textureFile = "gfx/interface/technologies/BDMIO_9_43.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_51"
+		textureFile = "gfx/interface/technologies/BDMIO_9_51.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_52"
+		textureFile = "gfx/interface/technologies/BDMIO_9_52.png"
+	}
+	spriteType = {
+		name = "GFX_trait_BDMIO_9_53"
+		textureFile = "gfx/interface/technologies/BDMIO_9_53.png"
+	}
+}

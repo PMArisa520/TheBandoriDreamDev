@@ -1,0 +1,120 @@
+armor_PRC = {
+
+	available_for = {
+		PRC
+	}
+	
+	roles = {
+		armor
+	}
+	
+	upgrade_prio = {
+		factor = 50 # 高优先级，鼓励AI升级到此装甲师
+
+		modifier = {
+			factor = 50 # 基础修正
+		}
+	}
+	
+	production_prio = {
+		factor = 50 # 高优先级，鼓励AI生产此装甲师
+
+		modifier = {
+			factor = 50 # 基础修正
+		}
+	}
+
+	tank_division_PRC = {
+	
+		upgrade_prio = {
+			factor = 60 # 更高优先级，确保AI偏好此具体模板
+
+			modifier = {
+				factor = 60
+			}
+		}
+		
+		production_prio = {
+			factor = 60 # 更高优先级
+
+			modifier = {
+				factor = 60
+			}
+		}
+
+				stat_weights = {
+			0.00 #-- default_morale
+			1.10 #-- defense
+			2.10 #-- breakthrough
+			0.60 #-- hardness
+			2.00 #-- soft_attack
+			4.00 #-- hard_attack
+			0.10 #-- recon
+			0.01 #-- entrenchment
+			0.10 #-- initiative
+			0.01 #-- casualty_trickleback
+			-0.05 #-- supply_consumption_factor
+			-0.01 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			3.00 #-- air_attack
+			#-- Common Values
+			2.00 #-- max_organisation
+			0.80 #-- max_strength
+			2.0 #-- maximum_speed
+			0.20 #-- armor_value
+			0.05 #-- ap_attack
+			0.10 #-- reliability
+			0.10 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 0.9 # 高权重，确保AI优先考虑此模板
+			match_value = 10000.0 # 高匹配值，确保AI优先
+			support = {
+				engineer = 1
+				logistics_company = 1
+				anti_air = 1 # 防空
+				mot_recon = 1
+				maintenance_company = 1 # 维护连，对装甲部队重要
+			}
+			
+			regiments = {
+				modern_armor = 4 # 主要坦克营
+				modern_sp_artillery_brigade = 1 # 自行火炮营
+				mechanized = 2 # 其次机械化营
+			}
+		}
+		replace_at_match = 0.4
+		#replace_with = medium_armor_default
+		target_min_match = 0.5
+
+
+	}
+}
+
+# 镇压编制可以沿用通用模板或根据需要单独定义，此处不定义轻步兵和民兵
+# 如果需要PRC特有的镇压编制，可以仿照garrison_generic添加
+# garrison_PRC = {
+# 	available_for = { PRC }
+# 	roles = { garrison }
+# 	upgrade_prio = { factor = 80 }
+# 	garrison_PRC_default = {
+# 		target_template = {
+# 			support = { engineer = 1 }
+# 			regiments = { infantry = 4 } # 镇压通常用步兵
+# 		}
+# 	}
+# }

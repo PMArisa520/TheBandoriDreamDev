@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		EAS_227_order = {
+			 picture = jingshen_zhanwei
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                army_strength_factor = 3
+				land_reinforce_rate = 0.4
+			}
+		}
+	}
+}

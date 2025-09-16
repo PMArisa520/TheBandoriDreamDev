@@ -74,6 +74,46 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_ideas = EAS_zhixv_senyan
+				set_technology = { space_marines_infantry = 1 }
+				custom_effect_tooltip = PRC_establish_space_marine_legions_tt
+				unlock_decision_tooltip = PRC_establish_xibots_legion
+				unlock_decision_tooltip = PRC_establish_social_credit_legion
+				unlock_decision_tooltip = PRC_establish_uyghur_punishers_legion
+				unlock_decision_tooltip = PRC_establish_taiwan_crushers_legion
+				hidden_effect = {
+					division_template = {			
+						name = "Sinius Astartes"
+						priority = 2
+						is_locked = yes
+						regiments = {
+							space_marines = { x = 0 y = 0 }
+							space_marines = { x = 0 y = 1 }
+							space_marines = { x = 1 y = 0 }
+							space_marines = { x = 1 y = 1 }
+							space_marines = { x = 2 y = 0 }
+							space_marines = { x = 2 y = 1 }
+							space_marines = { x = 3 y = 0 }
+							space_marines = { x = 3 y = 1 }
+							space_marines = { x = 4 y = 0 }
+							space_marines = { x = 4 y = 1 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+							logistics_company = { x = 0 y = 1 }
+							artillery = { x = 0 y = 2 }
+							mbt_company = { x = 0 y = 3 }
+							spaa_company = { x = 0 y = 4 }
+						}
+					}
+					capital_scope = {
+						create_unit = {
+							division = "name = \"UltraXirines Legion\"division_template = \"Sinius Astartes\" start_experience_factor = 1 start_equipment_factor = 1.0"
+							owner = PRC
+							count = 200
+						}
+					}
+				}
+			
 		}
 	}
     focus = {
