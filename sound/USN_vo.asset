@@ -1,0 +1,268 @@
+
+category = 
+{
+ name = "Voices"
+ soundeffects = {
+	USN_infantry_idle
+	USN_infantry_neutral_combat
+	USN_infantry_positive_combat
+	USN_infantry_retreat
+	USN_infantry_move_out
+ }
+  compressor = 
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+##########
+soundeffect = 
+{
+    name = "USN_infantry_idle"
+    sounds = {
+        sound = USN_Idle_001
+        sound = USN_Idle_002
+        sound = USN_Idle_003
+        sound = USN_Idle_004
+    }
+	max_audible = 4
+	max_audible_behaviour = fail
+	volume = 0.55
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "USN_infantry_neutral_combat"
+    sounds = {
+        sound = USN_Neutral_001
+        sound = USN_Neutral_002
+        sound = USN_Neutral_003
+        sound = USN_Neutral_004
+        sound = USN_Neutral_005
+        sound = USN_Neutral_006
+        sound = USN_Neutral_007
+		sound = USN_Neutral_008
+    }
+	max_audible = 8
+	max_audible_behaviour = fail
+	volume = 0.55
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "USN_infantry_positive_combat"
+    sounds = {
+        sound = USN_Positive_001
+		sound = USN_Positive_002
+		sound = USN_Positive_003
+		sound = USN_Positive_004
+		sound = USN_Positive_005
+		sound = USN_Positive_006
+    }
+	max_audible = 6
+	max_audible_behaviour = fail
+	volume = 0.55
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "USN_infantry_retreat"
+    sounds = {
+        sound = USN_Retreat_001
+        sound = USN_Retreat_002
+        sound = USN_Retreat_003
+        sound = USN_Retreat_004
+        sound = USN_Retreat_005
+    }
+	max_audible = 5
+	max_audible_behaviour = fail
+	volume = 0.55
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "USN_infantry_move_out"
+    sounds = {
+        sound = USN_Moving_001
+        sound = USN_Moving_002
+        sound = USN_Moving_003
+        sound = USN_Moving_004
+        sound = USN_Moving_005
+		sound = USN_Moving_006
+		sound = USN_Moving_007
+		sound = USN_Moving_008
+    }
+	max_audible = 8
+	max_audible_behaviour = fail
+	volume = 0.55
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+############## AUDIO ASSETS
+
+############## USN
+sound = 
+{
+	name = "USN_Moving_001"
+	file = "USN/USN_Moving_001.wav"
+}
+sound = 
+{
+	name = "USN_Moving_002"
+	file = "USN/USN_Moving_002.wav"
+}
+sound = 
+{
+	name = "USN_Moving_003"
+	file = "USN/USN_Moving_003.wav"
+}
+sound = 
+{
+	name = "USN_Moving_004"
+	file = "USN/USN_Moving_004.wav"
+}
+sound = 
+{
+	name = "USN_Moving_005"
+	file = "USN/USN_Moving_005.wav"
+}
+sound = 
+{
+	name = "USN_Moving_006"
+	file = "USN/USN_Moving_006.wav"
+}
+sound = 
+{
+	name = "USN_Moving_007"
+	file = "USN/USN_Moving_007.wav"
+}
+sound = 
+{
+	name = "USN_Moving_008"
+	file = "USN/USN_Moving_008.wav"
+}
+sound = 
+{
+	name = "USN_Idle_001"
+	file = "USN/USN_Idle_001.wav"
+}
+sound = 
+{
+	name = "USN_Idle_002"
+	file = "USN/USN_Idle_002.wav"
+}
+sound = 
+{
+	name = "USN_Idle_003"
+	file = "USN/USN_Idle_003.wav"
+}
+sound = 
+{
+	name = "USN_Idle_004"
+	file = "USN/USN_Idle_004.wav"
+}
+sound = 
+{
+	name = "USN_Neutral_001"
+	file = "USN/USN_Neutral_001.wav"
+}
+sound = 
+{
+	name = "USN_Neutral_002"
+	file = "USN/USN_Neutral_002.wav"
+}
+sound = 
+{
+	name = "USN_Neutral_003"
+	file = "USN/USN_Neutral_003.wav"
+}
+sound = 
+{
+	name = "USN_Neutral_004"
+	file = "USN/USN_Neutral_004.wav"
+}
+sound = 
+{
+	name = "USN_Neutral_005"
+	file = "USN/USN_Neutral_005.wav"
+}
+sound = 
+{
+	name = "USN_Neutral_006"
+	file = "USN/USN_Neutral_006.wav"
+}
+sound = 
+{
+	name = "USN_Neutral_007"
+	file = "USN/USN_Neutral_007.wav"
+}
+sound = 
+{
+	name = "USN_Neutral_008"
+	file = "USN/USN_Neutral_008.wav"
+}
+sound = 
+{
+	name = "USN_Positive_001"
+	file = "USN/USN_Positive_001.wav"
+}
+sound = 
+{
+	name = "USN_Positive_002"
+	file = "USN/USN_Positive_002.wav"
+}
+sound = 
+{
+	name = "USN_Positive_003"
+	file = "USN/USN_Positive_003.wav"
+}
+sound = 
+{
+	name = "USN_Positive_004"
+	file = "USN/USN_Positive_004.wav"
+}
+sound = 
+{
+	name = "USN_Positive_005"
+	file = "USN/USN_Positive_005.wav"
+}
+sound = 
+{
+	name = "USN_Positive_006"
+	file = "USN/USN_Positive_006.wav"
+}
+sound = 
+{
+	name = "USN_Retreat_001"
+	file = "USN/USN_Retreat_001.wav"
+}
+sound = 
+{
+	name = "USN_Retreat_002"
+	file = "USN/USN_Retreat_002.wav"
+}
+sound = 
+{
+	name = "USN_Retreat_003"
+	file = "USN/USN_Retreat_003.wav"
+}
+sound = 
+{
+	name = "USN_Retreat_004"
+	file = "USN/USN_Retreat_004.wav"
+}
+sound = 
+{
+	name = "USN_Retreat_005"
+	file = "USN/USN_Retreat_005.wav"
+}
