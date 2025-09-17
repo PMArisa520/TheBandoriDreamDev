@@ -1220,6 +1220,18 @@ country_event = {
 			id = bgd.67
 			days = 15
 		}
+		if = {
+			limit = {
+				has_global_flag = hell_of_hajimi
+			}
+			BGD ={
+				add_timed_idea = {
+		    		idea = BGD_heil_of_hajimi
+ 		   		    days = 90
+				}
+			}
+		}
+
 	}
 }
 
@@ -1996,6 +2008,7 @@ country_event = {
 			add_ideas = EAS_jiaqiang_gao
 			add_research_slot = 2
 		}
+		set_global_flag = hell_of_hajimi
 	}
 }
 

@@ -74,6 +74,9 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_ideas = EAS_zhixv_senyan
+			if = {
+				limit = { has_global_flag = hell_of_hajimi  }
+			
 				set_technology = { space_marines_infantry = 1 }
 				custom_effect_tooltip = PRC_establish_space_marine_legions_tt
 				unlock_decision_tooltip = PRC_establish_xibots_legion
@@ -113,7 +116,7 @@ focus_tree = {
 						}
 					}
 				}
-			
+			}			
 		}
 	}
     focus = {
