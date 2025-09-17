@@ -3,9 +3,6 @@ ideas = {
 	country = {	
 		BGD_heil_of_hajimi = {
 		   picture = jingshen_zhanwei
-			traits = {
-			        ZZZ_blank_idea_trait
-			    }
 			allowed = {
 				always = no
 			}	
