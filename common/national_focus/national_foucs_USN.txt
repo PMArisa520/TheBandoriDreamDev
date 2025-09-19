@@ -4,9 +4,7 @@ focus_tree = {
 		base = 0
 	}
 	default = no
-
 	shared_focus = USN_junshi_yantao
-
     focus = {
 		#远方的来客
 	    id = USN_ganshe_start
@@ -26,7 +24,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_test_1
+		#变化的交响乐
+	    id = USN_music_first
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
@@ -34,13 +33,14 @@ focus_tree = {
 
 		prerequisite = {focus = USN_ganshe_start}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.10
 			add_war_support = 0.10
+			army_experience = 50
+			country_event = {id = usnavy.34}
 		}
 	}
 	focus = {
-	    id = USN_test_2
+		#科学化作行动
+	    id = USN_Science_Action
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 7
@@ -48,13 +48,13 @@ focus_tree = {
 
 		prerequisite = {focus = USN_ganshe_start}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.10
-			add_war_support = 0.10
+			add_research_slot = 1
+			add_ideas = USN_keji_jiaoliu
 		}
 	}
 	focus = {
-	    id = USN_test_3
+		#平和备生 未雨绸缪
+	    id = USN_war_Prepare
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
@@ -62,47 +62,57 @@ focus_tree = {
 
 		prerequisite = {focus = USN_ganshe_start}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.10
-			add_war_support = 0.10
+			add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					variant_name = "F-15J"
+					amount = 150
+					producer = BGD
+			}
+			add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					variant_name = "Mitsubishi F-2"
+					amount = 100
+					producer = BGD
+			}
 		}
 	}
 	focus = {
+		#荣誉 勇气 奉献
 	    id = USN_test_4
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 2
 
-		prerequisite = {focus = USN_test_1}
+		prerequisite = {focus = USN_music_first}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.10
-			add_war_support = 0.10
+			country_event = {id = usnavy.35}
+			navy_experience = 50
 		}
 	}
 	focus = {
+		#安全信赖第一
 	    id = USN_test_5
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 7
 		y = 2
 
-		prerequisite = {focus = USN_test_2}
+		prerequisite = {focus = USN_Science_Action}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.10
-			add_war_support = 0.10
+			country_event = {id = usnavy.35}
+			navy_experience = 50
 		}
 	}
 	focus = {
+		#患难见真情
 	    id = USN_test_6
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
 		y = 2
 
-		prerequisite = {focus = USN_test_3}
+		prerequisite = {focus = USN_war_Prepare}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10

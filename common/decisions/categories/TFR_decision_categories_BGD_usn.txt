@@ -8,6 +8,18 @@ decisions_BGD_usn = {
 		NOT = {
 			has_global_flag = USA_american_civil_war_over_global
 		}
-	}
-	
+	}	
+}
+USN_Makarapa = {
+    icon = GFX_gui_ppp_party_small
+
+    allowed = {
+       tag = USN
+    }
+
+    visible = {
+        has_completed_focus = USN_junshi_yantao
+    }
+
+    priority = 98
 }

@@ -46,6 +46,7 @@ USN_huiyi_zhengchao: "军官团的争吵"
 USN_huiyi_zhengchao_A: "军官团的对峙——传统主导"
 USN_huiyi_zhengchao_1: "军官团的对峙"
 USN_youji_zhanshu: "游击队"
+USN_keji_jiaoliu: "科技交流"
 
 ########################
 
@@ -189,6 +190,10 @@ usnavy.32.a: "尽快确定未来方针！"
 usnavy.33.t: "游击战术！"
 usnavy.33.d: "日本内战的经验告诉我们正面对抗虽容易陷入僵局，但是敌后的侵扰会令战局迎来意想不到的转机"
 usnavy.33.a: "就像我们之前那样！"
+
+usnavy.34.t: "来自本部的支援将领"
+
+usnavy.35.t: "来自我方的联合海军倡议"
 ########################
 
 #FLAG###################
@@ -223,4 +228,12 @@ USN_east: "东方战场经验"
 USN_east_desc: "依赖地缘优势和人口资源，强调战略纵深与整体协调。结合民生政策与军事部署，强调整体协调与长线作战，擅长以持久防御消耗敌方实力，同时通过地理优势进行有限反击。"
 USN_middle: "敌后战场经验"
 USN_midile_desc: "灵活、快速、非正规手段应对局部冲突。发动群众力量，与地方民众网络结合，建立快速响应系统和地下供应链。强调自主作战与适应环境能力，装备轻便、高机动性武器系统，能在敌方重火力面前保持灵活性。"
+USN_music_first: "变化的交响乐"
+USN_music_first_desc: ""
+USN_Science_Action: "科学化作行动"
+USN_Science_Action_desc: ""
+USN_war_Prepare: "平和备生 未雨绸缪"
+USN_war_Prepare_desc: ""
+
+
 

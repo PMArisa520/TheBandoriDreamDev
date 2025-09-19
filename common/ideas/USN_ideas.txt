@@ -96,6 +96,20 @@ ideas = {
 				army_attack_factor = -0.10
 			}
 		}
+		USN_keji_jiaoliu = {
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1	
+			modifier = {
+				consumer_goods_factor = 0.10
+				research_speed_factor = 0.40
+			}
+		}
 		USN_lianbang_wuzhuang_0 = {#联邦武装
 			name = USN_lianbang_wuzhuang_dynamic
 			picture = jingshen_zhanwei

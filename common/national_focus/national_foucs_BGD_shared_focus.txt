@@ -1582,9 +1582,9 @@ shared_focus = {
 	available = {
 	}
 	completion_reward = {
-		unlock_decision_category = USN_WAST_A
-		unlock_decision_category = USN_EAST_B
-		unlock_decision_category = USN_MIDDIE_C
+		unlock_decision_tooltip = USN_WAST_A
+		unlock_decision_tooltip = USN_EAST_B
+		unlock_decision_tooltip = USN_MIDDIE_C
 		set_temp_variable = {
 				var = USN_influence_A_var_temp
 				value = 0.30
@@ -1682,6 +1682,12 @@ shared_focus = {
 	completion_reward = {
 		effect_tooltip = {
 			add_ideas = USN_lianbang_wuzhuang_1
+			unlock_decision_tooltip = USN_A_buji
+			unlock_decision_tooltip = USN_A_kuojian
+			unlock_decision_tooltip = USN_B_anfang
+			unlock_decision_tooltip = USN_B_jiagu
+			unlock_decision_tooltip = USN_C_xinren
+			unlock_decision_tooltip = USN_C_jianshe
 		}
 		hidden_effect = {
 			add_dynamic_modifier = {

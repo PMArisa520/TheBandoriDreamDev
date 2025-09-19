@@ -10,6 +10,7 @@ country_event = {
 	option = {
 		name = usnavy.0.o
 		BGD = {
+			add_to_faction = USN
 			puppet = USN               # USN成为BGD的傀儡
 		}
 		USN = {    				# USN全部舰队、将领转移给bgd
@@ -311,6 +312,7 @@ country_event = {
 					shaonv_yvgangtie
 				}
 			}
+
 			#create_field_marshal = {
 			#	name = Nanami
 			#	portrait_path = GFX_portrait_Nanami
@@ -377,8 +379,7 @@ country_event = {
 							mechanized = { x = 3 y = 4 }
 						}
 					}
-				}
-				
+				}	
 			}
 			629 = {
 				create_unit = { 
@@ -1098,6 +1099,96 @@ country_event = {
 		}
 		USC = {
 			add_ideas = USN_youji_zhanshu
+		}
+	}
+}
+
+country_event = {
+	#添加蝶团陆军将领
+	id = usnavy.34
+	title = usnavy.34.t
+	desc = usnavy.34.d
+	picture = GFX_japan_peacekeeper
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.34.a
+		USN = {
+			add_field_marshal_role = {
+				Character = BGD_nanami_char
+				skill = 4
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+				traits = {
+					shaonv_yvgangtie
+				}
+			}
+			add_corps_commander_role = {
+				Character = BGD_Rui_char
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+				traits = {
+					shaonv_yvgangtie
+				}
+			}
+			add_corps_commander_role = {
+				Character = BGD_Tsukushi_char
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+				traits = {
+					shaonv_yvgangtie
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#添加合作指挥海军将领
+	id = usnavy.35
+	title = usnavy.35.t
+	desc = usnavy.35.d
+	picture = GFX_japan_peacekeeper
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.35.a
+		USN = {
+			add_corps_commander_role = {
+				Character = USA_christopher_grady_char
+				skill = 5
+				attack_skill = 4
+				defense_skill = 4
+				maneuvering_skill = 4
+				coordination_skill = 4
+				traits = {
+					spotter
+					navy_career_officer
+					old_guard_navy
+					destroyer_leader
+				}
+			}
+			add_corps_commander_role = {
+				Character = USA_brian_davies_char
+				skill = 3
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 2
+				traits = {
+					seawolf
+					loading_drill_master
+				}
+			}
 		}
 	}
 }

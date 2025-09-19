@@ -144,6 +144,9 @@ shared_focus = {
 		BGD = {
 			country_event = { id = usnavy.29}
 		}
+		USN = {
+			country_event = { id = usnavy.29}
+		}
 	}
 }
 shared_focus = {
