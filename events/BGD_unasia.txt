@@ -445,6 +445,7 @@ country_event = {
 			limit = {
 				has_country_flag = APFNO_member
 				NOT = { tag = USN }
+				NOT = { tag = CAN }
 				NOT = { tag = BGD }  # 避免把自己也吞并了
 			}
 			PREV = {

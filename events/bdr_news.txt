@@ -290,3 +290,17 @@ news_event = {
 		name = bdrnews.1225.a
 	}
 }
+
+news_event = {
+	#加拿大正式加盟亚太自由国家联盟，北美地缘政治版图彻底重塑
+	id = bdrnews.1226
+	title = bdrnews.1226.t
+	desc = bdrnews.1226.d
+	picture = GFX_bgd_can_join_apfno
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = bdrnews.1226.a
+	}
+}

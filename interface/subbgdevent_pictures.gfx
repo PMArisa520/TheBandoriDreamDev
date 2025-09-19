@@ -12,6 +12,10 @@ spriteTypes = {
 		texturefile = "gfx\event_pictures\news_event\bgdnews\bang_girlsband_party.png"
 	    }
 	spriteType = {
+		name = "GFX_bgd_can_join_apfno"
+		texturefile = "gfx\event_pictures\news_event\bgdnews\bgd_can_join_apfno.png"
+	    }
+	spriteType = {
 		name = "GFX_bang_zhanjia"
 		texturefile = "gfx\event_pictures\bang_zhanjia.png"
 	    }
