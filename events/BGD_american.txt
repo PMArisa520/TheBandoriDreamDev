@@ -1113,39 +1113,15 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.34.a
-		USN = {
-			add_field_marshal_role = {
-				Character = BGD_nanami_char
-				skill = 4
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 3
-				traits = {
-					shaonv_yvgangtie
-				}
+		BGD = {
+			BGD_Rui_char = {			
+				set_nationality = USN
 			}
-			add_corps_commander_role = {
-				Character = BGD_Rui_char
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 3
-				traits = {
-					shaonv_yvgangtie
-				}
+			BGD_nanami_char = {			
+				set_nationality = USN
 			}
-			add_corps_commander_role = {
-				Character = BGD_Tsukushi_char
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 3
-				traits = {
-					shaonv_yvgangtie
-				}
+			BGD_Tsukushi_char = {			
+				set_nationality = USN
 			}
 		}
 	}

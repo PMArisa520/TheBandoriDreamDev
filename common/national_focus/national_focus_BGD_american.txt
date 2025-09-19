@@ -122,6 +122,7 @@ shared_focus = {
 			country_event = { id = usnavy.2 }
 			country_event = { id = usnavy.17 days = 3 }
 			country_event = { id = bgd.122 days = 21}
+			set_country_flag = attack_Ready
 		}
 	}
 }

@@ -12,6 +12,9 @@ focus_tree = {
 		cost = 3
 		x = 7
 		y = 0
+		available = {
+		has_country_flag = attack_Ready
+		}
 		completion_reward = {
 			add_country_leader_trait = USN_build_leader
 			add_political_power = 100
@@ -78,7 +81,7 @@ focus_tree = {
 	}
 	focus = {
 		#荣誉 勇气 奉献
-	    id = USN_test_4
+	    id = USN_Honor_Courage
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
@@ -92,7 +95,7 @@ focus_tree = {
 	}
 	focus = {
 		#安全信赖第一
-	    id = USN_test_5
+	    id = USN_Safety_Trust
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 7
@@ -100,13 +103,19 @@ focus_tree = {
 
 		prerequisite = {focus = USN_Science_Action}
 		completion_reward = {
-			country_event = {id = usnavy.35}
-			navy_experience = 50
+			add_tech_bonus = {
+			name = USN_computer
+			bonus = 1.5
+			uses = 3
+			category = computing_tech
+			add_stability = 0.05
+			add_political_power = 100
+		}
 		}
 	}
 	focus = {
 		#患难见真情
-	    id = USN_test_6
+	    id = USN_true_feelings
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
@@ -114,9 +123,19 @@ focus_tree = {
 
 		prerequisite = {focus = USN_war_Prepare}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.10
-			add_war_support = 0.10
+			add_offsite_building = { 
+			type = dockyard
+			level = 3
+		}
+			add_offsite_building = { 
+			type = arms_factory
+			level = 3
+		}
+			add_offsite_building = { 
+			type = industrial_complex
+			level = 3
+		}
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -126,9 +145,9 @@ focus_tree = {
 		x = 7
 		y = 3
 
-		prerequisite = {focus = USN_test_5}
-		prerequisite = {focus = USN_test_4}
-		prerequisite = {focus = USN_test_6}
+		prerequisite = {focus = USN_Safety_Trust}
+		prerequisite = {focus = USN_Honor_Courage}
+		prerequisite = {focus = USN_true_feelings}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10

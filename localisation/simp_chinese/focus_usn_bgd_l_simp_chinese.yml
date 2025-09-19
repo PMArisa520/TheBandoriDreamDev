@@ -200,6 +200,7 @@ usnavy.35.t: "来自我方的联合海军倡议"
 Rebuilding_the_Federation: "美利坚合众国"
 The_New_Pacific_Charter: "美利坚共和国"
 BGD_Morfonica_Commander: "Morfonica成员将加入军官团"
+attack_Ready: "攻击就绪"
 ########################
 
 #将领###################
@@ -234,6 +235,15 @@ USN_Science_Action: "科学化作行动"
 USN_Science_Action_desc: ""
 USN_war_Prepare: "平和备生 未雨绸缪"
 USN_war_Prepare_desc: ""
+USN_Honor_Courage: "荣誉 勇气 奉献"
+USN_Honor_Courage_desc: ""
+USN_Safety_Trust: "安全信赖第一"
+USN_Safety_Trust_desc: ""
+USN_true_feelings: "患难见真情"
+USN_true_feelings_desc: ""
+
+
+
 
 
 

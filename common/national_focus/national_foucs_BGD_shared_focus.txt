@@ -1562,6 +1562,7 @@ shared_focus = {
 	x = -4
 	y = 0
 	available = {
+		has_country_flag = attack_Ready
 	}
 	completion_reward = {
 		unlock_decision_category_tooltip = USN_Makarapa
