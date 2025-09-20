@@ -1443,15 +1443,9 @@ BGD_quanli_pingheng = {
 			has_country_flag = BGD_quanli_tianping_1
 		}
 		available = {
-			if = {
-				limit = {
-					has_country_flag = BGD_minzhen_wajie
-				}
-				OR = {
-					BGD = {
-						is_ai = yes
-					}
-				}
+			OR = {
+				BGD = {	is_ai = yes	}
+				has_country_flag = BGD_minzhen_wajie
 			}
 		}
 		is_good = no

@@ -797,3 +797,364 @@ USN_Makarapa = {
 	}
 }
 
+USN_quanli_pingheng = {
+	#BOP
+	USN_xuanchuan_shanyao = {
+		priority = 1
+		icon = GFX_JAP_election_day
+		cost = 40
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 30
+		allowed = {
+			tag = USN
+		}
+		available = {
+		}
+		visible = {
+		}
+		ai_will_do = {
+			modifier = {
+				factor = 100
+				power_balance_value = {
+					id = USN_power_balance
+					value < 0.35
+				}
+			}
+			modifier = {
+				factor = 50
+				power_balance_value = {
+					id = USN_power_balance
+					value < 0.75
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = USN_power_balance
+					value > 0.75
+				}
+			}
+		}
+		modifier = {
+			political_power_gain = 0.04
+			political_power_factor = 0.04
+			stability_weekly = 0.005
+			expense_growth_factor = 0.04
+			production_factory_max_efficiency_factor = 0.03
+			production_factory_efficiency_gain_factor = 0.05
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = USN_power_balance
+				value = 0.05
+			}
+		}
+	}
+	USN_dongyuan_zhichizhe = {
+		priority = 1
+		icon = GFX_JAP_election_day
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 30
+		allowed = {
+			tag = USN
+		}
+		available = {
+		}
+		visible = {
+		}
+		ai_will_do = {
+			modifier = {
+				factor = 100
+				power_balance_value = {
+					id = USN_power_balance
+					value < 0.35
+				}
+			}
+			modifier = {
+				factor = 50
+				power_balance_value = {
+					id = USN_power_balance
+					value < 0.75
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = USN_power_balance
+					value > 0.75
+				}
+			}
+		}
+		modifier = {
+			political_power_gain = 0.1
+			stability_factor = -0.12
+			industrial_capacity_dockyard = 0.05
+			industrial_capacity_factory = 0.05
+			consumer_goods_factor = -0.03
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = USN_power_balance
+				value = 0.05
+			}
+		}
+	}
+	USN_zhangwo_xingzheng = {
+		priority = 1
+		icon = GFX_JAP_election_day
+		cost = 60
+		days_remove = 30
+		fire_only_once = yes
+		allowed = {
+			tag = USN
+		}
+		available = {
+		}
+		visible = {
+		}
+		ai_will_do = {
+			modifier = {
+				factor = 100
+				power_balance_value = {
+					id = USN_power_balance
+					value < 0.35
+				}
+			}
+			modifier = {
+				factor = 50
+				power_balance_value = {
+					id = USN_power_balance
+					value < 0.75
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = USN_power_balance
+					value > 0.75
+				}
+			}
+		}
+		modifier = {
+			political_power_gain = 0.15
+			political_power_factor = 0.05
+			consumer_goods_factor = 0.06
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = USN_power_balance
+				value = 0.1
+			}
+			add_political_power = 120
+		}
+	}
+	USN_xvnuo_weilai = {
+		priority = 1
+		icon = GFX_JAP_election_day
+		cost = 60
+		days_remove = 30
+		fire_only_once = yes
+		allowed = {
+			tag = USN
+		}
+		available = {
+		}
+		visible = {
+		}
+		ai_will_do = {
+			modifier = {
+				factor = 100
+				power_balance_value = {
+					id = USN_power_balance
+					value < 0.35
+				}
+			}
+			modifier = {
+				factor = 50
+				power_balance_value = {
+					id = USN_power_balance
+					value < 0.75
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = USN_power_balance
+					value > 0.75
+				}
+			}
+		}
+		modifier = {
+			political_power_gain = 0.1
+			political_power_factor = 0.03
+			stability_weekly = 0.01
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = USN_power_balance
+				value = 0.1
+			}
+			add_political_power = 60
+		}
+	}
+	USN_tuijin_gaige = {
+		priority = 1
+		icon = GFX_JAP_election_day
+		cost = 45
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 30
+		allowed = {
+			tag = USN
+		}
+		available = {
+		}
+		visible = {
+		}
+		ai_will_do = {
+			modifier = {
+				factor = 100
+				power_balance_value = {
+					id = USN_power_balance
+					value < 0.35
+				}
+			}
+			modifier = {
+				factor = 50
+				power_balance_value = {
+					id = USN_power_balance
+					value < 0.75
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = USN_power_balance
+					value > 0.75
+				}
+			}
+		}
+		modifier = {
+			political_power_gain = -0.12
+			society_development_monthly = 0.02
+			poverty_development_monthly = 0.02
+			stability_factor = 0.05
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = USN_power_balance
+				value = 0.05
+			}
+		}
+	}
+	USN_tuoxie_minzhen = {
+		priority = 1
+		icon = GFX_JAP_election_day
+		cost = 0
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 30
+		allowed = {
+			tag = USN
+		}
+		available = {
+		}
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			political_power_gain = 0.12
+			stability_factor = 0.1
+			consumer_goods_factor = -0.07
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.1
+			production_speed_buildings_factor = 0.07
+			political_power_cost = -0.1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = USN_power_balance
+				value = -0.1
+			}
+			add_political_power = 40
+		}
+	}
+	USN_lianbang_xingdong = {
+		priority = 1
+		icon = GFX_JAP_election_day
+		days_mission_timeout = 90
+		allowed = {
+			tag = USN
+			USN = {
+				is_ai = no
+			}
+		}
+		activation = {
+
+		}
+		available = {
+			OR = {
+				 USN = { is_ai = yes }
+				has_country_flag = USN_minzhen_wajie
+			}
+		}
+		visible = {
+		}
+		cancel_trigger = {
+		}
+		timeout_effect = {
+			add_power_balance_value = {
+				id = USN_power_balance
+				value = -0.05
+			}
+			activate_mission = USN_lianbang_xingdong
+		}
+		cancel_effect = {
+		}
+	}
+	USN_chongjian_jsp = {
+		priority = 1
+		icon = GFX_JAP_election_day
+		fire_only_once = yes
+		days_mission_timeout = 205
+		allowed = {
+			tag = USN
+		}
+		activation = {
+
+		}
+		available = {
+			always = no
+		}
+		is_good = no
+		visible = {
+		}
+		cancel_trigger = {
+		}
+		timeout_effect = {
+			country_event = {
+				id = USN.61
+			}
+		}
+		cancel_effect = {
+		}
+	}
+}
+

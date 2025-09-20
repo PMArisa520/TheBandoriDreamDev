@@ -21,5 +21,14 @@ USN_Makarapa = {
         has_completed_focus = USN_junshi_yantao
     }
 
-    priority = 98
+    priority = 99
+}
+USN_quanli_pingheng = {
+	icon = GFX_jueyi_zhanweifu
+	allowed = {
+		tag = USN
+	}
+	visible = {
+	}
+	priority = 98
 }

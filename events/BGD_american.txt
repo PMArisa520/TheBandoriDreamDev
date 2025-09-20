@@ -50,7 +50,7 @@ country_event = {
 			set_country_flag = BGD_EPS
 			remove_ideas = ZZZ_chaostic_economy
 			remove_ideas = USN_naval_dictatorship_idea
-			add_ideas = USN_buxinren_LV5
+			add_ideas = USN_buxinren_1
 			#remove_ideas = USA_battle_for_america_idea
 			load_focus_tree = TFR_tree_USN #加载USN国策树
 		}
@@ -1168,3 +1168,54 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	#联邦党复权
+	id = usnavy.226
+	title = usnavy.226.t
+	desc = usnavy.226.d
+	picture = GFX_japan_peacekeeper
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.226.a
+		USN = {
+			add_ideas = USN_buxinren_1
+		}
+	}
+}
+
+country_event = {
+	#联邦派请求和解
+	id = usnavy.36
+	title = usnavy.36.t
+	desc = usnavy.36.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.36.a
+		set_country_flag = USN_minzhen_wajie
+	}
+}
+
+country_event = {
+	#开始权力平衡
+	id = usnavy.37
+	title = usnavy.37.t
+	desc = usnavy.37.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.37.a
+		set_power_balance = {
+			id = USN_power_balance
+			left_side = USN_lianbang_side
+			right_side = USN_shanyaodang_side
+			set_value = 0
+		}
+	}
+}
+
+
