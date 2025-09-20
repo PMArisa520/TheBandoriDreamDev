@@ -2080,3 +2080,92 @@ country_event = {
 		add_stability = 0.02
 	}
 }
+
+country_event = {
+	#突击K.E.R.N.E.L机房
+	id = unasia.28
+	title = unasia.28.t
+	desc = unasia.28.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.28.a
+		country_event = {id = unasia.29}
+	}
+	option = {
+		name = unasia.28.b
+		country_event = {id = unasia.29}
+	}
+}
+
+country_event = {
+	#处理K.E.R.N.E.L
+	id = unasia.29
+	title = unasia.29.t
+	desc = unasia.29.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.29.a
+		add_political_power = 100
+		add_stability = 0.2
+	}
+	option = {
+		name = unasia.29.b
+		add_political_power = -200
+		add_stability = -0.4
+		country_event = {id = unasia.30}
+	}
+}
+
+country_event = {
+	#处理K.E.R.N.E.L
+	id = unasia.30
+	title = unasia.30.t
+	desc = unasia.30.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.30.a
+		add_political_power = 200
+		add_stability = 0.4
+	}
+	option = {
+		name = unasia.29.b
+		add_political_power = -400
+		add_stability = -0.8
+		country_event = {id = unasia.31}
+	}
+}
+
+country_event = {
+	#获得K.E.R.N.E.L
+	id = unasia.31
+	title = unasia.31.t
+	desc = unasia.31.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.31.a
+		add_stability = 0.8
+		country_event = {id = unasia.32}
+	}
+}
+
+country_event = {
+	#审判K.E.R.N.E.L
+	id = unasia.32
+	title = unasia.32.t
+	desc = unasia.32.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.32.a
+		add_stability = 0.4
+	}
+}

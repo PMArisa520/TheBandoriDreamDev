@@ -118,6 +118,7 @@ news_event = {
 			#scoped_play_song = "CiRCLE THANKS MUSiC"
 			scoped_play_song = "户山香澄-GAW胜利演讲"
 			load_focus_tree = BGD_united_asia
+			country_event = {id = unasia.28}
 		}
 	}
 }
