@@ -2231,199 +2231,90 @@ country_event = {
 }
 
 country_event = {
-	#宣布建立东非联盟
+	#突击K.E.R.N.E.L机房
 	id = unasia.28
 	title = unasia.28.t
 	desc = unasia.28.d
 	picture = GFX_bangdream_victory
 	fire_only_once = yes
 	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			transfer_state = 550
-			transfer_state = 867
-			transfer_state = 268
-			transfer_state = 1140
-			transfer_state = 271
-			transfer_state = 1141
-			transfer_state = 1297
-			transfer_state = 674
-			transfer_state = 866
-			transfer_state = 955
-			transfer_state = 559
-			transfer_state = 807
-			transfer_state = 269
-			transfer_state = 762
-			transfer_state = 1351
-			transfer_state = 1344
-			transfer_state = 1445
-			transfer_state = 1348
-			transfer_state = 548
-			transfer_state = 1353
-			transfer_state = 1352
-			transfer_state = 547
-			transfer_state = 1354
-			transfer_state = 781
-			transfer_state = 780
-			transfer_state = 546
-			transfer_state = 544
-			transfer_state = 820
-			transfer_state = 543
-			transfer_state = 1345
-			transfer_state = 1295
-			transfer_state = 708
-		}
+	option = {
+		name = unasia.28.a
+		country_event = {id = unasia.29}
 	}
 	option = {
-		name = unasia.28.o
-		custom_effect_tooltip = "UA4_AFR_1"
-		custom_effect_tooltip = "UA4_AFR"
-		set_province_name = {
-			id = 1939
-			name = "BGD_Equator_City"
-		}
-		hidden_effect = {
-			BGD = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					set_autonomy = {
-						target = UA4
-						autonomy_state = bgd_allied_countries_state
-					}
-				}
-				else = {
-					puppet = UA4
-				}
+		name = unasia.28.b
+		country_event = {id = unasia.29}
+	}
+}
 
-				remove_state_core = 550
-				remove_state_core = 867
-				remove_state_core = 268
-				remove_state_core = 1140
-				remove_state_core = 271
-				remove_state_core = 1141
-				remove_state_core = 1297
-				remove_state_core = 674
-				remove_state_core = 866
-				remove_state_core = 955
-				remove_state_core = 559
-				remove_state_core = 807
-				remove_state_core = 269
-				remove_state_core = 762
-				remove_state_core = 1351
-				remove_state_core = 1344
-				remove_state_core = 1445
-				remove_state_core = 1348
-				remove_state_core = 548
-				remove_state_core = 1353
-				remove_state_core = 1352
-				remove_state_core = 547
-				remove_state_core = 1354
-				remove_state_core = 781
-				remove_state_core = 780
-				remove_state_core = 546
-				remove_state_core = 544
-				remove_state_core = 820
-				remove_state_core = 543
-				remove_state_core = 1345
-				remove_state_core = 1295
-				remove_state_core = 708
-			}
-			UA4 = {
-				set_country_flag = UNE_member
-				add_ideas = BGD_RBE_economy
-				create_country_leader = {
-					name = BGD_rana_char
-					desc = BGD_RANA_DESC
-					picture = GFX_portrait_rana
-					ideology = kirakira_dokidoki
-					traits = {
-						east_africa_wildcat
-					}
-				}
-				set_party_name = {
-					ideology = social_democrat
-					long_name = EastAfrica_social_democrat_long
-					name = EastAfrica_social_democrat
-				}
+country_event = {
+	#处理K.E.R.N.E.L
+	id = unasia.29
+	title = unasia.29.t
+	desc = unasia.29.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.29.a
+		add_political_power = 100
+		add_stability = 0.2
+	}
+	option = {
+		name = unasia.29.b
+		add_political_power = -200
+		add_stability = -0.4
+		country_event = {id = unasia.30}
+	}
+}
 
-				set_politics = {
-					  ruling_party = social_democrat
-					  elections_allowed = no
-				}
-				add_popularity = {
-					  ideology = social_democrat
-					  popularity = 1
-				}
-				add_ideas = BGD_asian_puppets
-				set_capital = { state = 547 }
-				transfer_state = 550
-				transfer_state = 867
-				transfer_state = 268
-				transfer_state = 1140
-				transfer_state = 271
-				transfer_state = 1141
-				transfer_state = 1297
-				transfer_state = 674
-				transfer_state = 866
-				transfer_state = 955
-				transfer_state = 559
-				transfer_state = 807
-				transfer_state = 269
-				transfer_state = 762
-				transfer_state = 1351
-				transfer_state = 1344
-				transfer_state = 1445
-				transfer_state = 1348
-				transfer_state = 548
-				transfer_state = 1353
-				transfer_state = 1352
-				transfer_state = 547
-				transfer_state = 1354
-				transfer_state = 781
-				transfer_state = 780
-				transfer_state = 546
-				transfer_state = 544
-				transfer_state = 820
-				transfer_state = 543
-				transfer_state = 1345
-				transfer_state = 1295
-				transfer_state = 708
+country_event = {
+	#处理K.E.R.N.E.L
+	id = unasia.30
+	title = unasia.30.t
+	desc = unasia.30.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.30.a
+		add_political_power = 200
+		add_stability = 0.4
+	}
+	option = {
+		name = unasia.29.b
+		add_political_power = -400
+		add_stability = -0.8
+		country_event = {id = unasia.31}
+	}
+}
 
-				add_state_core = 550
-				add_state_core = 867
-				add_state_core = 268
-				add_state_core = 1140
-				add_state_core = 271
-				add_state_core = 1141
-				add_state_core = 1297
-				add_state_core = 674
-				add_state_core = 866
-				add_state_core = 955
-				add_state_core = 559
-				add_state_core = 807
-				add_state_core = 269
-				add_state_core = 762
-				add_state_core = 1351
-				add_state_core = 1344
-				add_state_core = 1445
-				add_state_core = 1348
-				add_state_core = 548
-				add_state_core = 1353
-				add_state_core = 1352
-				add_state_core = 547
-				add_state_core = 1354
-				add_state_core = 781
-				add_state_core = 780
-				add_state_core = 546
-				add_state_core = 544
-				add_state_core = 820
-				add_state_core = 543
-				add_state_core = 1345
-				add_state_core = 1295
-				add_state_core = 708
-			}
-		}
+country_event = {
+	#获得K.E.R.N.E.L
+	id = unasia.31
+	title = unasia.31.t
+	desc = unasia.31.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.31.a
+		add_stability = 0.8
+		country_event = {id = unasia.32}
+	}
+}
+
+country_event = {
+	#审判K.E.R.N.E.L
+	id = unasia.32
+	title = unasia.32.t
+	desc = unasia.32.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.32.a
+		add_stability = 0.4
 	}
 }

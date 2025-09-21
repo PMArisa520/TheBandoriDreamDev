@@ -3005,6 +3005,413 @@ JAP_ldp_party_category = {
 	}
 }
 
+JAP_oil_crisis_cat = {
+	JAP_waning_oil_crisis_mission = {
+		icon = GFX_JAP_waning_oil_crisis_mission
+		priority = 10
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					OR = {
+						has_idea = JAP_oil_crash1
+						has_idea = JAP_oil_crash2
+						has_idea = JAP_oil_crash3
+					}
+				}
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				OR = {
+					has_idea = JAP_oil_crash1
+					has_idea = JAP_oil_crash2
+					has_idea = JAP_oil_crash3
+				}
+			}
+		}
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 200
+		timeout_effect = {
+			JAP_decrease_oil_crisis = yes
+			activate_mission = JAP_waning_oil_crisis_mission
+		}
+		complete_effect = {
+		}
+	}
+	JAP_asean_oil = {
+		icon = GFX_decision_generic_oil
+		priority = 1
+		available = {
+		}
+		visible = {
+			tag = JAP
+			hidden_trigger = {
+				OR = {
+					has_idea = JAP_oil_crash1
+					has_idea = JAP_oil_crash2
+					has_idea = JAP_oil_crash3
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 50
+		days_remove = 28
+		complete_effect = {
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = JAP_waning_oil_crisis_mission
+				days = -50
+			}
+		}
+	}
+	JAP_russian_deal = {
+		icon = GFX_decision_generic_oil
+		priority = 1
+		available = {
+		}
+		visible = {
+			tag = JAP
+			hidden_trigger = {
+				OR = {
+					has_idea = JAP_oil_crash1
+					has_idea = JAP_oil_crash2
+					has_idea = JAP_oil_crash3
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 50
+		days_remove = 28
+		complete_effect = {
+		}
+		remove_effect = {
+			SOV = {
+				country_event = {
+					id = jap.183
+				}
+			}
+			custom_effect_tooltip = SOV_agree_tt
+			event_option_tooltip = jap.184.a
+			custom_effect_tooltip = SOV_economic_wars_gas_disagree_tt
+			event_option_tooltip = jap.185.a
+		}
+	}
+	JAP_resell_russian_oil = {
+		icon = GFX_decision_generic_oil
+		priority = 1
+		available = {
+		}
+		visible = {
+			tag = JAP
+			hidden_trigger = {
+				has_country_flag = JAP_rus_love_wins
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 50
+		days_remove = 28
+		complete_effect = {
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = JAP_waning_oil_crisis_mission
+				days = 100
+			}
+			add_timed_idea = {
+				idea = JAP_oil_resell
+				days = 100
+			}
+		}
+	}
+	JAP_develop_argentine_oil = {
+		icon = GFX_decision_generic_oil
+		priority = 1
+		available = {
+			NOT = {
+				has_country_flag = JAP_economic_partnership_ongoing
+			}
+		}
+		targets = {
+			ARG
+		}
+		visible = {
+			tag = JAP
+			hidden_trigger = {
+				OR = {
+					has_idea = JAP_oil_crash1
+					has_idea = JAP_oil_crash2
+					has_idea = JAP_oil_crash3
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 75
+		days_remove = 50
+		complete_effect = {
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = JAP_waning_oil_crisis_mission
+				days = -75
+			}
+			512 = {
+				add_resource = {
+					type = oil
+					amount = 24
+				}
+			}
+			ARG = {
+				add_timed_idea = {
+					idea = JAP_south_america_cooperation
+					days = 100
+				}
+				give_resource_rights = {
+					receiver = JAP
+					state = 512
+					resources = {
+						oil
+					}
+				}
+			}
+			add_opinion_modifier = {
+				target = ARG
+				modifier = economic_ties
+			}
+			ARG = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = economic_ties
+				}
+			}
+		}
+	}
+	JAP_develop_indonesia_oil = {
+		icon = GFX_decision_generic_oil
+		priority = 1
+		available = {
+			NOT = {
+				has_country_flag = JAP_economic_partnership_ongoing
+			}
+		}
+		targets = {
+			INS
+		}
+		visible = {
+			tag = JAP
+			hidden_trigger = {
+				OR = {
+					has_idea = JAP_oil_crash1
+					has_idea = JAP_oil_crash2
+					has_idea = JAP_oil_crash3
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 75
+		days_remove = 50
+		complete_effect = {
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = JAP_waning_oil_crisis_mission
+				days = -75
+			}
+			334 = {
+				add_resource = {
+					type = oil
+					amount = 13
+				}
+			}
+			INS = {
+				add_timed_idea = {
+					idea = JAP_south_america_cooperation
+					days = 100
+				}
+				give_resource_rights = {
+					receiver = JAP
+					state = 334
+					resources = {
+						oil
+					}
+				}
+			}
+			add_opinion_modifier = {
+				target = INS
+				modifier = economic_ties
+			}
+			INS = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = economic_ties
+				}
+			}
+		}
+	}
+	JAP_develop_ecuador_oil = {
+		icon = GFX_decision_generic_oil
+		priority = 1
+		available = {
+			NOT = {
+				has_country_flag = JAP_economic_partnership_ongoing
+			}
+		}
+		targets = {
+			ECU
+		}
+		visible = {
+			tag = JAP
+			hidden_trigger = {
+				OR = {
+					has_idea = JAP_oil_crash1
+					has_idea = JAP_oil_crash2
+					has_idea = JAP_oil_crash3
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 75
+		days_remove = 50
+		complete_effect = {
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = JAP_waning_oil_crisis_mission
+				days = -75
+			}
+			901 = {
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+			ECU = {
+				add_timed_idea = {
+					idea = JAP_south_america_cooperation
+					days = 100
+				}
+				give_resource_rights = {
+					receiver = JAP
+					state = 901
+					resources = {
+						oil
+					}
+				}
+			}
+			add_opinion_modifier = {
+				target = ECU
+				modifier = economic_ties
+			}
+			ECU = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = economic_ties
+				}
+			}
+		}
+	}
+	JAP_promote_alternative_energy = {
+		icon = GFX_decision_generic_oil
+		available = {
+		}
+		visible = {
+			tag = JAP
+			hidden_trigger = {
+				OR = {
+					has_idea = JAP_oil_crash1
+					has_idea = JAP_oil_crash2
+					has_idea = JAP_oil_crash3
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 100
+		days_remove = 25
+		complete_effect = {
+		}
+		remove_effect = {
+			534 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			530 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			536 = {
+				if = {
+					limit = {
+						is_core_of = ROOT
+						is_able_to_build_energy_farm_in_state = yes
+						free_building_slots = {
+							building = energy_farm
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = energy_farm
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = oil
+				amount = 3
+			}
+			add_days_mission_timeout = {
+				mission = JAP_waning_oil_crisis_mission
+				days = -50
+			}
+		}
+	}
+}
+
 JAP_japan_economy_category = {
 	JAP_we_will_build_japan = {
 		allowed = {

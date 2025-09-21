@@ -41,13 +41,14 @@ USN_BGD: "§Y二叶筑紫§!将领导§Y美国海军司令部§!"
 #国家精神###############
 BGD_USN_Ready_for_action: "行动准备就绪"
 BGD_USN_Beachhead_offensive: "滩头攻势"
-USN_buxinren_LV5: "国内极度不信任"
+USN_buxinren_1: "国内极度不信任"
+USN_buxinren_2: "国内部分不信任"
 USN_huiyi_zhengchao: "军官团的争吵"
 USN_huiyi_zhengchao_A: "军官团的对峙——传统主导"
 USN_huiyi_zhengchao_1: "军官团的对峙"
 USN_youji_zhanshu: "游击队"
 USN_keji_jiaoliu: "科技交流"
-
+USN_zhengzhi_boyi: "政治博弈"
 ########################
 
 #决议###################
@@ -60,6 +61,18 @@ BGD_WAR_ATW: "给我干掉核武之师！"
 BGD_WAR_USC: "解决和美利坚宪政政府的战争"
 BGD_WAR_USB: "解决和美利坚联邦的战争"
 BGD_WAR_PTF: "解决和爱国者联盟的战争"
+#bop
+USN_power_balance: "联邦党和闪耀党权力平衡"
+USN_pingheng_side: "政治均势"
+USN_lian_1_side: "联邦党部分优势"
+USN_lian_2_side: "联邦党获得认同"
+USN_lian_3_side: "闪耀党遭受孤立"
+USN_shan_1_side: "闪耀党部分优势"
+USN_shan_2_side: "闪耀党获得认同"
+USN_shan_3_side: "闪耀党获得认可"
+USN_lianbang_side: "联邦党"
+USN_shanyaodang_side: "闪耀党"
+USN_lianbang_xingdong: "联邦党正在密谋"
 ########################
 
 #事件###################
@@ -194,6 +207,12 @@ usnavy.33.a: "就像我们之前那样！"
 usnavy.34.t: "来自本部的支援将领"
 
 usnavy.35.t: "来自我方的联合海军倡议"
+
+usnavy.226.t: "联邦党复权！"
+
+usnavy.36.t: "联邦派请求和解！"
+
+usnavy.37.t: "开始投入政治事务"
 ########################
 
 #FLAG###################
@@ -201,6 +220,7 @@ Rebuilding_the_Federation: "美利坚合众国"
 The_New_Pacific_Charter: "美利坚共和国"
 BGD_Morfonica_Commander: "Morfonica成员将加入军官团"
 attack_Ready: "攻击就绪"
+USN_minzhen_wajie: "联邦派和解"
 ########################
 
 #将领###################
@@ -241,6 +261,7 @@ USN_Safety_Trust: "安全信赖第一"
 USN_Safety_Trust_desc: ""
 USN_true_feelings: "患难见真情"
 USN_true_feelings_desc: ""
+USN_zhanwen_jiaogen: "站稳脚跟"
 
 
 
