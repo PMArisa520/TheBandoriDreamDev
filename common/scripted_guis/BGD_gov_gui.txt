@@ -1,0 +1,13 @@
+scripted_gui = {
+
+	TFR_BGD_gov_icon = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "TFR_BGD_department_tt_container"
+		
+		visible = {
+			tag = BGD
+		}
+	}
+}
+

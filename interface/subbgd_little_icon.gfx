@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "BGD_MFA_icon"
+		texturefile = "gfx\interface\MFA.png"
+	}
+	spriteType = {
+		name = "BGD_MoD_icon"
+		texturefile = "gfx\interface\MoD.png"
+	}
+	spriteType = {
+		name = "BGD_MoF_icon"
+		texturefile = "gfx\interface\MoF.png"
+	}
+	spriteType = {
+		name = "BGD_MoI_icon"
+		texturefile = "gfx\interface\MoI.png"
+	}
+	spriteType = {
+		name = "BGD_SoI_icon"
+		texturefile = "gfx\interface\SoI.png"
+	}
+	spriteType = {
+		name = "BGD_MoJ_icon"
+		texturefile = "gfx\interface\MoJ.png"
+	}
+}

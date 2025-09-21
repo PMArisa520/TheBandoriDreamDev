@@ -67,17 +67,20 @@ on_actions = {
 				#赛里斯打死东南亚三宝直接吞并
 				limit = {
 					FROM = {
-						OR = {
-							original_tag = PRC
-							PRC = {
-								has_cosmetic_tag  = PRC_dongyaguo
-							}
-						}
+						#OR = {
+						#	original_tag = PRC
+						#	#PRC = {
+						#	#	has_cosmetic_tag  = PRC_dongyaguo
+						#	#}
+						#}
+						original_tag = PRC
 					}
 					ROOT = {
-						original_tag = LAO
-						original_tag = VIL
-						original_tag = CAM
+						OR = {
+							original_tag = LAO
+							original_tag = VIN
+							original_tag = CAM
+						}
 					}
 				}
 				ROOT = {
@@ -170,6 +173,7 @@ on_actions = {
 					FROM = {
 						OR = {
 							original_tag = BGD
+							has_country_flag = APFNO_member
 						}
 					}
 					ROOT = {

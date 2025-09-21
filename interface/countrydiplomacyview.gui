@@ -15,6 +15,61 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
+		name = "TFR_BGD_department_tt_container"
+		position = { x = 220 y = -45 }
+		size = { width = 40 height = 40 }
+		margin = { top = 1 left = 1 right = 1 bottom = 1 }
+		#clipping = yes
+		scale = 0.5
+		iconType = {
+			name = "TFR_BGD_gov_tt_icon"
+			position = { x = -300 y = 0 }
+			spriteType = "GFX_HoG_icon"
+			pdx_tooltip  = "TFR_BGD_GOV_TT1"
+			pdx_tooltip_delayed  = "TFR_BGD_GOV_TT"
+		}
+		#外交
+		iconType = {
+			name = "TFR_BGD_MFA_tt_icon"
+			position = { x = -240 y = 0 }
+			spriteType = "BGD_MFA_icon"
+			pdx_tooltip  = "TFR_BGD_MFA_TT1"
+			pdx_tooltip_delayed  = "TFR_BGD_MFA_TT"
+		}
+		#财政
+		iconType = {
+			name = "TFR_BGD_MoF_tt_icon"
+			position = { x = -180 y = 0 }
+			spriteType = "BGD_MoF_icon"
+			pdx_tooltip  = "TFR_BGD_MoF_TT1"
+			pdx_tooltip_delayed  = "TFR_BGD_MoF_TT"
+		}
+		#总务
+		iconType = {
+			name = "TFR_BGD_SoI_tt_icon"
+			position = { x = -120 y = 0 }
+			spriteType = "BGD_SoI_icon"
+			pdx_tooltip  = "TFR_BGD_SoI_TT1"
+			pdx_tooltip_delayed  = "TFR_BGD_SoI_TT"
+		}
+		#情报
+		iconType = {
+			name = "TFR_BGD_MoI_tt_icon"
+			position = { x = -60 y = 0 }
+			spriteType = "BGD_MoI_icon"
+			pdx_tooltip  = "TFR_BGD_MoI_TT1"
+			pdx_tooltip_delayed  = "TFR_BGD_MoI_TT"
+		}
+		#国防
+		iconType = {
+			name = "TFR_BGD_MoD_tt_icon"
+			position = { x = -0 y = 0 }
+			spriteType = "BGD_MoD_icon"
+			pdx_tooltip  = "TFR_BGD_MoD_TT1"
+			pdx_tooltip_delayed  = "TFR_BGD_MoD_TT"
+		}
+	}
+	containerWindowType = {
 		name = "TFR_global_asssociation_countrydiplomacyview_container"
 		position = { x = 468 y = 0 }
 		size = { width = 68 height = 68 }
@@ -282,19 +337,19 @@ guiTypes = {
 			{
 				name ="stability_bg" 
 				spriteType = "GFX_diplo_unity_bg" 
-				position = { x= 330 y = -40 } #position = { x= 370 y = 1 }
+				position = { x= 330 y = -43 } #position = { x= 370 y = 1 }
 			}	
 			
 			iconType =
 			{
 				name ="stability_icon"
 				spriteType = "GFX_stability_icon"
-				position = { x= 375 y = -36 } #position = { x= 378 y = 9 }
+				position = { x= 375 y = -39 } #position = { x= 378 y = 9 }
 			}			
 
 			instantTextboxType = {
 				name = "stability_value"
-				position = { x = 338 y = -32 } #position = { x = 369 y = 42 }
+				position = { x = 338 y = -35 } #position = { x = 369 y = 42 }
 				font = "VCR02_12"
 				text = "100.0%"
 				maxWidth = 44
@@ -306,19 +361,19 @@ guiTypes = {
 			{
 				name ="war_support_bg"
 				#spriteType = "GFX_diplo_unity_bg"
-				position = { x= 490 y = 1 } #position = { x= 414 y = 1 }
+				position = { x= 490 y = -4 } #position = { x= 414 y = 1 }
 			}	
 			
 			iconType =
 			{
 				name ="war_support_icon"
 				spriteType = "GFX_war_support_icon"
-				position = { x= 443 y = -36 } #position = { x= 421 y = 9 }
+				position = { x= 443 y = -39 } #position = { x= 421 y = 9 }
 			}			
 
 			instantTextboxType = {
 				name = "war_support_value"
-				position = { x = 405 y = -32 } #osition = { x = 414 y = 42 }
+				position = { x = 405 y = -36 } #osition = { x = 414 y = 42 }
 				font = "VCR02_12"
 				text = "100.0%"
 				maxWidth = 44
@@ -876,38 +931,38 @@ guiTypes = {
 			}
 		}
 		
-		containerWindowType = {
-			name = "player_info_box"
-			position = { x = 168 y = 11 }	
-			size = { width = 200 height = 40 }
-
-			iconType ={
-				name ="player_name_bg"
-				spriteType = "GFX_generic_text_bg_203"
-				position = { x= 5 y = -2 }
-				Orientation = "UPPER_LEFT"
-			}
-
-			iconType ={
-				name ="player_icon"
-				spriteType = "GFX_players_icon"
-				position = { x= 15 y = 4 }
-				Orientation = "UPPER_LEFT"
-			}
-			
-			instantTextboxType = {
-				name = "player_name"
-				position = { x = 38 y =7 }
-				textureFile = ""
-				font = "VCR02_12"
-				borderSize = {x = 0 y = 0}
-				text = "Player"
-				maxWidth = 120
-				maxHeight = 40
-				fixedsize = yes
-				format = left
-			}
-		}
+		#containerWindowType = {
+		#	name = "player_info_box"
+		#	position = { x = 168 y = 11 }	
+		#	size = { width = 200 height = 40 }
+#
+		#	iconType ={
+		#		name ="player_name_bg"
+		#		spriteType = "GFX_generic_text_bg_203"
+		#		position = { x= 5 y = -2 }
+		#		Orientation = "UPPER_LEFT"
+		#	}
+#
+		#	iconType ={
+		#		name ="player_icon"
+		#		spriteType = "GFX_players_icon"
+		#		position = { x= 15 y = 4 }
+		#		Orientation = "UPPER_LEFT"
+		#	}
+		#	
+		#	instantTextboxType = {
+		#		name = "player_name"
+		#		position = { x = 38 y =7 }
+		#		textureFile = ""
+		#		font = "VCR02_12"
+		#		borderSize = {x = 0 y = 0}
+		#		text = "Player"
+		#		maxWidth = 120
+		#		maxHeight = 40
+		#		fixedsize = yes
+		#		format = left
+		#	}
+		#}
 
 	
 		

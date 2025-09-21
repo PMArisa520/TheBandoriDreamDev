@@ -642,11 +642,11 @@ JAP_ai_behavior = {#State of Japan 2021 Election 日本国2021年大选
 	name = "JAP_ai_behavior"
 	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_EAST_ASIAN"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
-		allow_achievements = yes
+		allow_achie	vements = yes
 	}
 	option = {
 		name = LDP_AI_BEHAVIOR
@@ -654,7 +654,7 @@ JAP_ai_behavior = {#State of Japan 2021 Election 日本国2021年大选
 		desc = "LDP_AI_BEHAVIOR_TXT_DESC"
 		allow_achievements = yes
 	}
-	option = {
+	default = {
 		name = CIVIC_COALITION_AI_BEHAVIOR
 		text = "CIVIC_COALITION_AI_BEHAVIOR_TXT"
 		desc = "CIVIC_COALITION_AI_BEHAVIOR_TXT_DESC"
@@ -2803,13 +2803,13 @@ NATO_ai_behavior = {#European War Outcome 欧陆战争结局
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 		allow_achievements = yes
 	}
-	option = {
+	default = {
 		name = NATO_VICTORY
 		text = "RULE_OPTION_NATO_VICTORY"
 		desc = "RULE_OPTION_NATO_VICTORY_AI_DESC"
 		allow_achievements = yes
 	}
-	default = {
+	option = {
 		name = CSTO_VICTORY
 		text = "RULE_OPTION_CSTO_VICTORY"
 		desc = "RULE_OPTION_CSTO_VICTORY_AI_DESC"
@@ -3196,7 +3196,7 @@ The_Dugin_or_Navalny = {#Dugin or Navalny 杜金或纳瓦利内
 	name = "The_Dugin_or_Navalny"
 	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_EUROPE_SOV"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "The_Dugin_or_Navalny_TXT_DESC"
@@ -3207,7 +3207,7 @@ The_Dugin_or_Navalny = {#Dugin or Navalny 杜金或纳瓦利内
 		desc = "The_Dugin_or_Navalny_1_TXT_DESC"
 		allow_achievements = yes
 	}
-	option = {
+	default = {
 		name = The_Dugin_or_Navalny_2
 		text = "The_Dugin_or_Navalny_2_TXT"
 		desc = "The_Dugin_or_Navalny_2_TXT_DESC"

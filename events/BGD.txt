@@ -1625,6 +1625,7 @@ country_event = {
 		}
 		KOR = {
 			set_country_flag = APFNO_member
+			remove_ideas = BGD_APFNO_Observer
 		}
 		country_event = {
 			id = bgd.68

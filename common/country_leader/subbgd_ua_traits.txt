@@ -33,4 +33,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	east_africa_wildcat = {
+		random = no
+		political_power_factor = 0.05
+		political_power_gain = 0.2
+		trade_opinion_factor = 0.15
+		social_democrat_drift = 0.005
+		disabled_ideas = 1
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }	

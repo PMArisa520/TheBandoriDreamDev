@@ -38,8 +38,18 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_BGD_Arisa_texticon"
+		texturefile = "gfx\texticons\BGD\texticon_portraits\arisa_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_BGD_Rimi"
 		texturefile = "gfx\leaders\BGD\ppp\BGD_rimi_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BGD_Rimi_texticon"
+		texturefile = "gfx\texticons\BGD\texticon_portraits\rimi_texticon.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -48,8 +58,18 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_BGD_Tae_texticon"
+		texturefile = "gfx\texticons\BGD\texticon_portraits\otae_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_BGD_Saaya"
 		texturefile = "gfx\leaders\BGD\ppp\BGD_saaya_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BGD_Saaya_texticon"
+		texturefile = "gfx\texticons\BGD\texticon_portraits\saaya_texticon.png"
 		legacy_lazy_load = no
 	}
 
@@ -62,6 +82,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_BGD_nanami"
 		texturefile = "gfx\leaders\BGD\morfonica\BGD_nnm.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BGD_nanami_texticon"
+		texturefile = "gfx\texticons\BGD\texticon_portraits\nanami_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BGD_lisa_texticon"
+		texturefile = "gfx\texticons\BGD\texticon_portraits\lisa_texticon.png"
 		legacy_lazy_load = no
 	}
 

@@ -454,7 +454,7 @@ country_event = {
 				}
 			}
 			BGD = {
-				annex_country = { target = PREV }
+				annex_country = { target = PREV transfer_troops = yes }
 			}
 		}
 		every_owned_state = {
@@ -552,40 +552,57 @@ country_event = {
 				else = {
 					puppet = UA1
 				}
-				remove_state_core = 570
-				remove_state_core = 583
-				remove_state_core = 582
-				remove_state_core = 403
-				remove_state_core = 653
-				remove_state_core = 580
-				remove_state_core = 579
-				remove_state_core = 590
-				remove_state_core = 403
-				remove_state_core = 577
-				remove_state_core = 588
-				remove_state_core = 571
-				remove_state_core = 403
-				remove_state_core = 578
-				remove_state_core = 572
-				remove_state_core = 40
-				remove_state_core = 654
-				remove_state_core = 569
-				remove_state_core = 575
-				remove_state_core = 568
-				remove_state_core = 576
-				remove_state_core = 644
-				remove_state_core = 655
-				remove_state_core = 562
-				remove_state_core = 637
-				remove_state_core = 561
-				remove_state_core = 574
-				remove_state_core = 563
-				remove_state_core = 564
-				remove_state_core = 566
-				remove_state_core = 567
-				remove_state_core = 565
-				remove_state_core = 516
-				remove_state_core = 1293
+				#remove_state_core = 570
+				#remove_state_core = 583
+				#remove_state_core = 582
+				#remove_state_core = 403
+				#remove_state_core = 653
+				#remove_state_core = 580
+				#remove_state_core = 579
+				#remove_state_core = 590
+				#remove_state_core = 403
+				#remove_state_core = 577
+				#remove_state_core = 588
+				#remove_state_core = 571
+				#remove_state_core = 403
+				#remove_state_core = 578
+				#remove_state_core = 572
+				#remove_state_core = 40
+				#remove_state_core = 654
+				#remove_state_core = 569
+				#remove_state_core = 575
+				#remove_state_core = 568
+				#remove_state_core = 576
+				#remove_state_core = 644
+				#remove_state_core = 655
+				#remove_state_core = 562
+				#remove_state_core = 637
+				#remove_state_core = 561
+				#remove_state_core = 574
+				#remove_state_core = 563
+				#remove_state_core = 564
+				#remove_state_core = 566
+				#remove_state_core = 567
+				#remove_state_core = 565
+				#remove_state_core = 516
+				#remove_state_core = 1293
+
+				#every_state = {
+				#	limit = {
+				#		is_core_of = SOV
+				#		is_controlled_by = BGD
+				#		NOT = {
+				#			state = 1328
+				#			state = 560
+				#			state = 408
+				#			state = 537
+				#			state = 657
+				#			state = 409
+				#			state = 329
+				#		}
+				#	}
+				#}
+				#remove_state_core = THIS
 
 				add_core_of = 1328
 				add_core_of = 560
@@ -593,54 +610,55 @@ country_event = {
 				add_core_of = 537
 				add_core_of = 657
 				add_core_of = 409
+				add_core_of = 329
 			}
 
-			SOV = {
-				remove_state_core = 570
-				remove_state_core = 914
-				remove_state_core = 583
-				remove_state_core = 582
-				remove_state_core = 403
-				remove_state_core = 653
-				remove_state_core = 580
-				remove_state_core = 579
-				remove_state_core = 590
-				remove_state_core = 403
-				remove_state_core = 577
-				remove_state_core = 588
-				remove_state_core = 571
-				remove_state_core = 403
-				remove_state_core = 578
-				remove_state_core = 572
-				remove_state_core = 40
-				remove_state_core = 654
-				remove_state_core = 569
-				remove_state_core = 575
-				remove_state_core = 568
-				remove_state_core = 576
-				remove_state_core = 644
-				remove_state_core = 655
-				remove_state_core = 562
-				remove_state_core = 637
-				remove_state_core = 561
-				remove_state_core = 574
-				remove_state_core = 563
-				remove_state_core = 564
-				remove_state_core = 566
-				remove_state_core = 567
-				remove_state_core = 565
-				remove_state_core = 516
-				remove_state_core = 129
-				remove_state_core = 329
-				remove_state_core = 132
-				remove_state_core = 657
-				remove_state_core = 409
-				remove_state_core = 408
-				remove_state_core = 537
-				remove_state_core = 329
-				remove_state_core = 555
-				remove_state_core = 560
-			}
+			#SOV = {
+				#remove_state_core = 570
+				#remove_state_core = 914
+				#remove_state_core = 583
+				#remove_state_core = 582
+				#remove_state_core = 403
+				#remove_state_core = 653
+				#remove_state_core = 580
+				#remove_state_core = 579
+				#remove_state_core = 590
+				#remove_state_core = 403
+				#remove_state_core = 577
+				#remove_state_core = 588
+				#remove_state_core = 571
+				#remove_state_core = 403
+				#remove_state_core = 578
+				#remove_state_core = 572
+				#remove_state_core = 40
+				#remove_state_core = 654
+				#remove_state_core = 569
+				#remove_state_core = 575
+				#remove_state_core = 568
+				#remove_state_core = 576
+				#remove_state_core = 644
+				#remove_state_core = 655
+				#remove_state_core = 562
+				#remove_state_core = 637
+				#remove_state_core = 561
+				#remove_state_core = 574
+				#remove_state_core = 563
+				#remove_state_core = 564
+				#remove_state_core = 566
+				#remove_state_core = 567
+				#remove_state_core = 565
+				#remove_state_core = 516
+				#remove_state_core = 129
+				#remove_state_core = 329
+				#remove_state_core = 132
+				#remove_state_core = 657
+				#remove_state_core = 409
+				#remove_state_core = 408
+				#remove_state_core = 537
+				#remove_state_core = 329
+				#remove_state_core = 555
+				#remove_state_core = 560
+			#}
 
 			UA1 = {
 				set_country_flag = UNE_member
@@ -722,75 +740,129 @@ country_event = {
 					  popularity = 1
 				}
 				set_capital = { state = 570 }
-				transfer_state = 570
-				transfer_state = 583
-				transfer_state = 582
-				transfer_state = 403
-				transfer_state = 653
-				transfer_state = 580
-				transfer_state = 579
-				transfer_state = 590
-				transfer_state = 403
-				transfer_state = 577
-				transfer_state = 588
-				transfer_state = 571
-				transfer_state = 403
-				transfer_state = 578
-				transfer_state = 572
-				transfer_state = 40
-				transfer_state = 654
-				transfer_state = 569
-				transfer_state = 575
-				transfer_state = 568
-				transfer_state = 576
-				transfer_state = 644
-				transfer_state = 655
-				transfer_state = 562
-				transfer_state = 637
-				transfer_state = 561
-				transfer_state = 574
-				transfer_state = 563
-				transfer_state = 564
-				transfer_state = 566
-				transfer_state = 567
-				transfer_state = 565
-				transfer_state = 516
-				transfer_state = 1293
+				#transfer_state = 570
+				#transfer_state = 583
+				#transfer_state = 582
+				#transfer_state = 403
+				#transfer_state = 653
+				#transfer_state = 580
+				#transfer_state = 579
+				#transfer_state = 590
+				#transfer_state = 403
+				#transfer_state = 577
+				#transfer_state = 588
+				#transfer_state = 571
+				#transfer_state = 403
+				#transfer_state = 578
+				#transfer_state = 572
+				#transfer_state = 40
+				#transfer_state = 654
+				#transfer_state = 569
+				#transfer_state = 575
+				#transfer_state = 568
+				#transfer_state = 576
+				#transfer_state = 644
+				#transfer_state = 655
+				#transfer_state = 562
+				#transfer_state = 637
+				#transfer_state = 561
+				#transfer_state = 574
+				#transfer_state = 563
+				#transfer_state = 564
+				#transfer_state = 566
+				#transfer_state = 567
+				#transfer_state = 565
+				#transfer_state = 516
+				#transfer_state = 1293
 
-				add_state_core = 570
-				add_state_core = 583
-				add_state_core = 582
-				add_state_core = 403
-				add_state_core = 653
-				add_state_core = 580
-				add_state_core = 579
-				add_state_core = 590
-				add_state_core = 403
-				add_state_core = 577
-				add_state_core = 588
-				add_state_core = 571
-				add_state_core = 403
-				add_state_core = 578
-				add_state_core = 572
-				add_state_core = 40
-				add_state_core = 654
-				add_state_core = 569
-				add_state_core = 575
-				add_state_core = 568
-				add_state_core = 576
-				add_state_core = 644
-				add_state_core = 655
-				add_state_core = 562
-				add_state_core = 637
-				add_state_core = 561
-				add_state_core = 574
-				add_state_core = 563
-				add_state_core = 564
-				add_state_core = 566
-				add_state_core = 567
-				add_state_core = 565
-				add_state_core = 516
-				add_state_core = 1293
+				#add_state_core = 570
+				#add_state_core = 583
+				#add_state_core = 582
+				#add_state_core = 403
+				#add_state_core = 653
+				#add_state_core = 580
+				#add_state_core = 579
+				#add_state_core = 590
+				#add_state_core = 403
+				#add_state_core = 577
+				#add_state_core = 588
+				#add_state_core = 571
+				#add_state_core = 403
+				#add_state_core = 578
+				#add_state_core = 572
+				#add_state_core = 40
+				#add_state_core = 654
+				#add_state_core = 569
+				#add_state_core = 575
+				#add_state_core = 568
+				#add_state_core = 576
+				#add_state_core = 644
+				#add_state_core = 655
+				#add_state_core = 562
+				#add_state_core = 637
+				#add_state_core = 561
+				#add_state_core = 574
+				#add_state_core = 563
+				#add_state_core = 564
+				#add_state_core = 566
+				#add_state_core = 567
+				#add_state_core = 565
+				#add_state_core = 516
+				#add_state_core = 1293
+
+				every_state = {
+					limit = {
+						is_core_of = SOV
+						is_controlled_by = BGD
+						NOT = {
+							state = 1328
+							state = 560
+							state = 408
+							state = 537
+							state = 657
+							state = 409
+							state = 329
+						}
+					}
+					
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SOV
+					is_owned_by = BGD
+					NOT = {
+						state = 1328
+						state = 560
+						state = 408
+						state = 537
+						state = 657
+						state = 409
+						state = 329
+					}
+				}
+				BGD = { remove_state_core = PREV }
+				UA1 = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+				SOV = {
+					remove_state_core = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						state = 1328
+						state = 560
+						state = 408
+						state = 537
+						state = 657
+						state = 409
+						state = 329
+					}
+				}
+				BGD = { add_state_core = PREV }
 			}
 		}
 	}
@@ -1835,17 +1907,17 @@ country_event = {
         	        controls_state = 565
         	        controls_state = 516
         	        controls_state = 1293
+					controls_state = 651
         	    }
         		NOT = { tag = BGD }  # 排除自己
         		#is_subject = no      # 可选：排除附属国
         	}
-
-        	BGD = {
-				PREV = {
+			PREV = {
 					leave_faction = yes	
 				}
+        	BGD = {
         	    create_wargoal = {
-        	        type = annex_everything
+        	        type = liberate_wargoal
         	        target = PREV
         	    }
         	}
@@ -1861,6 +1933,77 @@ country_event = {
 	picture = GFX_bangdream_victory
 	fire_only_once = yes
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			every_country = {
+        		limit = {
+        		    OR = {
+        		        controls_state = 419
+        		        controls_state = 421
+        		        controls_state = 1327
+        		        controls_state = 417
+        		        controls_state = 413
+        		        controls_state = 411
+        		        controls_state = 266
+        		        controls_state = 420
+        		        controls_state = 416
+        		        controls_state = 418
+        		        controls_state = 913
+        		        controls_state = 1326
+        		        controls_state = 912
+        		        controls_state = 916
+        		        controls_state = 414
+        		        controls_state = 412
+        		        controls_state = 410
+        		        controls_state = 1054
+        		        controls_state = 1055
+        		        controls_state = 1056
+        		        controls_state = 1051
+        		        controls_state = 1052
+        		        controls_state = 803
+        		        controls_state = 837
+        		        controls_state = 267
+        		        controls_state = 802
+        		        controls_state = 821
+        		        controls_state = 799
+        		        controls_state = 584
+        		        controls_state = 804
+        		        controls_state = 402
+        		        controls_state = 805
+        		        controls_state = 404
+        		        controls_state = 589
+        		        controls_state = 586
+        		        controls_state = 407
+        		        controls_state = 406
+        		        controls_state = 587
+        		        controls_state = 801
+        		        controls_state = 585
+        		        controls_state = 823
+        		        controls_state = 822
+        		        controls_state = 405
+        		        controls_state = 824
+        		        controls_state = 1058
+        		        controls_state = 1057
+        		        controls_state = 1053
+        		        controls_state = 732
+        		        controls_state = 415
+        		        controls_state = 1355
+        		    }
+        			NOT = { tag = BGD }  # 排除自己
+        			#is_subject = no      # 可选：排除附属国
+        		}
+				ENG = {
+					end_puppet = PREV
+				}
+				GER = {
+					end_puppet = PREV
+				}
+				FRA = {
+					end_puppet = PREV
+				}
+    		}
+		}
+	}
 	option = {
 		name = unasia.25.a
 		every_country = {
@@ -1920,13 +2063,20 @@ country_event = {
         		NOT = { tag = BGD }  # 排除自己
         		#is_subject = no      # 可选：排除附属国
         	}
+			#PREV = {
+			#	leave_faction = yes
+			#	#remove_ideas_with_trait = ZZZ_blank_idea_trait
+			#}
+			PER = {
+				leave_faction = yes
+			}
+			ZET = {
+				leave_faction = yes
+			}
 
         	BGD = {
-				PREV = {
-					leave_faction = yes	
-				}
         	    create_wargoal = {
-        	        type = annex_everything
+        	        type = liberate_wargoal
         	        target = PREV
         	    }
         	}
@@ -2052,13 +2202,12 @@ country_event = {
         		NOT = { tag = BGD }  # 排除自己
         		#is_subject = no      # 可选：排除附属国
         	}
-
+			PREV = {
+				leave_faction = yes	
+			}
         	BGD = {
-				PREV = {
-					leave_faction = yes	
-				}
         	    create_wargoal = {
-        	        type = annex_everything
+        	        type = liberate_wargoal
         	        target = PREV
         	    }
         	}
@@ -2078,5 +2227,203 @@ country_event = {
 		name = unasia.27.a
 		add_political_power = 50
 		add_stability = 0.02
+	}
+}
+
+country_event = {
+	#宣布建立东非联盟
+	id = unasia.28
+	title = unasia.28.t
+	desc = unasia.28.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			transfer_state = 550
+			transfer_state = 867
+			transfer_state = 268
+			transfer_state = 1140
+			transfer_state = 271
+			transfer_state = 1141
+			transfer_state = 1297
+			transfer_state = 674
+			transfer_state = 866
+			transfer_state = 955
+			transfer_state = 559
+			transfer_state = 807
+			transfer_state = 269
+			transfer_state = 762
+			transfer_state = 1351
+			transfer_state = 1344
+			transfer_state = 1445
+			transfer_state = 1348
+			transfer_state = 548
+			transfer_state = 1353
+			transfer_state = 1352
+			transfer_state = 547
+			transfer_state = 1354
+			transfer_state = 781
+			transfer_state = 780
+			transfer_state = 546
+			transfer_state = 544
+			transfer_state = 820
+			transfer_state = 543
+			transfer_state = 1345
+			transfer_state = 1295
+			transfer_state = 708
+		}
+	}
+	option = {
+		name = unasia.28.o
+		custom_effect_tooltip = "UA4_AFR_1"
+		custom_effect_tooltip = "UA4_AFR"
+		set_province_name = {
+			id = 1939
+			name = "BGD_Equator_City"
+		}
+		hidden_effect = {
+			BGD = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					set_autonomy = {
+						target = UA4
+						autonomy_state = bgd_allied_countries_state
+					}
+				}
+				else = {
+					puppet = UA4
+				}
+
+				remove_state_core = 550
+				remove_state_core = 867
+				remove_state_core = 268
+				remove_state_core = 1140
+				remove_state_core = 271
+				remove_state_core = 1141
+				remove_state_core = 1297
+				remove_state_core = 674
+				remove_state_core = 866
+				remove_state_core = 955
+				remove_state_core = 559
+				remove_state_core = 807
+				remove_state_core = 269
+				remove_state_core = 762
+				remove_state_core = 1351
+				remove_state_core = 1344
+				remove_state_core = 1445
+				remove_state_core = 1348
+				remove_state_core = 548
+				remove_state_core = 1353
+				remove_state_core = 1352
+				remove_state_core = 547
+				remove_state_core = 1354
+				remove_state_core = 781
+				remove_state_core = 780
+				remove_state_core = 546
+				remove_state_core = 544
+				remove_state_core = 820
+				remove_state_core = 543
+				remove_state_core = 1345
+				remove_state_core = 1295
+				remove_state_core = 708
+			}
+			UA4 = {
+				set_country_flag = UNE_member
+				add_ideas = BGD_RBE_economy
+				create_country_leader = {
+					name = BGD_rana_char
+					desc = BGD_RANA_DESC
+					picture = GFX_portrait_rana
+					ideology = kirakira_dokidoki
+					traits = {
+						east_africa_wildcat
+					}
+				}
+				set_party_name = {
+					ideology = social_democrat
+					long_name = EastAfrica_social_democrat_long
+					name = EastAfrica_social_democrat
+				}
+
+				set_politics = {
+					  ruling_party = social_democrat
+					  elections_allowed = no
+				}
+				add_popularity = {
+					  ideology = social_democrat
+					  popularity = 1
+				}
+				add_ideas = BGD_asian_puppets
+				set_capital = { state = 547 }
+				transfer_state = 550
+				transfer_state = 867
+				transfer_state = 268
+				transfer_state = 1140
+				transfer_state = 271
+				transfer_state = 1141
+				transfer_state = 1297
+				transfer_state = 674
+				transfer_state = 866
+				transfer_state = 955
+				transfer_state = 559
+				transfer_state = 807
+				transfer_state = 269
+				transfer_state = 762
+				transfer_state = 1351
+				transfer_state = 1344
+				transfer_state = 1445
+				transfer_state = 1348
+				transfer_state = 548
+				transfer_state = 1353
+				transfer_state = 1352
+				transfer_state = 547
+				transfer_state = 1354
+				transfer_state = 781
+				transfer_state = 780
+				transfer_state = 546
+				transfer_state = 544
+				transfer_state = 820
+				transfer_state = 543
+				transfer_state = 1345
+				transfer_state = 1295
+				transfer_state = 708
+
+				add_state_core = 550
+				add_state_core = 867
+				add_state_core = 268
+				add_state_core = 1140
+				add_state_core = 271
+				add_state_core = 1141
+				add_state_core = 1297
+				add_state_core = 674
+				add_state_core = 866
+				add_state_core = 955
+				add_state_core = 559
+				add_state_core = 807
+				add_state_core = 269
+				add_state_core = 762
+				add_state_core = 1351
+				add_state_core = 1344
+				add_state_core = 1445
+				add_state_core = 1348
+				add_state_core = 548
+				add_state_core = 1353
+				add_state_core = 1352
+				add_state_core = 547
+				add_state_core = 1354
+				add_state_core = 781
+				add_state_core = 780
+				add_state_core = 546
+				add_state_core = 544
+				add_state_core = 820
+				add_state_core = 543
+				add_state_core = 1345
+				add_state_core = 1295
+				add_state_core = 708
+			}
+		}
 	}
 }
