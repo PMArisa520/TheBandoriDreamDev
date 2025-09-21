@@ -1,0 +1,385 @@
+BDMIO_1 = {									#Poppin'Party航空，大飞机  		星之鼓动
+	name = BDMIO_1
+	icon = GFX_idea_BDMIO_1
+	background = GFX_BDMIO_1_background
+	equipment_type = { 						#设备类型
+		large_plane_airframe
+		large_plane_maritime_patrol_plane_airframe
+		transport_plane_equipment
+	}		
+	research_categories = {						#研究类别
+		mio_cat_all_heavy_aircraft_and_modules 	#大型飞机及模块
+	}
+
+allowed = {always= yes}	
+available = { 
+ 	owner = {	OR = {tag = BGD
+                          tag = PM5}  }
+	} #可用
+	tree_header_text = {
+		text = "BDMIO_1_x0"
+		x = 0
+	}
+	tree_header_text = {
+		text = "BDMIO_1_x2"
+		x = 2
+	}
+	tree_header_text = {
+		text = "BDMIO_1_x4"
+		x = 4
+	}
+	tree_header_text = {
+		text = "BDMIO_1_x6"
+		x = 6
+	}
+	tree_header_text = {
+		text = "BDMIO_1_x8"
+		x = 8
+	}
+	
+	initial_trait = {
+		token = BDMIO_1_00
+		name = BDMIO_1_00
+		
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+	trait = {
+		token = BDMIO_1_11
+		name = BDMIO_1_11
+		icon = GFX_trait_BDMIO_1_11
+
+		position = { x=0 y=0 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_11"
+			}
+		}
+		
+		equipment_bonus = {
+            air_defence = 0.15			#防御
+			fuel_consumption = -0.15	#燃油
+		}
+	}
+	trait = {
+		token = BDMIO_1_12
+		name = BDMIO_1_12
+		icon = GFX_trait_BDMIO_1_12
+
+		position = { x=0 y=2 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_12"
+			}
+		}
+		
+		equipment_bonus = {
+            air_agility = 0.2			#机动
+			reliability = 0.15			#可靠
+		}
+	}
+	trait = {
+		token = BDMIO_1_13
+		name = BDMIO_1_13
+		icon = GFX_trait_BDMIO_1_13
+
+		position = { x=0 y=4 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_13"
+			}
+		}
+		
+		equipment_bonus = {
+            maximum_speed = 0.2			#速度
+			mines_planting = 0.2		#布雷
+			mines_sweeping = 0.2		#扫雷
+		}
+	}
+	trait = {
+		token = BDMIO_1_21
+		name = BDMIO_1_21
+		icon = GFX_trait_BDMIO_1_21
+
+		position = { x=2 y=0 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_21"
+			}
+			custom_effect_tooltip  = BDMIO_5_51_tooltip
+		}
+		
+		equipment_bonus = {
+            air_bombing = 0.2			#轰炸
+			night_penalty = 0.2			#夜间
+		}
+	}
+	trait = {
+		token = BDMIO_1_22
+		name = BDMIO_1_22
+		icon = GFX_trait_BDMIO_1_22
+
+		position = { x=2 y=2 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_22"
+			}
+		}
+		
+		equipment_bonus = {
+            weight = -0.2				#重量
+			thrust = 0.2				#推力
+		}
+	}
+	trait = {
+		token = BDMIO_1_23
+		name = BDMIO_1_23
+		icon = GFX_trait_BDMIO_1_23
+
+		position = { x=2 y=4 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_23"
+			}
+		}
+		
+		equipment_bonus = {
+            air_attack = 0.15			#对空攻击
+			naval_strike_attack = 0.15	#对海攻击
+		}
+	}
+	trait = {
+		token = BDMIO_1_31
+		name = BDMIO_1_31
+		icon = GFX_trait_BDMIO_1_31
+
+		position = { x=4 y=0 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_31"
+			}
+		}
+		
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.15			#经费
+			military_industrial_organization_research_bonus = 0.05		#研究
+		}
+	}
+	trait = {
+		token = BDMIO_1_32
+		name = BDMIO_1_32
+		icon = GFX_trait_BDMIO_1_32
+
+		position = { x=4 y=2 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_32"
+			}
+		}
+		
+		organization_modifier = {
+			military_industrial_organization_size_up_requirement = -0.15	#规模
+			military_industrial_organization_research_bonus = 0.05		#研究
+		}
+	}
+	trait = {
+		token = BDMIO_1_33
+		name = BDMIO_1_33
+		icon = GFX_trait_BDMIO_1_33
+
+		position = { x=4 y=4 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_33"
+			}
+		}
+		
+		organization_modifier = {
+			military_industrial_organization_design_team_assign_cost = -0.4
+			military_industrial_organization_design_team_change_cost = -0.4
+			military_industrial_organization_research_bonus = 0.1		#研究
+		}
+	}
+	trait = {
+		token = BDMIO_1_41
+		name = BDMIO_1_41
+		icon = GFX_trait_BDMIO_1_41
+
+		position = { x=6 y=0 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+			transport_plane_equipment
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_41"
+			}
+		}
+		
+		production_bonus = {
+			production_efficiency_gain_factor = 0.2		#效率增长
+			production_efficiency_cap_factor =  0.1		#效率上限
+		}
+	}
+	trait = {
+		token = BDMIO_1_42
+		name = BDMIO_1_42
+		icon = GFX_trait_BDMIO_1_42
+
+		position = { x=6 y=2 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+			transport_plane_equipment
+		}
+		
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_42"
+			}
+		}
+		
+		production_bonus = {
+			production_capacity_factor = 0.1			#产量
+			production_resource_need_factor = -0.2		#资源需求
+			production_resource_penalty_factor = -0.2	#资源惩罚
+		}
+	}
+	trait = {
+		token = BDMIO_1_43
+		name = BDMIO_1_43
+		icon = GFX_trait_BDMIO_1_43
+
+		position = { x=6 y=4 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_large_plane
+			transport_plane_equipment
+		}
+		
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_43"
+			}
+		}
+		
+		equipment_bonus = {
+            air_range = 0.2				#航程
+			build_cost_ic = -0.1		#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_1_51
+		name = BDMIO_1_51
+		icon = GFX_trait_BDMIO_1_51
+
+		position = { x=8 y=0 }
+		
+		limit_to_equipment_type = { 
+			transport_plane_equipment
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_51"
+			}
+		}
+		
+		equipment_bonus = {
+            air_range = 0.15			#航程
+			fuel_consumption = -0.1		#耗油
+		}
+	}
+	trait = {
+		token = BDMIO_1_52
+		name = BDMIO_1_52
+		icon = GFX_trait_BDMIO_1_52
+
+		position = { x=8 y=2 }
+		
+		limit_to_equipment_type = { 
+			transport_plane_equipment
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_52"
+			}
+		}
+		
+		equipment_bonus = {
+            air_defence = 0.3		#防御
+			air_agility = 0.2		#机动
+		}
+	}
+	trait = {
+		token = BDMIO_1_53
+		name = BDMIO_1_53
+		icon = GFX_trait_BDMIO_1_53
+
+		position = { x=8 y=4 }
+		
+		limit_to_equipment_type = { 
+			transport_plane_equipment
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_1_53"
+			}
+		}
+		
+		equipment_bonus = {
+            maximum_speed = 0.2		#速度
+			reliability = 0.1		#可靠
+		}
+	}
+}

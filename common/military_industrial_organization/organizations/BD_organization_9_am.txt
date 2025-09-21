@@ -1,0 +1,317 @@
+BDMIO_9 = {									#Ave Mujica剧场			颂乐人偶
+	name = BDMIO_9
+	icon = GFX_idea_BDMIO_9
+	background = GFX_BDMIO_9_background
+	equipment_type = { 						#设备类型
+		armor				#装甲科技
+	}		
+	research_categories = {						#研究类别
+		mio_cat_tech_all_armor_and_modules
+	}
+
+allowed = {always= yes}	
+available = { 
+ 	owner = {	OR = {tag = BGD
+                          tag = PM5}  }
+	} #可用
+	tree_header_text = {
+		text = "BDMIO_9_x0"
+		x = 0
+	}
+	tree_header_text = {
+		text = "BDMIO_9_x2"
+		x = 2
+	}
+	tree_header_text = {
+		text = "BDMIO_9_x4"
+		x = 4
+	}
+	tree_header_text = {
+		text = "BDMIO_9_x6"
+		x = 6
+	}
+	tree_header_text = {
+		text = "BDMIO_9_x8"
+		x = 8
+	}
+	
+	initial_trait = {
+		token = BDMIO_9_00
+		name = BDMIO_9_00
+		
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+	trait = {
+		token = BDMIO_9_11
+		name = BDMIO_9_11
+		icon = GFX_trait_BDMIO_9_11
+
+		position = { x=0 y=0 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_11"
+			}
+		}
+		
+		equipment_bonus = {
+			soft_attack = -0.05	#软攻
+			build_cost_ic = -0.05 #造价
+		}
+	}
+	trait = {
+		token = BDMIO_9_12
+		name = BDMIO_9_12
+		icon = GFX_trait_BDMIO_9_12
+
+		position = { x=0 y=2 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_12"
+			}
+		}
+		
+		equipment_bonus = {
+			armor_value = -0.05	#厚度
+			build_cost_ic = -0.05 #造价
+		}
+	}
+	trait = {
+		token = BDMIO_9_13
+		name = BDMIO_9_13
+		icon = GFX_trait_BDMIO_9_13
+
+		position = { x=0 y=4 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_13"
+			}
+		}
+		
+		equipment_bonus = {
+            breakthrough = -0.1		#突破
+			defense = -0.1			#防御
+			build_cost_ic = -0.1	#造价
+		}
+	}
+	trait = {
+		token = BDMIO_9_21
+		name = BDMIO_9_21
+		icon = GFX_trait_BDMIO_9_21
+
+		position = { x=2 y=0 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_21"
+			}
+		}
+		
+		equipment_bonus = {
+            hard_attack = -0.05		#硬攻
+			build_cost_ic = -0.05	#造价
+		}
+	}
+	trait = {
+		token = BDMIO_9_22
+		name = BDMIO_9_22
+		icon = GFX_trait_BDMIO_9_22
+
+		position = { x=2 y=2 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_22"
+			}
+		}
+		
+		equipment_bonus = {
+            hardness = -0.05		#装甲率
+			build_cost_ic = -0.05	#造价
+		}
+	}
+	trait = {
+		token = BDMIO_9_23
+		name = BDMIO_9_23
+		icon = GFX_trait_BDMIO_9_23
+
+		position = { x=2 y=4 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_23"
+			}
+		}
+		
+		equipment_bonus = {
+            maximum_speed = -0.1	#速度
+			build_cost_ic = -0.1	#造价
+		}
+	}
+	trait = {
+		token = BDMIO_9_31
+		name = BDMIO_9_31
+		icon = GFX_trait_BDMIO_9_31
+
+		position = { x=4 y=0 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_31"
+			}
+		}
+		
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.15			#经费
+			military_industrial_organization_research_bonus = 0.05		#研究
+		}
+	}
+	trait = {
+		token = BDMIO_9_32
+		name = BDMIO_9_32
+		icon = GFX_trait_BDMIO_9_32
+
+		position = { x=4 y=2 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_32"
+			}
+		}
+		
+		organization_modifier = {
+			military_industrial_organization_size_up_requirement = -0.15	#规模
+			military_industrial_organization_research_bonus = 0.05		#研究
+		}
+	}
+	trait = {
+		token = BDMIO_9_33
+		name = BDMIO_9_33
+		icon = GFX_trait_BDMIO_9_33
+
+		position = { x=4 y=4 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_33"
+			}
+		}
+		
+		organization_modifier = {
+			military_industrial_organization_design_team_assign_cost = -0.4
+			military_industrial_organization_design_team_change_cost = -0.4
+			military_industrial_organization_research_bonus = 0.1		#研究
+		}
+	}
+	trait = {
+		token = BDMIO_9_41
+		name = BDMIO_9_41
+		icon = GFX_trait_BDMIO_9_41
+
+		position = { x=6 y=0 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_41"
+			}
+		}
+		
+		production_bonus = {
+			production_efficiency_gain_factor = 0.1		#效率增长
+			production_efficiency_cap_factor =  0.2		#效率上限
+		}
+	}
+	trait = {
+		token = BDMIO_9_42
+		name = BDMIO_9_42
+		icon = GFX_trait_BDMIO_9_42
+
+		position = { x=6 y=2 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_42"
+			}
+		}
+		
+		production_bonus = {
+			production_capacity_factor = 0.1			#产量
+			production_conversion_speed_factor = 0.5	#改装速度
+		}
+	}
+	trait = {
+		token = BDMIO_9_43
+		name = BDMIO_9_43
+		icon = GFX_trait_BDMIO_9_43
+
+		position = { x=6 y=4 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_43"
+			}
+		}
+		
+		production_bonus = {
+            production_resource_need_factor = -0.2		#资源需求
+			production_resource_penalty_factor = -0.2	#资源惩罚
+		}
+	}
+	trait = {
+		token = BDMIO_9_51
+		name = BDMIO_9_51
+		icon = GFX_trait_BDMIO_9_51
+
+		position = { x=8 y=0 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_51"
+			}
+		}
+		
+		equipment_bonus = {
+			fuel_consumption = -0.15	#耗油
+		}
+	}
+	trait = {
+		token = BDMIO_9_52
+		name = BDMIO_9_52
+		icon = GFX_trait_BDMIO_9_52
+
+		position = { x=8 y=2 }
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_52"
+			}
+		}
+		
+		equipment_bonus = {
+            reliability = 0.2		#可靠
+		}
+	}
+	trait = {
+		token = BDMIO_9_53
+		name = BDMIO_9_53
+		icon = GFX_trait_BDMIO_9_53
+
+		position = { x=8 y=4 }
+
+
+		on_complete = { 
+			hidden_effect = {
+				#play_song = "BD_music_9_53"
+			}
+			custom_effect_tooltip  = BDMIO_9_53_tooltip
+		}
+		
+		equipment_bonus = {
+            entrenchment = 2	#堑壕#本身有堑壕（推土铲）才生效
+		}
+	}
+}

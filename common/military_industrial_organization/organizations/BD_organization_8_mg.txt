@@ -1,0 +1,405 @@
+BDMIO_8 = {									#MyGO!!!!!集会			迷子でも進め
+	name = BDMIO_8
+	icon = GFX_idea_BDMIO_8
+	background = GFX_BDMIO_8_background
+	equipment_type = { 						#设备类型
+		mio_cat_eq_all_battleship	#战列舰
+		mio_cat_eq_all_carrier		#航母
+		mio_cat_eq_all_cruiser		#巡洋舰
+		mio_cat_eq_all_destroyer	#驱逐舰
+	}		
+	research_categories = {						#研究类别
+		mio_cat_tech_all_capital_ship_and_modules	#所有主力舰及配件
+		mio_cat_tech_all_ship_hull_submarine_and_modules	#所有屏卫舰及配件
+	}
+
+allowed = {always= yes}	
+available = { 
+ 	owner = {	OR = {tag = BGD
+                          tag = PM5}  }
+	} #可用
+	tree_header_text = {
+		text = "BDMIO_8_x0"
+		x = 0
+	}
+	tree_header_text = {
+		text = "BDMIO_8_x2"
+		x = 2
+	}
+	tree_header_text = {
+		text = "BDMIO_8_x4"
+		x = 4
+	}
+	tree_header_text = {
+		text = "BDMIO_8_x6"
+		x = 6
+	}
+	tree_header_text = {
+		text = "BDMIO_8_x8"
+		x = 8
+	}
+	
+	initial_trait = {
+		token = BDMIO_8_00
+		name = BDMIO_8_00
+		
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+	trait = {
+		token = BDMIO_8_11
+		name = BDMIO_8_11
+		icon = GFX_trait_BDMIO_8_11
+
+		position = { x=0 y=0 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_carrier
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_11"
+			}
+		}
+		
+		equipment_bonus = {
+            anti_air_attack = 0.5 		#防空
+			carrier_size = 2			#搭载量
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_12
+		name = BDMIO_8_12
+		icon = GFX_trait_BDMIO_8_12
+
+		position = { x=0 y=2 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_carrier
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_12"
+			}
+		}
+		
+		equipment_bonus = {
+            max_strength = 0.2	#hp
+			surface_visibility = -0.3	#水面可见
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_13
+		name = BDMIO_8_13
+		icon = GFX_trait_BDMIO_8_13
+
+		position = { x=0 y=4 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_carrier
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_13"
+			}
+		}
+		
+		equipment_bonus = {
+            naval_speed = 0.35	#速度
+			reliability = 0.1	#可靠性
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_21
+		name = BDMIO_8_21
+		icon = GFX_trait_BDMIO_8_21
+
+		position = { x=2 y=0 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_cruiser
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_21"
+			}
+		}
+		
+		equipment_bonus = {
+            lg_attack = 0.2							#轻炮
+			naval_light_gun_hit_chance_factor = 0.1	#轻炮命中
+			lg_armor_piercing = 0.2					#轻炮穿深
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_22
+		name = BDMIO_8_22
+		icon = GFX_trait_BDMIO_8_22
+
+		position = { x=2 y=2 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_cruiser
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_22"
+			}
+		}
+		
+		equipment_bonus = {
+            max_strength = 0.15	#hp
+			naval_torpedo_damage_reduction_factor = 0.3			#鱼雷损伤降低
+			naval_torpedo_enemy_critical_chance_factor = -0.3	#来袭鱼雷致命一击
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_23
+		name = BDMIO_8_23
+		icon = GFX_trait_BDMIO_8_23
+
+		position = { x=2 y=4 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_cruiser
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_23"
+			}
+		}
+		
+		equipment_bonus = {
+            naval_speed = 0.3	#速度
+            anti_air_attack = 0.3		#防空
+			fuel_consumption = -0.1		#油耗
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_31
+		name = BDMIO_8_31
+		icon = GFX_trait_BDMIO_8_31
+
+		position = { x=4 y=0 }
+		
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_31"
+			}
+		}
+		
+		production_bonus = {
+			production_cost_factor = -0.1	#降低生产成本
+			production_resource_need_factor = 0.05		#资源需求
+		}
+		
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.15			#经费
+			military_industrial_organization_research_bonus = 0.05		#研究
+		}
+	}
+	trait = {
+		token = BDMIO_8_32
+		name = BDMIO_8_32
+		icon = GFX_trait_BDMIO_8_32
+
+		position = { x=4 y=2 }
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_32"
+			}
+		}
+		
+		production_bonus = {
+			production_capacity_factor = 0.1	#提高产量
+			production_resource_penalty_factor = 0.1	#资源不足的惩罚。
+		}
+		
+		organization_modifier = {
+			military_industrial_organization_size_up_requirement = -0.15	#规模
+			military_industrial_organization_research_bonus = 0.05			#研究
+		}
+	}
+	trait = {
+		token = BDMIO_8_33
+		name = BDMIO_8_33
+		icon = GFX_trait_BDMIO_8_33
+
+		position = { x=4 y=4 }
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_33"
+			}
+		}
+		
+		production_bonus = {
+			production_conversion_speed_factor = 0.5	#改装速度
+			production_resource_penalty_factor = 0.1	#资源不足的惩罚。
+		}
+		
+		equipment_bonus = {
+            reliability = 0.1		#可靠性
+		}
+		organization_modifier = {
+			military_industrial_organization_design_team_assign_cost = -0.4
+			military_industrial_organization_design_team_change_cost = -0.4
+			military_industrial_organization_research_bonus = 0.1		#研究
+		}
+	}
+	trait = {
+		token = BDMIO_8_41
+		name = BDMIO_8_41
+		icon = GFX_trait_BDMIO_8_41
+
+		position = { x=6 y=0 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_destroyer
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_41"
+			}
+		}
+		
+		equipment_bonus = {
+            torpedo_attack = 0.3				#鱼雷攻击
+			naval_torpedo_hit_chance_factor = 0.2	#鱼雷命中
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_42
+		name = BDMIO_8_42
+		icon = GFX_trait_BDMIO_8_42
+
+		position = { x=6 y=2 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_destroyer
+		}
+		
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_42"
+			}
+		}
+		
+		equipment_bonus = {
+			sub_detection = 0.4		#对潜探测
+			sub_attack = 0.3		#深水炸弹
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_43
+		name = BDMIO_8_43
+		icon = GFX_trait_BDMIO_8_43
+
+		position = { x=6 y=4 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_destroyer
+		}
+		
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_43"
+			}
+		}
+		
+		equipment_bonus = {
+			naval_range = 0.75	#航程
+			naval_speed = 0.3	#速度
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_51
+		name = BDMIO_8_51
+		icon = GFX_trait_BDMIO_8_51
+
+		position = { x=8 y=0 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_battleship
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_51"
+			}
+		}
+		
+		equipment_bonus = {
+            hg_attack = 0.3								#重炮
+			naval_heavy_gun_hit_chance_factor = 0.1		#重炮命中
+			hg_armor_piercing = 0.2						#重炮穿深
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_52
+		name = BDMIO_8_52
+		icon = GFX_trait_BDMIO_8_52
+
+		position = { x=8 y=2 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_battleship
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_52"
+			}
+		}
+		
+		equipment_bonus = {
+            max_strength = 0.2	#hp
+			armor_value = 0.4	#装甲
+			naval_torpedo_damage_reduction_factor = 0.2		#鱼雷损伤降低
+			naval_torpedo_enemy_critical_chance_factor = -0.1	#来袭鱼雷致命一击
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+	trait = {
+		token = BDMIO_8_53
+		name = BDMIO_8_53
+		icon = GFX_trait_BDMIO_8_53
+
+		position = { x=8 y=4 }
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_battleship
+		}
+
+		on_complete = { 
+			hidden_effect = {
+				play_song = "BD_music_8_53"
+			}
+		}
+		
+		equipment_bonus = {
+            naval_speed = 0.4		#速度
+			anti_air_attack = 0.2		#防空
+			build_cost_ic = 0.05	#生产花费
+		}
+	}
+}
