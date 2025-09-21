@@ -286,7 +286,7 @@ on_actions = {
 			}
 
 			if = {
-				# PRC Kill ROC
+				# PRC Kill CHI
 				limit = {
 					FROM = {
 						OR = {
@@ -297,28 +297,28 @@ on_actions = {
 						original_tag = CHI
 					}
 				}
-				ROC = {
+				CHI = {
 					transfer_navy = {
 						target = PRC
 					}
 				}
 				PRC = {
-					white_peace = ROC
+					white_peace = CHI
 					annex_country = {
-						target = ROC
+						target = CHI
 						transfer_troops = yes
 					}
 					every_state = {
 						limit = {
-							is_core_of = ROC
+							is_core_of = CHI
 						}
-						remove_core_of = ROC
+						remove_core_of = CHI
 					}
 					every_state = {
     				    limit = {
-    				        is_core_of = ROC
+    				        is_core_of = CHI
     				    }
-    				    transfer_state_to = ROC
+    				    transfer_state_to = CHI
     				}
 					country_event = {
 						id = bgd.1984
