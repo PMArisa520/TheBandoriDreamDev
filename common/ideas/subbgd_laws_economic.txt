@@ -37,7 +37,7 @@ ideas = {
 		}
 		}
 		BGD_jingji_huangjin_shidai = {
-		picture = laws_economic_focus
+		picture = BGD_Golden_Age
 		removal_cost = -1
 		level = 6
 		cancel_if_invalid = no

@@ -133,4 +133,8 @@ spriteTypes = {
 		name = "GFX_idea_Enthusiastic_Army"
 		textureFile = "gfx\interface\laws\military_laws\BGX_Enthusiastic_Army.png"
 	}
+	spriteType = {
+		name = "GFX_idea_BGD_Golden_Age"
+		textureFile = "gfx\interface\laws\economic_laws\BGX_Golden_Age.png"
+	}
 }
