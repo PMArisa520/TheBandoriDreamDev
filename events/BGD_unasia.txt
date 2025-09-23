@@ -1824,7 +1824,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-		#hidden_effect = {
+		hidden_effect = {
 			every_country = {
 				limit = {
 					AND = {
@@ -1882,6 +1882,11 @@ country_event = {
 						nationalist = 100
 					}
 					leave_faction = yes
+					set_party_name = {
+						ideology = nationalist
+						long_name = BGX_EAPA_PARTY_long
+						name = BGX_EAPA_PARTY
+					}
 				}
 				TZN = {
 					create_faction = BGX_EAPA
@@ -1897,7 +1902,7 @@ country_event = {
 					}
 				}
 			}
-		#}
+		}
 	}
 	option = {
 		name = unasia.21.a
