@@ -1823,10 +1823,140 @@ country_event = {
 	picture = GFX_bangdream_victory
 	fire_only_once = yes
 	is_triggered_only = yes
+	immediate = {
+		#hidden_effect = {
+			every_country = {
+				limit = {
+					AND = {
+						OR = {
+							controls_state = 550
+							controls_state = 867
+							controls_state = 268
+							controls_state = 1140
+							controls_state = 271
+							controls_state = 1141
+							controls_state = 1297
+							controls_state = 674
+							controls_state = 866
+							controls_state = 955
+							controls_state = 559
+							controls_state = 807
+							controls_state = 269
+							controls_state = 762
+							controls_state = 1351
+							controls_state = 1344
+							controls_state = 1445
+							controls_state = 1348
+							controls_state = 548
+							controls_state = 1353
+							controls_state = 1352
+							controls_state = 547
+							controls_state = 1354
+							controls_state = 781
+							controls_state = 780
+							controls_state = 546
+							controls_state = 544
+							controls_state = 820
+							controls_state = 543
+							controls_state = 1345
+							controls_state = 1295
+							controls_state = 708
+						}
+						OR = {
+							NOT = { original_tag = BGD }
+							NOT = { original_tag = UA1 }
+							NOT = { original_tag = UA2 }
+							NOT = { original_tag = UA3 }
+							NOT = { original_tag = UA4 }
+							NOT = { has_country_flag = APFNO_member }
+							NOT = { has_country_flag = UNE_member }
+						}
+					}
+				}
+				THIS = {
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+					set_popularities = {
+						nationalist = 100
+					}
+					leave_faction = yes
+				}
+				TZN = {
+					create_faction = BGX_EAPA
+				}
+			}
+			if = {
+				limit = {
+					country_exists = TDF
+				}
+				TDF = {
+					annex_country = {
+						target = ETH
+					}
+				}
+			}
+		#}
+	}
 	option = {
 		name = unasia.21.a
 		add_political_power = 50
 		add_stability = 0.02
+		hidden_effect = {
+			every_country = {
+				limit = {
+					AND = {
+						OR = {
+							controls_state = 550
+							controls_state = 867
+							controls_state = 268
+							controls_state = 1140
+							controls_state = 271
+							controls_state = 1141
+							controls_state = 1297
+							controls_state = 674
+							controls_state = 866
+							controls_state = 955
+							controls_state = 559
+							controls_state = 807
+							controls_state = 269
+							controls_state = 762
+							controls_state = 1351
+							controls_state = 1344
+							controls_state = 1445
+							controls_state = 1348
+							controls_state = 548
+							controls_state = 1353
+							controls_state = 1352
+							controls_state = 547
+							controls_state = 1354
+							controls_state = 781
+							controls_state = 780
+							controls_state = 546
+							controls_state = 544
+							controls_state = 820
+							controls_state = 543
+							controls_state = 1345
+							controls_state = 1295
+							controls_state = 708
+						}
+						OR = {
+							NOT = { original_tag = BGD }
+							NOT = { original_tag = UA1 }
+							NOT = { original_tag = UA2 }
+							NOT = { original_tag = UA3 }
+							NOT = { original_tag = UA4 }
+							NOT = { has_country_flag = APFNO_member }
+							NOT = { has_country_flag = UNE_member }
+						}
+					}
+				}
+				TZN = {
+					add_to_faction = PREV
+				}
+			}
+		}
 	}
 }
 
@@ -2063,15 +2193,9 @@ country_event = {
         		NOT = { tag = BGD }  # 排除自己
         		#is_subject = no      # 可选：排除附属国
         	}
-			#PREV = {
-			#	leave_faction = yes
-			#	#remove_ideas_with_trait = ZZZ_blank_idea_trait
-			#}
-			PER = {
+			THIS = {
 				leave_faction = yes
-			}
-			ZET = {
-				leave_faction = yes
+				#remove_ideas_with_trait = ZZZ_blank_idea_trait
 			}
 
         	BGD = {
@@ -2316,5 +2440,203 @@ country_event = {
 	option = {
 		name = unasia.32.a
 		add_stability = 0.4
+	}
+}
+
+country_event = {
+	#宣布建立东非联盟
+	id = unasia.2000
+	title = unasia.2000.t
+	desc = unasia.2000.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			transfer_state = 550
+			transfer_state = 867
+			transfer_state = 268
+			transfer_state = 1140
+			transfer_state = 271
+			transfer_state = 1141
+			transfer_state = 1297
+			transfer_state = 674
+			transfer_state = 866
+			transfer_state = 955
+			transfer_state = 559
+			transfer_state = 807
+			transfer_state = 269
+			transfer_state = 762
+			transfer_state = 1351
+			transfer_state = 1344
+			transfer_state = 1445
+			transfer_state = 1348
+			transfer_state = 548
+			transfer_state = 1353
+			transfer_state = 1352
+			transfer_state = 547
+			transfer_state = 1354
+			transfer_state = 781
+			transfer_state = 780
+			transfer_state = 546
+			transfer_state = 544
+			transfer_state = 820
+			transfer_state = 543
+			transfer_state = 1345
+			transfer_state = 1295
+			transfer_state = 708
+		}
+	}
+	option = {
+		name = unasia.2000.o
+		custom_effect_tooltip = "UA4_AFR_1"
+		custom_effect_tooltip = "UA4_AFR"
+		set_province_name = {
+			id = 1939
+			name = "BGD_Equator_City"
+		}
+		hidden_effect = {
+			BGD = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					set_autonomy = {
+						target = UA4
+						autonomy_state = bgd_allied_countries_state
+					}
+				}
+				else = {
+					puppet = UA4
+				}
+
+				remove_state_core = 550
+				remove_state_core = 867
+				remove_state_core = 268
+				remove_state_core = 1140
+				remove_state_core = 271
+				remove_state_core = 1141
+				remove_state_core = 1297
+				remove_state_core = 674
+				remove_state_core = 866
+				remove_state_core = 955
+				remove_state_core = 559
+				remove_state_core = 807
+				remove_state_core = 269
+				remove_state_core = 762
+				remove_state_core = 1351
+				remove_state_core = 1344
+				remove_state_core = 1445
+				remove_state_core = 1348
+				remove_state_core = 548
+				remove_state_core = 1353
+				remove_state_core = 1352
+				remove_state_core = 547
+				remove_state_core = 1354
+				remove_state_core = 781
+				remove_state_core = 780
+				remove_state_core = 546
+				remove_state_core = 544
+				remove_state_core = 820
+				remove_state_core = 543
+				remove_state_core = 1345
+				remove_state_core = 1295
+				remove_state_core = 708
+			}
+			UA4 = {
+				set_country_flag = UNE_member
+				add_ideas = BGD_RBE_economy
+				create_country_leader = {
+					name = BGD_rana_char
+					desc = BGD_RANA_DESC
+					picture = GFX_portrait_rana
+					ideology = kirakira_dokidoki
+					traits = {
+						east_africa_wildcat
+					}
+				}
+				set_party_name = {
+					ideology = social_democrat
+					long_name = EastAfrica_social_democrat_long
+					name = EastAfrica_social_democrat
+				}
+
+				set_politics = {
+					  ruling_party = social_democrat
+					  elections_allowed = no
+				}
+				add_popularity = {
+					  ideology = social_democrat
+					  popularity = 1
+				}
+				add_ideas = BGD_asian_puppets
+				set_capital = { state = 547 }
+				transfer_state = 550
+				transfer_state = 867
+				transfer_state = 268
+				transfer_state = 1140
+				transfer_state = 271
+				transfer_state = 1141
+				transfer_state = 1297
+				transfer_state = 674
+				transfer_state = 866
+				transfer_state = 955
+				transfer_state = 559
+				transfer_state = 807
+				transfer_state = 269
+				transfer_state = 762
+				transfer_state = 1351
+				transfer_state = 1344
+				transfer_state = 1445
+				transfer_state = 1348
+				transfer_state = 548
+				transfer_state = 1353
+				transfer_state = 1352
+				transfer_state = 547
+				transfer_state = 1354
+				transfer_state = 781
+				transfer_state = 780
+				transfer_state = 546
+				transfer_state = 544
+				transfer_state = 820
+				transfer_state = 543
+				transfer_state = 1345
+				transfer_state = 1295
+				transfer_state = 708
+
+				add_state_core = 550
+				add_state_core = 867
+				add_state_core = 268
+				add_state_core = 1140
+				add_state_core = 271
+				add_state_core = 1141
+				add_state_core = 1297
+				add_state_core = 674
+				add_state_core = 866
+				add_state_core = 955
+				add_state_core = 559
+				add_state_core = 807
+				add_state_core = 269
+				add_state_core = 762
+				add_state_core = 1351
+				add_state_core = 1344
+				add_state_core = 1445
+				add_state_core = 1348
+				add_state_core = 548
+				add_state_core = 1353
+				add_state_core = 1352
+				add_state_core = 547
+				add_state_core = 1354
+				add_state_core = 781
+				add_state_core = 780
+				add_state_core = 546
+				add_state_core = 544
+				add_state_core = 820
+				add_state_core = 543
+				add_state_core = 1345
+				add_state_core = 1295
+				add_state_core = 708
+			}
+		}
 	}
 }
