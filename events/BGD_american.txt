@@ -1217,5 +1217,36 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	#玩不起
+	id = usnavy.38
+	title = usnavy.38.t
+	desc = usnavy.38.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.38.a
+		every_country = {
+                limit = {
+                    owns_state = 931
+                    exists = yes
+                    NOT = { tag = USN }
+                }
+				BGD = {
+                    declare_war_on = {
+                        type = annex_everything
+                        target = PREV
+                    }
+					add_to_faction = USN
+					puppet = USN
+                }
+				USN = {
+					set_country_flag = attack_Ready
+				}
+            }
+		}
+	}
+
 
 
