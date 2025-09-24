@@ -1989,3 +1989,7 @@ ETI_republic_of_siam = {
 	color = rgb { 232 88 119 }
 	color_ui = rgb { 232 88 119 }
 }
+UA_Military_Gov = {
+	color = rgb { 0 48 154 }
+	color_ui = rgb { 0 48 154 }
+}

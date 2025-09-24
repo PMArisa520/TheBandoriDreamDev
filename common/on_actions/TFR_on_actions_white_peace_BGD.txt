@@ -105,7 +105,6 @@ on_actions = {
 				set_global_flag = skip_default_capitulation
 			}
 
-
 			if = {
 				# Students Kill SIA
 				limit = {
@@ -325,15 +324,479 @@ on_actions = {
 					}
 				}
 			}
+
+			#BGD Kill East African
+			if = {
+				limit = {
+					FROM = {
+						original_tag = BGD
+					}
+					ROOT = {
+						original_tag = TZN
+					}
+				}
+				BGD = {
+					if = {
+						limit = {
+							has_dlc = "Together for Victory"
+						}
+						set_autonomy = {
+							target = UA4
+							autonomy_state = bgd_allied_countries_state
+						}
+					}
+					else = {
+						puppet = UA4
+					}
+				}
+				UA4 = {
+					transfer_state = 550
+					transfer_state = 867
+					transfer_state = 268
+					transfer_state = 1140
+					transfer_state = 271
+					transfer_state = 1141
+					transfer_state = 1297
+					transfer_state = 674
+					transfer_state = 866
+					transfer_state = 955
+					transfer_state = 559
+					transfer_state = 807
+					transfer_state = 269
+					transfer_state = 762
+					transfer_state = 1351
+					transfer_state = 1344
+					transfer_state = 1445
+					transfer_state = 1348
+					transfer_state = 548
+					transfer_state = 1353
+					transfer_state = 1352
+					transfer_state = 547
+					transfer_state = 1354
+					transfer_state = 781
+					transfer_state = 780
+					transfer_state = 546
+					transfer_state = 544
+					transfer_state = 820
+					transfer_state = 543
+					transfer_state = 1345
+					transfer_state = 1295
+					transfer_state = 708
+					set_cosmetic_tag = UA_Military_Gov
+					create_country_leader = {
+						name = "BGD_APFNO_LEADER"
+						desc = "BGD_APFNO_LEADER_DESC"
+						picture = GFX_portrait_AU_MIL
+						ideology = kirakira_dokidoki
+						traits = {
+							rebuild_gov
+						}
+					}
+					set_party_name = {
+						ideology = social_democrat
+						long_name = EastAfrica_social_democrat_long
+						name = EastAfrica_social_democrat
+					}
+				
+					set_politics = {
+						  ruling_party = social_democrat
+						  elections_allowed = no
+					}
+					add_popularity = {
+						  ideology = social_democrat
+						  popularity = 1
+					}
+					set_capital = {
+						state = 547
+					}
+				}
+				set_global_flag = skip_default_capitulation
+			}
 		}
 	}
 }
 
 
 
+on_actions = {
+	on_capitulation_immediate = {#立刻执行#
+		effect = {
+			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+			set_global_flag = show_peace_popup_alert
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+			if = {
+				limit = {
+					event_target:losing_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:losing_country
+						}
+					}
+				}
+				set_global_flag = losing_country_multiple
+			}
+			if = {
+				limit = {
+					event_target:winning_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:winning_country
+						}
+					}
+				}
+				set_global_flag = winning_country_multiple
+			}
+			#BGD Kill World
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = BGD
+							is_ally_with = BGD
+						}
+					}
+					ROOT = {
+						OR = {
+							NOT = {
+								original_tag = BGD
+							}
+							NOT = {
+								is_ally_with = BGD
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							has_idea = african_union_member
+						}
+					}
+					log = "Kasumi Fucking African!!! KILL [Root.GetName]"
+					ROOT = {
+						white_peace = FROM
+						ASIA_MIL_GOV_EFF = yes
+					}
+					FROM = {
+						#white_peace = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = bgd_allied_countries_state
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = BGD
+								is_ally_with = BGD
+							}
+						}
+						ROOT = {
+							has_idea = USA_battle_for_america_idea
+						}
+					}
+					USN = {
+						annex_country = {
+							target = ROOT
+						}
+						every_owned_state = {
+							limit = { controller = { tag = USN } }
+							add_core_of = USN
+						}
+					}
+					log = "Kasumi Fucking American @USA!!! KILL [Root.GetName]"
+				}
+				else_if = {
+					# ASIAN Kill HRL
+					limit = {
+						BGD = { has_cosmetic_tag = BGD_united_asia }
+						FROM = {
+							OR = {
+								original_tag = BGD
+								is_ally_with = BGD
+							}
+						}
+						ROOT = {
+							original_tag = HRL
+						}
+					}
+					log = "Kasumi Fucking NORTH AFRICAN @HRL!!! KILL [Root.GetName]"
+					FROM = {
+						white_peace = ROOT
+						MOR = {
+							transfer_state = 290
+							transfer_state = 461
+							transfer_state = 462
+							transfer_state = 699
+							transfer_state = 882
+							ASIA_MIL_GOV_EFF = yes
+						}
+						ALG = {
+							transfer_state = 514
+							transfer_state = 513
+							transfer_state = 459
+							transfer_state = 460
+							transfer_state = 1331
+							ASIA_MIL_GOV_EFF = yes
+						}
+						TUN = {
+							transfer_state = 665
+							transfer_state = 458
+							ASIA_MIL_GOV_EFF = yes
+						}
+						if = {
+							limit = {
+								has_dlc = "Together for Victory"
+							}
+							set_autonomy = {
+								target = MOR
+								autonomy_state = bgd_allied_countries_state
+							}
+						}
+						else = {
+							puppet = MOR
+						}
+						if = {
+							limit = {
+								has_dlc = "Together for Victory"
+							}
+							set_autonomy = {
+								target = ALG
+								autonomy_state = bgd_allied_countries_state
+							}
+						}
+						else = {
+							puppet = ALG
+						}
+						if = {
+							limit = {
+								has_dlc = "Together for Victory"
+							}
+							set_autonomy = {
+								target = TUN
+								autonomy_state = bgd_allied_countries_state
+							}
+						}
+						else = {
+							puppet = TUN
+						}
+						if = {
+							limit = {
+								has_dlc = "Together for Victory"
+							}
+							set_autonomy = {
+								target = ROOT
+								autonomy_state = bgd_allied_countries_state
+							}
+						}
+						else = {
+							puppet = ROOT
+						}
+					}
+					ROOT = {
+						white_peace = FROM
+						ASIA_MIL_GOV_EFF = yes
+					}
+				}
+				else_if = {
+					# ASIAN Kill MLI
+					limit = {
+						BGD = { has_cosmetic_tag = BGD_united_asia }
+						FROM = {
+							OR = {
+								original_tag = BGD
+								is_ally_with = BGD
+							}
+						}
+						ROOT = {
+							original_tag = MLI
+						}
+					}
+					log = "Kasumi Fucking WEST AFRICAN @MLI!!! KILL [Root.GetName]"
+					FROM = {
+						if = {
+							limit = {
+								has_dlc = "Together for Victory"
+							}
+							set_autonomy = {
+								target = ROOT
+								autonomy_state = bgd_allied_countries_state
+							}
+						}
+						else = {
+							puppet = ROOT
+						}
+						VOL = {
+							transfer_state = 750
+							transfer_state = 751
+							ASIA_MIL_GOV_EFF = yes
+						}
+						NGR = {
+							transfer_state = 749
+							transfer_state = 748
+							transfer_state = 747
+							ASIA_MIL_GOV_EFF = yes
+						}
+						BIA = {
+							transfer_state = 764
+							ASIA_MIL_GOV_EFF = yes
+						}
+						GNA = {
+							transfer_state = 775
+							transfer_state = 774
+							ASIA_MIL_GOV_EFF = yes
+						}
+						if = {
+							limit = {
+								has_dlc = "Together for Victory"
+							}
+							set_autonomy = {
+								target = VOL
+								autonomy_state = bgd_allied_countries_state
+							}
+						}
+						else = {
+							puppet = VOL
+						}
+						if = {
+							limit = {
+								has_dlc = "Together for Victory"
+							}
+							set_autonomy = {
+								target = NGR
+								autonomy_state = bgd_allied_countries_state
+							}
+						}
+						else = {
+							puppet = NGR
+						}
+						if = {
+							limit = {
+								has_dlc = "Together for Victory"
+							}
+							set_autonomy = {
+								target = BIA
+								autonomy_state = bgd_allied_countries_state
+							}
+						}
+						else = {
+							puppet = BIA
+						}
+						if = {
+							limit = {
+								has_dlc = "Together for Victory"
+							}
+							set_autonomy = {
+								target = GNA
+								autonomy_state = bgd_allied_countries_state
+							}
+						}
+						else = {
+							puppet = GNA
+						}
+					}
+					ROOT = {
+						white_peace = FROM
+						ASIA_MIL_GOV_EFF = yes
+					}
+					every_country = {
+						limit = {
+							has_country_flag = West_African_Nations
+						}
+						white_peace = BGD
+						ASIA_MIL_GOV_EFF = yes
+						clr_country_flag = West_African_Nations
+						BGD = {
+							if = {
+								limit = {
+									has_dlc = "Together for Victory"
+								}
+								set_autonomy = {
+									target = PREV
+									autonomy_state = bgd_allied_countries_state
+								}
+							}
+							else = {
+								puppet = PREV
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						BGD = { has_cosmetic_tag = unrestricted_diplomacy_flag }
+						FROM = {
+							OR = {
+								original_tag = BGD
+								is_ally_with = BGD
+							}
+						}
+					}
+					ROOT = {
+						white_peace = FROM
+						ASIA_MIL_GOV_EFF = yes
+					}
+					FROM = {
+						#white_peace = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = bgd_allied_countries_state
+						}
+					}
+
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = BGD
+								is_ally_with = BGD
+							}
+						}
+					}
+					log = "KIRAKIRA"
+					BGD = {
+						annex_country = {
+							target = ROOT
+						}
+					}
+				}
+				set_global_flag = skip_default_capitulation
+			}
+		}
+	}
+}
 
 
-
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_cosmetic_tag = UA_Military_Gov
+					OR = {
+						has_idea_with_trait = ZZZ_blank_idea_trait
+						NOT = {
+							has_government = social_democrat
+						}
+					}
+				}
+				log = "1231"
+				remove_ideas_with_trait = ZZZ_blank_idea_trait
+				set_politics = {
+					ruling_party = social_democrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
 
 
 
@@ -383,4 +846,4 @@ if = {
 		}
 	}
 	set_global_flag = skip_default_capitulation
-	}
+}

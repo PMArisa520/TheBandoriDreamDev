@@ -95,7 +95,6 @@ BGD_Interference_in_Thailand = {
 			has_country_flag = Thai_End_of_interference
 		}
 	}
-    visible_when_empty = yes
 	priority = 97
 }
 
@@ -128,4 +127,17 @@ BGD_shaonv_paifa = {
 		has_country_flag = BGD_shaonv_yuedui_paifa
 	}
 	priority = 80
+}
+
+
+BGD_kasumi_twitter_cat = {
+	icon = GFX_BGD_ksm_social_media
+	allowed = {
+		tag = BGD
+	}
+	visible = {
+		has_country_leader_with_trait = xingzhi_lingxiu
+	}
+	visible_when_empty = yes
+	priority = 114514
 }

@@ -17,3 +17,27 @@ BGD_economic_actions = {
 		economic_actions_array = token:develop_state_economic_action
 	}
 }
+
+ASIA_MIL_GOV_EFF = {
+	set_cosmetic_tag = UA_Military_Gov
+	#add_ideas = BGD_pan_african_kiraism
+	remove_ideas_with_trait = ZZZ_blank_idea_trait
+	create_country_leader = {
+		name = "BGD_APFNO_LEADER"
+		desc = "BGD_APFNO_LEADER_DESC"
+		picture = GFX_portrait_AU_MIL
+		ideology = kirakira_dokidoki
+		traits = {
+			rebuild_gov
+		}
+	}
+	set_party_name = {
+		ideology = social_democrat
+		long_name = BGX_ASIA_ARMY_PARTY_long
+		name = BGX_ASIA_ARMY_PARTY
+	}
+	set_politics = {
+		ruling_party = social_democrat
+		elections_allowed = no
+	}
+}

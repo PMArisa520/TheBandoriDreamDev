@@ -2889,6 +2889,10 @@ BGD_jingji_gongzuo = {
 			expense_growth_factor = 0.1
 		}
 		complete_effect = {
+			country_event = {
+				id = bgd.126
+				days = 45
+			}
 		}
 		remove_effect = {
 			1336 = {
@@ -6180,6 +6184,155 @@ BGD_Interference_in_Thailand = {
 			}
 			add_income = yes
 			hidden_effect = {
+			}
+		}
+	}
+}
+
+
+BGD_kasumi_twitter_cat = {
+	BGD_fucking_east_african = {
+		priority = 1
+		icon = generic_ignite_civil_war
+		cost = 15
+		days_remove = 20
+		fire_only_once = yes
+		allowed = {
+			tag = BGD
+			has_completed_focus = UNITED_ASIA_FUCKING_EAST_AFRICANS_DICTATOR
+		}
+		available = {
+		}
+		visible = {
+			has_completed_focus = UNITED_ASIA_FUCKING_EAST_AFRICANS_DICTATOR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			#hidden_effect = {
+			#	TZN = {
+			#		dismantle_faction = yes
+			#	}
+			#}
+			every_country = {
+				limit = {
+					OR = {
+						controls_state = 550
+						controls_state = 867
+						controls_state = 268
+						controls_state = 1140
+						controls_state = 271
+						controls_state = 1141
+						controls_state = 1297
+						controls_state = 674
+						controls_state = 866
+						controls_state = 955
+						controls_state = 559
+						controls_state = 807
+						controls_state = 269
+						controls_state = 762
+						controls_state = 1351
+						controls_state = 1344
+						controls_state = 1445
+						controls_state = 1348
+						controls_state = 548
+						controls_state = 1353
+						controls_state = 1352
+						controls_state = 547
+						controls_state = 1354
+						controls_state = 781
+						controls_state = 780
+						controls_state = 546
+						controls_state = 544
+						controls_state = 820
+						controls_state = 543
+						controls_state = 1345
+						controls_state = 1295
+						controls_state = 708
+					}
+				}
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+	BGD_fucking_north_african = {
+		priority = 1
+		icon = generic_ignite_civil_war
+		cost = 15
+		days_remove = 20
+		fire_only_once = yes
+		allowed = {
+			tag = BGD
+			has_completed_focus = UNITED_ASIA_FUCKING_NORTH_AFRICANS_DICTATOR
+		}
+		available = {
+		}
+		visible = {
+			has_completed_focus = UNITED_ASIA_FUCKING_NORTH_AFRICANS_DICTATOR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = HRL
+				type = annex_everything
+			}
+		}
+	}
+	BGD_fucking_west_african = {
+		priority = 1
+		icon = generic_ignite_civil_war
+		cost = 15
+		days_remove = 20
+		fire_only_once = yes
+		allowed = {
+			tag = BGD
+			has_completed_focus = UNITED_ASIA_FUCKING_WEST_AFRICANS_DICTATOR
+		}
+		available = {
+		}
+		visible = {
+			has_completed_focus = UNITED_ASIA_FUCKING_WEST_AFRICANS_DICTATOR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = MLI
+						is_ally_with = MLI
+					}
+				}
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+				set_country_flag = West_African_Nations
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						country_exists = TDF
+					}
+					ETH = {
+						annex_country = {
+							target = TDF
+						}
+					}
+				}
 			}
 		}
 	}

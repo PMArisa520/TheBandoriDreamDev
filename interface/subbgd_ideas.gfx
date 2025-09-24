@@ -125,8 +125,8 @@ spriteTypes = {
 		textureFile = "gfx\interface\ideas\asia_union.png"
 	}
 	spriteType = {
-		name = "GFX_idea_asian_puppets"
-		textureFile = "gfx\interface\ideas\Asian_puppets.png"
+		name = "GFX_idea_pan_african_kiraism"
+		textureFile = "gfx\interface\ideas\pan_african_kiraism.png"
 	}
 
 	spriteType = {

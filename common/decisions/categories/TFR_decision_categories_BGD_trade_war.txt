@@ -1,5 +1,5 @@
 decisions_BGD_trade_war = {
-	priority = 100001
+	priority = 100
 	icon = GFX_gui_ppp_party_small
 	
 	

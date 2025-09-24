@@ -105,5 +105,10 @@ spriteTypes = {
 		texturefile = "gfx\texticons\banners\flags\POTFRJ_flag.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_BGD_kasumi_twitter_cat_banner"
+		texturefile = "gfx\texticons\banners\decisions\BGD_kasumi_twitter_cat.png"
+		legacy_lazy_load = no
+	}
 }
 

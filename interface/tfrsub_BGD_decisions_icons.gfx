@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_BGD_ksm_social_media"
+        texturefile = "gfx\interface\decisions\BGD\BGD_ksm_social_media.png"
+	}
+}

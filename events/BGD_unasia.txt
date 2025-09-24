@@ -434,6 +434,17 @@ country_event = {
 				set_country_flag = UNE_member
 			}
 		}
+		if = {
+			limit = {
+				CAN = {
+					has_country_flag = APFNO_member
+				}
+			}
+			CAN = {
+				clr_country_flag = APFNO_member
+				set_country_flag = UNE_member
+			}
+		}
 
 		if = {
 			limit = {
@@ -1874,6 +1885,10 @@ country_event = {
 					}
 				}
 				THIS = {
+					if = {
+						limit = { NOT = { has_idea = african_union_member } }
+						add_ideas = african_union_member
+					}
 					set_politics = {
 						ruling_party = nationalist
 						elections_allowed = no
@@ -1896,9 +1911,9 @@ country_event = {
 				limit = {
 					country_exists = TDF
 				}
-				TDF = {
+				ETH = {
 					annex_country = {
-						target = ETH
+						target = TDF
 					}
 				}
 			}
@@ -1909,6 +1924,11 @@ country_event = {
 		add_political_power = 50
 		add_stability = 0.02
 		hidden_effect = {
+			set_country_flag = BGD_start_fucking_dictator
+			BGD = {
+				mark_focus_tree_layout_dirty = yes
+			}
+			complete_national_focus = UNITED_ASIA_FUCKING_DICTATOR
 			every_country = {
 				limit = {
 					AND = {
@@ -2047,9 +2067,9 @@ country_event = {
         		NOT = { tag = BGD }  # 排除自己
         		#is_subject = no      # 可选：排除附属国
         	}
-			PREV = {
-					leave_faction = yes	
-				}
+			THIS = {
+				leave_faction = yes
+			}
         	BGD = {
         	    create_wargoal = {
         	        type = liberate_wargoal
@@ -2331,7 +2351,7 @@ country_event = {
         		NOT = { tag = BGD }  # 排除自己
         		#is_subject = no      # 可选：排除附属国
         	}
-			PREV = {
+			THIS = {
 				leave_faction = yes	
 			}
         	BGD = {
@@ -2457,40 +2477,40 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = {
-			transfer_state = 550
-			transfer_state = 867
-			transfer_state = 268
-			transfer_state = 1140
-			transfer_state = 271
-			transfer_state = 1141
-			transfer_state = 1297
-			transfer_state = 674
-			transfer_state = 866
-			transfer_state = 955
-			transfer_state = 559
-			transfer_state = 807
-			transfer_state = 269
-			transfer_state = 762
-			transfer_state = 1351
-			transfer_state = 1344
-			transfer_state = 1445
-			transfer_state = 1348
-			transfer_state = 548
-			transfer_state = 1353
-			transfer_state = 1352
-			transfer_state = 547
-			transfer_state = 1354
-			transfer_state = 781
-			transfer_state = 780
-			transfer_state = 546
-			transfer_state = 544
-			transfer_state = 820
-			transfer_state = 543
-			transfer_state = 1345
-			transfer_state = 1295
-			transfer_state = 708
-		}
+		#hidden_effect = {
+		#	transfer_state = 550
+		#	transfer_state = 867
+		#	transfer_state = 268
+		#	transfer_state = 1140
+		#	transfer_state = 271
+		#	transfer_state = 1141
+		#	transfer_state = 1297
+		#	transfer_state = 674
+		#	transfer_state = 866
+		#	transfer_state = 955
+		#	transfer_state = 559
+		#	transfer_state = 807
+		#	transfer_state = 269
+		#	transfer_state = 762
+		#	transfer_state = 1351
+		#	transfer_state = 1344
+		#	transfer_state = 1445
+		#	transfer_state = 1348
+		#	transfer_state = 548
+		#	transfer_state = 1353
+		#	transfer_state = 1352
+		#	transfer_state = 547
+		#	transfer_state = 1354
+		#	transfer_state = 781
+		#	transfer_state = 780
+		#	transfer_state = 546
+		#	transfer_state = 544
+		#	transfer_state = 820
+		#	transfer_state = 543
+		#	transfer_state = 1345
+		#	transfer_state = 1295
+		#	transfer_state = 708
+		#}
 	}
 	option = {
 		name = unasia.2000.o
@@ -2549,6 +2569,7 @@ country_event = {
 				remove_state_core = 708
 			}
 			UA4 = {
+				drop_cosmetic_tag = yes
 				set_country_flag = UNE_member
 				add_ideas = BGD_RBE_economy
 				create_country_leader = {
@@ -2568,13 +2589,15 @@ country_event = {
 
 				set_politics = {
 					  ruling_party = social_democrat
-					  elections_allowed = no
+					  elections_allowed = yes
+					  election_frequency = 48
+					  last_election = "2030.1.1"
 				}
 				add_popularity = {
 					  ideology = social_democrat
 					  popularity = 1
 				}
-				add_ideas = BGD_asian_puppets
+				add_ideas = BGD_pan_african_kiraism
 				set_capital = { state = 547 }
 				transfer_state = 550
 				transfer_state = 867
@@ -2643,5 +2666,45 @@ country_event = {
 				add_state_core = 708
 			}
 		}
+	}
+}
+
+country_event = {
+	#操你妈东非
+	id = unasia.2001
+	title = unasia.2001.t
+	desc = unasia.2001.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.2001.a
+		unlock_decision_tooltip = BGD_fucking_east_african
+	}
+}
+country_event = {
+	#操你妈北非
+	id = unasia.2002
+	title = unasia.2002.t
+	desc = unasia.2002.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.2002.a
+		unlock_decision_tooltip = BGD_fucking_north_african
+	}
+}
+country_event = {
+	#操你妈西非
+	id = unasia.2003
+	title = unasia.2003.t
+	desc = unasia.2003.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.2003.a
+		unlock_decision_tooltip = BGD_fucking_west_african
 	}
 }

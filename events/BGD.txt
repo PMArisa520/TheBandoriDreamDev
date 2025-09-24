@@ -2823,3 +2823,25 @@ country_event = {
 		add_stability = 0.1
 	}
 }
+
+country_event = {
+	#行波堆“星辰之心”一号机组建设现场，其一
+	id = bgd.126
+	title = bgd.126.t
+	desc = bgd.126.d
+	picture = GFX_ksar_5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.126.a
+		add_stability = 0.05
+		1334 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = nuclear_reactor
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}

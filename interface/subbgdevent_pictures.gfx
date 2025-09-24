@@ -78,6 +78,10 @@ spriteTypes = {
 		texturefile = "gfx\event_pictures\ksar_3.png"
 	}
 	spriteType = {
+		name = "GFX_ksar_5"
+		texturefile = "gfx\event_pictures\ksar_5.png"
+	}
+	spriteType = {
 		name = "GFX_ksar_4"
 		texturefile = "gfx\event_pictures\ksar_4.png"
 	}

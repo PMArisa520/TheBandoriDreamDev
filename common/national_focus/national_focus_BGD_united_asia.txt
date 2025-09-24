@@ -639,5 +639,103 @@ focus_tree = {
 			}
 		}
 	}
-}
 
+
+
+
+
+	##################
+	#FUCKING DICTATOR#
+	##################
+
+
+
+
+
+	focus = {
+		id = UNITED_ASIA_FUCKING_DICTATOR
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 16
+		y = 2
+		allow_branch = {
+			has_country_flag = BGD_start_fucking_dictator
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_FUCKING_EAST_AFRICANS_DICTATOR
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 18
+		y = 3
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_DICTATOR
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2001
+			}
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_FUCKING_NORTH_AFRICANS_DICTATOR
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 16
+		y = 3
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_DICTATOR
+		}
+		bypass = {
+			HRL = {
+				NOT = { has_cosmetic_tag = HRL_arab_republic }
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2002
+			}
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_FUCKING_WEST_AFRICANS_DICTATOR
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 14
+		y = 3
+		available = {
+			MLT = {
+				has_cosmetic_tag = MLT_sahel_federation
+			}
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_DICTATOR
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2003
+			}
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_RANA_EAST_AFRICANS_DICTATOR
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 18
+		y = 4
+		available = {
+			UA4 = {
+				controls_state = 547
+				has_cosmetic_tag = UA_Military_Gov
+			}
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_EAST_AFRICANS_DICTATOR
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2000
+			}
+		}
+	}
+}

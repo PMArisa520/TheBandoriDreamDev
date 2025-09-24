@@ -55,6 +55,10 @@ spriteTypes = {
 		texturefile = "gfx\leaders\APFNO.png"
 	}
 	spriteType = {
+		name = "GFX_portrait_AU_MIL"
+		texturefile = "gfx\leaders\AU_MIL.png"
+	}
+	spriteType = {
 		name = "GFX_portrait_Mana"
 		texturefile = "gfx\leaders\BGD_mana.png"
 	}
