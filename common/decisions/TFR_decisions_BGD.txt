@@ -3092,6 +3092,7 @@ BGD_guojia_waijiao = {
 		}
 		available = {
 			has_global_flag = USA_american_civil_war_over_global
+			NOT = {USN = {owns_state = 931}}
 		}
 		complete_effect = {
 			country_event = {id = usnavy.38}

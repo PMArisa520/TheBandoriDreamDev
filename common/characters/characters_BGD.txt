@@ -787,4 +787,14 @@ characters = {
 		#	logistics_skill = 3
 		#}
 	}
+	BGD_zheng_char = {
+		name = BGD_zheng_char
+		portraits = {
+			#army = {
+				#small = "gfx\interface\ideas\BGD\ministers\BGD_nanami_1.png"
+			#}
+			army = {
+				large = GFX_portrait_zheng
+			}
+		}
 }

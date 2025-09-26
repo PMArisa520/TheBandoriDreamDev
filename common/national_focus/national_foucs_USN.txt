@@ -114,7 +114,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		#患难见真情
+		#一起，变强
 	    id = USN_true_feelings
 		icon = GFX_guoce_zhanwei
 		cost = 3

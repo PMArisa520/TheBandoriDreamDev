@@ -62,4 +62,9 @@ spriteTypes = {
 		name = "GFX_portrait_Mana"
 		texturefile = "gfx\leaders\BGD_mana.png"
 	}
+
+	spriteType = {
+		name = "GFX_portrait_zheng"
+		texturefile = "gfx\leaders\EAS\zheng.png"
+	}
 }

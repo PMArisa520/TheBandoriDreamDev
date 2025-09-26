@@ -2465,6 +2465,19 @@ country_event = {
 	option = {
 		name = unasia.32.a
 		add_stability = 0.4
+		BGD = {
+			add_corps_commander_role = {
+				Character = BGD_zheng_char
+				skill = 5
+				attack_skill = 10
+				defense_skill = 10
+				planning_skill = 10
+				logistics_skill = 10
+				traits = {
+					shangdi_ji
+				}
+			}
+		}
 	}
 }
 

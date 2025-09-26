@@ -30,6 +30,7 @@ recruit_character = BGD_pareo_char
 recruit_character = BGD_Tsukushi_char
 recruit_character = BGD_Rui_char
 recruit_character = BGD_Nanami_char
+recruit_character = BGD_zheng_char
 
 set_technology = {
 	## Infantry ##
