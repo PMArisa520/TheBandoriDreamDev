@@ -234,10 +234,17 @@ endgui_startup_tt: "§w历史将在此翻开新的一页§!。"
 
 
 UNITED_ASIA_FUCKING_DICTATOR: "绞杀独裁者"
+UNITED_ASIA_Liberate_the_Dark_Continent: "解放“黑暗大陆”"
 UNITED_ASIA_FUCKING_EAST_AFRICANS_DICTATOR: "处理东非独裁现象"
 UNITED_ASIA_FUCKING_NORTH_AFRICANS_DICTATOR: "消灭北非集权国家"
 UNITED_ASIA_FUCKING_WEST_AFRICANS_DICTATOR: "终结西非独裁现象"
 UNITED_ASIA_RANA_EAST_AFRICANS_DICTATOR: "帮助东非人民建立东非联盟"
+UNITED_ASIA_FUCKING_Nile_River: "非洲动脉：尼罗河"
+
+UNITED_ASIA_FUCKING_America_Continent: "解决美洲乱象"
+UNITED_ASIA_FUCKING_Mexico: "终结黑帮国家"
+UNITED_ASIA_FUCKING_Central_America: "终结“香蕉共和国”"
+UNITED_ASIA_FUCKING_South_America: "解决南美乱象"
 
 unasia.2000.t: "东非的新主人"
 unasia.2000.d: "随着维和行动的尘埃落定，东非的未来悬而未决。当我们的人民还在为谁将领导我们走向新生而争论不休时，一架来自[Root.Capital.GetName]的专机降落在了内罗毕国际机场。\n\n走下飞机的不是外交官，不是将军，也不是政治家。她叫要乐奈，一个看起来对周围一切都漠不关心的少女。据传，她是亚洲联盟最高层——秘书长户山香澄的密友，一位被誉为“神”的吉他手。没有任何官方公告，也没有举行任何就职典礼，她就这样住进了秘书长官邸，成为了东非联盟名义上的最高行政长官。\n\n这一任命震惊了所有人。传统政治家们对此感到愤怒和不解，认为这是亚洲联盟对我们的羞辱。然而，那些深受“闪耀主义”感召的年轻革命者们却欢欣鼓舞，他们宣称：“规则的时代已经结束了！只有挣脱一切束缚，我们才能找到真正有趣的东西！”\n\n乐奈本人似乎对这一切毫不在意。她既不发布施政纲领，也不接见任何官员。人们只知道，她向副官下达的唯一指示是：“把有趣的提案拿给我看，无聊的东西就扔掉。”\n\n一个由“有趣”驱动的时代，就这样毫无征兆地降临在了东非大地上。这究竟是一场天才的社会实验，还是一场将数亿人命运作为赌注的狂想？无人知晓。但可以确定的是，旧世界的秩序，再也回不来了。"
@@ -245,9 +252,14 @@ unasia.2000.o: "这太……有趣了！"
 unasia.2001.t: "东非必须去独裁化！§C#去独裁化#DE_DICTATORSHIP§!"
 unasia.2002.t: "北非必须去极端化！§C#去独裁化#DE_DICTATORSHIP§!"
 unasia.2003.t: "西非必须去贫穷化！§C#去独裁化#DE_DICTATORSHIP§!"
+unasia.2004.t: "墨西哥流出的毒品比全球的总和还要多！§C#去独裁化#DE_DICTATORSHIP§!"
+unasia.2005.t: "看看中美洲的独裁者吧！§C#去独裁化#DE_DICTATORSHIP§!"
+unasia.2006.t: "尼罗河上的暴君！§C#去独裁化#DE_DICTATORSHIP§!"
 
 BGD_APFNO_LEADER: "联盟统辖委员会"
 
 BGD_fucking_east_african: "现在！立刻！解放东非！§C#解放非洲运动§!"
 BGD_fucking_north_african: "太残暴了！§C#终结北非奴隶贸易§!"
 BGD_fucking_west_african: "我们将给西非带来富饶！§C#持久富裕计划§!"
+BGD_fucking_mexico: "毒品正在毒害全世界人民！§C#终结毒品犯罪集团§!"
+BGD_fucking_nile_river: "消灭河床暴政！§C#进一步终结北非乱象§!"

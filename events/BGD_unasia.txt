@@ -2721,3 +2721,45 @@ country_event = {
 		unlock_decision_tooltip = BGD_fucking_west_african
 	}
 }
+
+country_event = {
+	#操你妈墨西哥
+	id = unasia.2004
+	title = unasia.2004.t
+	desc = unasia.2004.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.2004.a
+		unlock_decision_tooltip = BGD_fucking_mexico
+	}
+}
+
+country_event = {
+	#操你妈中美洲
+	id = unasia.2005
+	title = unasia.2005.t
+	desc = unasia.2005.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.2005.a
+		#unlock_decision_tooltip = BGD_fucking_mexico
+	}
+}
+
+country_event = {
+	#操你妈埃及
+	id = unasia.2006
+	title = unasia.2006.t
+	desc = unasia.2006.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.2006.a
+		unlock_decision_tooltip = BGD_fucking_nile_river
+	}
+}

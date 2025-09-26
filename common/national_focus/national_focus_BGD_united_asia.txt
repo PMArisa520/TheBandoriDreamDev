@@ -656,20 +656,89 @@ focus_tree = {
 		id = UNITED_ASIA_FUCKING_DICTATOR
 		icon = GFX_guoce_zhanwei
 		cost = 2
-		x = 16
+		x = 19
 		y = 2
 		allow_branch = {
 			has_country_flag = BGD_start_fucking_dictator
 		}
 	}
 	focus = {
-		id = UNITED_ASIA_FUCKING_EAST_AFRICANS_DICTATOR
+		id = UNITED_ASIA_FUCKING_America_Continent
 		icon = GFX_guoce_zhanwei
 		cost = 2
-		x = 18
+		x = 23
 		y = 3
 		prerequisite = {
 			focus = UNITED_ASIA_FUCKING_DICTATOR
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_FUCKING_Mexico
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 23
+		y = 4
+		bypass = {
+			MEX = {
+				has_war = no
+				exists = yes
+				controls_state = 1137
+			}
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_America_Continent
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2004
+			}
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_FUCKING_Central_America
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 21
+		y = 4
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_America_Continent
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2005
+			}
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_FUCKING_South_America
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 25
+		y = 4
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_America_Continent
+		}
+	}
+
+
+	focus = {#解放“黑暗大陆”
+		id = UNITED_ASIA_Liberate_the_Dark_Continent
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 15
+		y = 3
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_DICTATOR
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_FUCKING_EAST_AFRICANS_DICTATOR
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 17
+		y = 4
+		prerequisite = {
+			focus = UNITED_ASIA_Liberate_the_Dark_Continent
 		}
 		completion_reward = {
 			country_event = {
@@ -681,10 +750,10 @@ focus_tree = {
 		id = UNITED_ASIA_FUCKING_NORTH_AFRICANS_DICTATOR
 		icon = GFX_guoce_zhanwei
 		cost = 2
-		x = 16
-		y = 3
+		x = 15
+		y = 4
 		prerequisite = {
-			focus = UNITED_ASIA_FUCKING_DICTATOR
+			focus = UNITED_ASIA_Liberate_the_Dark_Continent
 		}
 		bypass = {
 			HRL = {
@@ -701,15 +770,15 @@ focus_tree = {
 		id = UNITED_ASIA_FUCKING_WEST_AFRICANS_DICTATOR
 		icon = GFX_guoce_zhanwei
 		cost = 2
-		x = 14
-		y = 3
+		x = 13
+		y = 4
 		available = {
 			MLT = {
 				has_cosmetic_tag = MLT_sahel_federation
 			}
 		}
 		prerequisite = {
-			focus = UNITED_ASIA_FUCKING_DICTATOR
+			focus = UNITED_ASIA_Liberate_the_Dark_Continent
 		}
 		completion_reward = {
 			country_event = {
@@ -721,8 +790,8 @@ focus_tree = {
 		id = UNITED_ASIA_RANA_EAST_AFRICANS_DICTATOR
 		icon = GFX_guoce_zhanwei
 		cost = 2
-		x = 18
-		y = 4
+		x = 17
+		y = 5
 		available = {
 			UA4 = {
 				controls_state = 547
@@ -735,6 +804,23 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = unasia.2000
+			}
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_FUCKING_Nile_River
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 15
+		y = 5
+		available = {
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_NORTH_AFRICANS_DICTATOR
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2006
 			}
 		}
 	}

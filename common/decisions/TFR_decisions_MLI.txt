@@ -509,6 +509,7 @@ MLI_sahel_war = {
 	
 	MLI_form_sahel_federation = {
 		available = {
+			NOT = {is_in_faction_with = BGD}
 			tag = MLI
 			is_puppet = no
 			has_war = no

@@ -137,4 +137,8 @@ spriteTypes = {
 		name = "GFX_idea_BGD_Golden_Age"
 		textureFile = "gfx\interface\laws\economic_laws\BGX_Golden_Age.png"
 	}
+	spriteType = {
+		name = "GFX_idea_BGX_Guarantee_freedom"
+		textureFile = "gfx\interface\laws\social_laws\BGX_Guarantee_freedom.png"
+	}
 }

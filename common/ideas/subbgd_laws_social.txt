@@ -6,7 +6,7 @@ ideas = {
 			removal_cost = -1
 			cost = 100
 			level = 6
-			picture = laws_security2
+			picture = BGX_Guarantee_freedom
 			allowed = {
 			    tag = BGD
 		    }

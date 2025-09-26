@@ -5477,6 +5477,9 @@ BGD_Interference_in_Thailand = {
 					student_athletic_readiness < 25
 				}
 				country_exists = ETI
+				BGD = {
+					has_cosmetic_tag = BGD_united_asia
+				}
 			}
 		}
 		is_good = no
@@ -6289,7 +6292,7 @@ BGD_kasumi_twitter_cat = {
 			}
 		}
 	}
-	BGD_fucking_west_african = {
+	BGD_fucking_mexico = {
 		priority = 1
 		icon = generic_ignite_civil_war
 		cost = 15
@@ -6297,12 +6300,105 @@ BGD_kasumi_twitter_cat = {
 		fire_only_once = yes
 		allowed = {
 			tag = BGD
-			has_completed_focus = UNITED_ASIA_FUCKING_WEST_AFRICANS_DICTATOR
+			has_completed_focus = UNITED_ASIA_FUCKING_Mexico
+			NOT = {
+				MEX = {
+					has_war = no
+					exists = yes
+					controls_state = 1137
+				}
+			}
 		}
 		available = {
 		}
 		visible = {
-			has_completed_focus = UNITED_ASIA_FUCKING_WEST_AFRICANS_DICTATOR
+			has_completed_focus = UNITED_ASIA_FUCKING_Mexico
+			NOT = {
+				MEX = {
+					has_war = no
+					exists = yes
+					controls_state = 1137
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_core_of = MEX
+				}
+				every_country = {
+					limit = {
+						controls_state = PREV
+						NOT = { tag = MEX }
+					}
+					declare_war_on = {
+						target = BGD
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = MEX
+				}
+				MEX = {
+					create_country_leader = {
+						name = "BGD_APFNO_LEADER"
+						desc = "BGD_APFNO_LEADER_DESC"
+						picture = GFX_portrait_AU_MIL
+						ideology = kirakira_dokidoki
+						traits = {
+							rebuild_gov
+						}
+					}
+					set_party_name = {
+						ideology = social_democrat
+						long_name = BGX_ASIA_ARMY_PARTY_long
+						name = BGX_ASIA_ARMY_PARTY
+					}
+					set_politics = {
+						ruling_party = social_democrat
+						elections_allowed = no
+					}
+					remove_ideas_with_trait = ZZZ_blank_idea_trait
+				}
+				BGD = {
+					if = {
+						limit = {
+							has_dlc = "Together for Victory"
+						}
+						set_autonomy = {
+							target = MEX
+							autonomy_state = bgd_allied_countries_state
+						}
+					}
+					else = {
+						puppet = MEX
+					}
+				}
+			}
+		}
+	}
+
+	BGD_fucking_nile_river = {
+		priority = 1
+		icon = generic_ignite_civil_war
+		cost = 15
+		days_remove = 20
+		fire_only_once = yes
+		allowed = {
+			tag = BGD
+			has_completed_focus = UNITED_ASIA_FUCKING_Nile_River
+		}
+		available = {
+		}
+		visible = {
+			has_completed_focus = UNITED_ASIA_FUCKING_Nile_River
 		}
 		ai_will_do = {
 			factor = 1
@@ -6313,27 +6409,15 @@ BGD_kasumi_twitter_cat = {
 			every_country = {
 				limit = {
 					OR = {
-						original_tag = MLI
-						is_ally_with = MLI
+						controls_state = 1349
+						controls_state = 446
 					}
 				}
 				declare_war_on = {
-					target = PREV
+					target = BGD
 					type = annex_everything
 				}
-				set_country_flag = West_African_Nations
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						country_exists = TDF
-					}
-					ETH = {
-						annex_country = {
-							target = TDF
-						}
-					}
-				}
+				leave_faction = yes
 			}
 		}
 	}

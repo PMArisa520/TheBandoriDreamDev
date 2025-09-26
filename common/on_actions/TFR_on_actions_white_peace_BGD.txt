@@ -730,6 +730,33 @@ on_actions = {
 				}
 				else_if = {
 					limit = {
+						FROM = {
+							OR = {
+								original_tag = BGD
+								is_ally_with = BGD
+							}
+						}
+						ROOT = {
+							OR = {
+								original_tag = ZAP
+								original_tag = SIN
+								original_tag = GUC
+								original_tag = CAS
+							}
+						}
+					}
+					ROOT = {
+						white_peace = FROM
+						white_peace = MEX
+					}
+					MEX = {
+						annex_country = {
+							target = ROOT
+						}
+					}
+				}
+				else_if = {
+					limit = {
 						BGD = { has_cosmetic_tag = unrestricted_diplomacy_flag }
 						FROM = {
 							OR = {
@@ -749,7 +776,6 @@ on_actions = {
 							autonomy_state = bgd_allied_countries_state
 						}
 					}
-
 				}
 				else_if = {
 					limit = {
