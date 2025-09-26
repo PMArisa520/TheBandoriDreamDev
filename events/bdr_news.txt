@@ -305,3 +305,17 @@ news_event = {
 		name = bdrnews.1226.a
 	}
 }
+
+news_event = {
+	#加州爆发严重山火
+	id = bdrnews.1227
+	title = bdrnews.1227.t
+	desc = bdrnews.1227.d
+	picture = GFX_bang_girlsband_party
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = bdrnews.1227.a
+	}
+}
