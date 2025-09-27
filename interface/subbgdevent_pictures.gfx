@@ -90,4 +90,9 @@ spriteTypes = {
 		texturefile = "gfx\event_pictures\BGD_JMNDF1.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_USN_FIRE"
+		texturefile = "gfx\event_pictures\USN_fire_start.png"
+		legacy_lazy_load = no
+	}
 }

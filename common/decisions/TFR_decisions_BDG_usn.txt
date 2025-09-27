@@ -1157,4 +1157,32 @@ USN_quanli_pingheng = {
 		}
 	}
 }
-
+#
+USN_fire_start = {
+	USN_test_A = {
+		priority = 1
+		icon = GFX_KKP_logo
+		cost = 0
+		days_remove = 0
+		fire_only_once = no
+		allowed = {tag = USN}
+		available = {
+			has_country_flag = USN_fire_rise
+		}
+		visible = {
+			has_country_flag = USN_fire_rise
+        }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 5
+					value = 1
+				}
+			}
+		}
+	}
+}

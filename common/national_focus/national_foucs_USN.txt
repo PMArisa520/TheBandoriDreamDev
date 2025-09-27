@@ -157,6 +157,7 @@ focus_tree = {
 			add_ideas = USN_buxinren_2
 			add_ideas = USN_zhengzhi_boyi
 			country_event = {id= usnavy.37}
+			unlock_decision_category_tooltip = USN_fire_start
 		}
 	}
 	focus = {

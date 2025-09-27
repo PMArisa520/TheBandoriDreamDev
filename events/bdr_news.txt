@@ -316,6 +316,16 @@ news_event = {
 	is_triggered_only = yes
 	major = yes
 	option = {
-		name = bdrnews.1227.a
+		if = {
+				limit = {
+					is_ai = no
+				}
+			name = bdrnews.1227.a
+			hidden_effect = {
+			set_country_flag = USN_fire_rise
+			set_country_flag = USN_fire
+			scoped_play_song = "老鹰之歌"
+			}
+		}
 	}
 }
