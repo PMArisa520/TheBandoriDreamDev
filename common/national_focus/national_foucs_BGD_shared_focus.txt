@@ -1566,6 +1566,7 @@ shared_focus = {
 		has_country_flag = attack_Ready
 	}
 	completion_reward = {
+		unlock_decision_category_tooltip = USN_Makarapa
 		country_event = {id = usnavy.32}
 		add_dynamic_modifier = {modifier = USN_influence_A_dynamic}
 		add_dynamic_modifier = {modifier = USN_influence_B_dynamic}
