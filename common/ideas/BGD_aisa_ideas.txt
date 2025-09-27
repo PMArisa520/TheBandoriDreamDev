@@ -47,6 +47,51 @@ ideas = {
 			}
 		}
 
+		BGD_Afrika_Equatoriale_Spatium_Group = {
+			#阿非利加赤道航天集团
+			picture = BGD_Afrika_Equatoriale_Spatium_Group
+			allowed = {
+				 always = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				industrial_development_monthly = 0.025
+				society_development_monthly = 0.015
+				poverty_development_monthly = 0.005
+				production_speed_buildings_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = BGD
+				extra_trade_to_target_factor = 0.15
+				trade_cost_for_target_factor = -0.25
+			}
+		}
+
+		BGD_Glio_Tech = {
+			#格里奥科技
+			picture = BGD_Glio_Tech
+			allowed = {
+				 always = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				stability_weekly = 0.1
+				industrial_development_monthly = -0.01
+				society_development_monthly = 0.025
+				poverty_development_monthly = 0.01
+				production_speed_buildings_factor = -0.005
+			}
+			targeted_modifier = {
+				tag = BGD
+				extra_trade_to_target_factor = 0.15
+				trade_cost_for_target_factor = -0.25
+			}
+		}
+
 
 	}
 }

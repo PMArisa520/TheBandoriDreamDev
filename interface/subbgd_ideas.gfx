@@ -128,6 +128,14 @@ spriteTypes = {
 		name = "GFX_idea_pan_african_kiraism"
 		textureFile = "gfx\interface\ideas\pan_african_kiraism.png"
 	}
+	spriteType = {
+		name = "GFX_idea_BGD_Afrika_Equatoriale_Spatium_Group"
+		textureFile = "gfx\interface\ideas\BGD_Afrika_Equatoriale_Spatium_Group.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BGD_Glio_Tech"
+		textureFile = "gfx\interface\ideas\BGD_Glio_Tech.png"
+	}
 
 	spriteType = {
 		name = "GFX_idea_Enthusiastic_Army"

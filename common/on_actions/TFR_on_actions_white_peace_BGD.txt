@@ -342,7 +342,7 @@ on_actions = {
 						}
 						set_autonomy = {
 							target = UA4
-							autonomy_state = bgd_allied_countries_state
+							autonomy_state = bgd_government_of_occupied_territories
 						}
 					}
 					else = {
@@ -389,7 +389,7 @@ on_actions = {
 						picture = GFX_portrait_AU_MIL
 						ideology = kirakira_dokidoki
 						traits = {
-							rebuild_gov
+							UA_MAC
 						}
 					}
 					set_party_name = {
@@ -473,7 +473,10 @@ on_actions = {
 				if = {
 					limit = {
 						ROOT = {
-							has_idea = african_union_member
+							OR = {
+								has_idea = african_union_member
+								original_tag = GNA
+							}
 						}
 					}
 					log = "Kasumi Fucking African!!! KILL [Root.GetName]"
@@ -485,7 +488,7 @@ on_actions = {
 						#white_peace = ROOT
 						set_autonomy = {
 							target = ROOT
-							autonomy_state = bgd_allied_countries_state
+							autonomy_state = bgd_government_of_occupied_territories
 						}
 					}
 				}
@@ -556,7 +559,7 @@ on_actions = {
 							}
 							set_autonomy = {
 								target = MOR
-								autonomy_state = bgd_allied_countries_state
+								autonomy_state = bgd_government_of_occupied_territories
 							}
 						}
 						else = {
@@ -568,7 +571,7 @@ on_actions = {
 							}
 							set_autonomy = {
 								target = ALG
-								autonomy_state = bgd_allied_countries_state
+								autonomy_state = bgd_government_of_occupied_territories
 							}
 						}
 						else = {
@@ -580,7 +583,7 @@ on_actions = {
 							}
 							set_autonomy = {
 								target = TUN
-								autonomy_state = bgd_allied_countries_state
+								autonomy_state = bgd_government_of_occupied_territories
 							}
 						}
 						else = {
@@ -592,7 +595,7 @@ on_actions = {
 							}
 							set_autonomy = {
 								target = ROOT
-								autonomy_state = bgd_allied_countries_state
+								autonomy_state = bgd_government_of_occupied_territories
 							}
 						}
 						else = {
@@ -626,7 +629,7 @@ on_actions = {
 							}
 							set_autonomy = {
 								target = ROOT
-								autonomy_state = bgd_allied_countries_state
+								autonomy_state = bgd_government_of_occupied_territories
 							}
 						}
 						else = {
@@ -658,7 +661,7 @@ on_actions = {
 							}
 							set_autonomy = {
 								target = VOL
-								autonomy_state = bgd_allied_countries_state
+								autonomy_state = bgd_government_of_occupied_territories
 							}
 						}
 						else = {
@@ -670,7 +673,7 @@ on_actions = {
 							}
 							set_autonomy = {
 								target = NGR
-								autonomy_state = bgd_allied_countries_state
+								autonomy_state = bgd_government_of_occupied_territories
 							}
 						}
 						else = {
@@ -682,7 +685,7 @@ on_actions = {
 							}
 							set_autonomy = {
 								target = BIA
-								autonomy_state = bgd_allied_countries_state
+								autonomy_state = bgd_government_of_occupied_territories
 							}
 						}
 						else = {
@@ -694,7 +697,7 @@ on_actions = {
 							}
 							set_autonomy = {
 								target = GNA
-								autonomy_state = bgd_allied_countries_state
+								autonomy_state = bgd_government_of_occupied_territories
 							}
 						}
 						else = {
@@ -719,7 +722,7 @@ on_actions = {
 								}
 								set_autonomy = {
 									target = PREV
-									autonomy_state = bgd_allied_countries_state
+									autonomy_state = bgd_government_of_occupied_territories
 								}
 							}
 							else = {
@@ -757,6 +760,88 @@ on_actions = {
 				}
 				else_if = {
 					limit = {
+						ROOT = {
+							has_cosmetic_tag = CEN
+						}
+						FROM = {
+							OR = {
+								original_tag = BGD
+								is_ally_with = BGD
+							}
+						}
+					}
+					ROOT = {
+						white_peace = FROM
+						ASIA_MIL_GOV_EFF = yes
+						BLZ = {
+							transfer_state = 311
+							ASIA_MIL_GOV_EFF = yes
+						}
+						GUA = {
+							transfer_state = 1377
+							transfer_state = 313
+							ASIA_MIL_GOV_EFF = yes
+						}
+						ELS = {
+							transfer_state = 314
+							ASIA_MIL_GOV_EFF = yes
+						}
+						HON = {
+							transfer_state = 312
+							ASIA_MIL_GOV_EFF = yes
+						}
+						NIC = {
+							transfer_state = 317
+							ASIA_MIL_GOV_EFF = yes
+						}
+						COS = {
+							transfer_state = 316
+							ASIA_MIL_GOV_EFF = yes
+						}
+						PAN = {
+							transfer_state = 889
+							transfer_state = 304
+							transfer_state = 909
+							ASIA_MIL_GOV_EFF = yes
+						}
+					}
+					FROM = {
+						BGD = {
+							transfer_state = 685
+						}
+						#white_peace = ROOT
+						set_autonomy = {
+							target = BLZ
+							autonomy_state = bgd_government_of_occupied_territories
+						}
+						set_autonomy = {
+							target = GUA
+							autonomy_state = bgd_government_of_occupied_territories
+						}
+						set_autonomy = {
+							target = ELS
+							autonomy_state = bgd_government_of_occupied_territories
+						}
+						set_autonomy = {
+							target = HON
+							autonomy_state = bgd_government_of_occupied_territories
+						}
+						set_autonomy = {
+							target = NIC
+							autonomy_state = bgd_government_of_occupied_territories
+						}
+						set_autonomy = {
+							target = COS
+							autonomy_state = bgd_government_of_occupied_territories
+						}
+						set_autonomy = {
+							target = PAN
+							autonomy_state = bgd_government_of_occupied_territories
+						}
+					}
+				}
+				else_if = {
+					limit = {
 						BGD = { has_cosmetic_tag = unrestricted_diplomacy_flag }
 						FROM = {
 							OR = {
@@ -773,7 +858,7 @@ on_actions = {
 						#white_peace = ROOT
 						set_autonomy = {
 							target = ROOT
-							autonomy_state = bgd_allied_countries_state
+							autonomy_state = bgd_government_of_occupied_territories
 						}
 					}
 				}

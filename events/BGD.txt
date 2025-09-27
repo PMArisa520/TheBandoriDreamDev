@@ -1033,6 +1033,18 @@ country_event = {
 	}
 	option = {
 		name = bgd.58.b
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 4764
+		}
+		add_debt = yes
+	}
+	option = {
+		name = bgd.58.c
+		add_timed_idea = {
+			idea = BGD_Debt_default
+			days = 768
+		}
 	}
 }
 

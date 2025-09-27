@@ -685,6 +685,9 @@ focus_tree = {
 				controls_state = 1137
 			}
 		}
+		bypass_effect = {
+			set_country_flag = NO_FUCKING_Mexico
+		}
 		prerequisite = {
 			focus = UNITED_ASIA_FUCKING_America_Continent
 		}
@@ -709,16 +712,16 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = UNITED_ASIA_FUCKING_South_America
-		icon = GFX_guoce_zhanwei
-		cost = 2
-		x = 25
-		y = 4
-		prerequisite = {
-			focus = UNITED_ASIA_FUCKING_America_Continent
-		}
-	}
+	#focus = {
+	#	id = UNITED_ASIA_FUCKING_South_America
+	#	icon = GFX_guoce_zhanwei
+	#	cost = 2
+	#	x = 25
+	#	y = 4
+	#	prerequisite = {
+	#		focus = UNITED_ASIA_FUCKING_America_Continent
+	#	}
+	#}
 
 
 	focus = {#解放“黑暗大陆”
@@ -760,6 +763,9 @@ focus_tree = {
 				NOT = { has_cosmetic_tag = HRL_arab_republic }
 			}
 		}
+		bypass_effect = {
+			set_country_flag = NO_FUCKING_NORTH_AFRICANS
+		}
 		completion_reward = {
 			country_event = {
 				id = unasia.2002
@@ -773,9 +779,19 @@ focus_tree = {
 		x = 13
 		y = 4
 		available = {
-			MLT = {
+			MLI = {
 				has_cosmetic_tag = MLT_sahel_federation
 			}
+		}
+		bypass = {
+			NOT = {
+				MLI = {
+					has_cosmetic_tag = MLT_sahel_federation
+				}
+			}
+		}
+		bypass_effect = {
+			set_country_flag = NO_FUCKING_WEST_AFRICANS
 		}
 		prerequisite = {
 			focus = UNITED_ASIA_Liberate_the_Dark_Continent
@@ -804,6 +820,36 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = unasia.2000
+			}
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_EAST_AFRICANS_FEDERATION
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 13
+		y = 5
+		available = {
+			MLI = {
+				has_cosmetic_tag = UA_Military_Gov
+			}
+		}
+		bypass = {
+			NOT = {
+				MLI = {
+					has_cosmetic_tag = MLT_sahel_federation
+				}
+				MLI = {
+					has_cosmetic_tag = UA_Military_Gov
+				}
+			}
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_WEST_AFRICANS_DICTATOR
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2007
 			}
 		}
 	}

@@ -105,6 +105,17 @@ ideas = {
 				war_support_weekly = -0.01
 			}
 		}
+		BGD_Debt_default = {
+			#债务违约
+			picture = jingshen_zhanwei
+			modifier = {
+				stability_factor = -0.5
+				political_power_factor = -0.5
+				society_development_monthly = -0.05
+				industrial_development_monthly = -0.05
+				poverty_development_monthly = -0.05
+			}
+		}
 		BGD_Justice_for_All = {
 			#全民正义
 			picture = jingshen_zhanwei
@@ -124,6 +135,11 @@ ideas = {
 				trade_opinions_factor = 0.15
 				intelligence_agency_upgrade_time_factor = -0.2
 				income_growth_factor = 0.1
+				society_development_monthly = 0.1
+				industrial_development_monthly = 0.045
+				poverty_development_monthly = 0.045
+				farming_development_monthly = 0.045
+				military_development_monthly = 0.035
 			}
 		}
 		BGD_mingyun_zhizhan = {

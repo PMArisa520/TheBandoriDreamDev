@@ -6216,6 +6216,18 @@ BGD_kasumi_twitter_cat = {
 		complete_effect = {
 		}
 		remove_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						country_exists = TDF
+					}
+					ETH = {
+						annex_country = {
+							target = TDF
+						}
+					}
+				}
+			}
 			#hidden_effect = {
 			#	TZN = {
 			#		dismantle_faction = yes
@@ -6265,6 +6277,49 @@ BGD_kasumi_twitter_cat = {
 			}
 		}
 	}
+	BGD_fucking_west_african = {
+		priority = 1
+		icon = generic_ignite_civil_war
+		cost = 15
+		days_remove = 20
+		fire_only_once = yes
+		allowed = {
+			tag = BGD
+			has_completed_focus = UNITED_ASIA_FUCKING_WEST_AFRICANS_DICTATOR
+		}
+		available = {
+		}
+		visible = {
+			has_completed_focus = UNITED_ASIA_FUCKING_WEST_AFRICANS_DICTATOR
+			NOT = { has_country_flag = NO_FUCKING_WEST_AFRICANS }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = MLI
+						is_ally_with = MLI
+					}
+				}
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+				set_country_flag = West_African_Nations
+			}
+			MRT = {
+				declare_war_on = {
+					target = BGD
+					type = annex_everything
+				}
+			}
+		}
+	}
 	BGD_fucking_north_african = {
 		priority = 1
 		icon = generic_ignite_civil_war
@@ -6279,6 +6334,7 @@ BGD_kasumi_twitter_cat = {
 		}
 		visible = {
 			has_completed_focus = UNITED_ASIA_FUCKING_NORTH_AFRICANS_DICTATOR
+			NOT = { has_country_flag = NO_FUCKING_NORTH_AFRICANS }
 		}
 		ai_will_do = {
 			factor = 1
@@ -6319,6 +6375,7 @@ BGD_kasumi_twitter_cat = {
 					exists = yes
 					controls_state = 1137
 				}
+				has_country_flag = NO_FUCKING_Mexico
 			}
 		}
 		ai_will_do = {
@@ -6366,6 +6423,7 @@ BGD_kasumi_twitter_cat = {
 						elections_allowed = no
 					}
 					remove_ideas_with_trait = ZZZ_blank_idea_trait
+					set_country_flag = UNE_member
 				}
 				BGD = {
 					if = {
@@ -6418,6 +6476,51 @@ BGD_kasumi_twitter_cat = {
 					type = annex_everything
 				}
 				leave_faction = yes
+			}
+		}
+	}
+
+	BGD_fucking_Central_America = {
+		priority = 1
+		icon = generic_ignite_civil_war
+		cost = 15
+		days_remove = 20
+		fire_only_once = yes
+		allowed = {
+			tag = BGD
+			has_completed_focus = UNITED_ASIA_FUCKING_Central_America
+		}
+		available = {
+		}
+		visible = {
+			has_completed_focus = UNITED_ASIA_FUCKING_Central_America
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						controls_state = 313
+						controls_state = 1377
+						controls_state = 311
+						controls_state = 314
+						controls_state = 312
+						controls_state = 317
+						controls_state = 316
+						controls_state = 889
+						controls_state = 685
+						controls_state = 304
+						controls_state = 909
+					}
+				}
+				declare_war_on = {
+					target = BGD
+					type = annex_everything
+				}
 			}
 		}
 	}

@@ -53,6 +53,7 @@ autonomy_state = {
 
 	allowed_levels_filter = {
 		bgd_allied_countries_state
+		bgd_government_of_occupied_territories
 	}
 
 	#ROOT is puppet - FROM is potential OVERLORD

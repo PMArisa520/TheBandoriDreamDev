@@ -28,7 +28,7 @@ ASIA_MIL_GOV_EFF = {
 		picture = GFX_portrait_AU_MIL
 		ideology = kirakira_dokidoki
 		traits = {
-			rebuild_gov
+			UA_MAC
 		}
 	}
 	set_party_name = {
@@ -40,4 +40,5 @@ ASIA_MIL_GOV_EFF = {
 		ruling_party = social_democrat
 		elections_allowed = no
 	}
+	set_country_flag = UNE_member
 }

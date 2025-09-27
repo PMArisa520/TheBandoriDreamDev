@@ -1993,3 +1993,7 @@ UA_Military_Gov = {
 	color = rgb { 0 48 154 }
 	color_ui = rgb { 0 48 154 }
 }
+UA_West_African_Federation = {
+	color = rgb { 38 46 121 }
+	color_ui = rgb { 38 46 121 }
+}
