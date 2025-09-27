@@ -1157,4 +1157,149 @@ USN_quanli_pingheng = {
 		}
 	}
 }
+#
+USN_fire_start = {
+	USN_fire_mission = {
+		icon = GFX_KKP_logo
+		allowed = {
+			tag = USN
+		}
+		activation = {
+			has_country_flag = USN_fire_rise
+		}
+		available = {
+			has_country_flag = USN_fire_end
+		}
+		visible = {
+			has_country_flag = USN_fire_rise
+        }
+		#is_good = no
+		#selectable_mission = no
+		days_mission_timeout = 60
+		timeout_effect = {
+			USN_fire_intensity = yes
+			activate_mission = USN_fire_mission
+		}
+	}
+	USN_state_emergency = {
+		priority = 1
+		icon = GFX_KKP_logo
+		cost = 0
+		days_remove = 3
+		fire_only_once = yes
+		allowed = {tag = USN}
+		available = {
+			has_country_flag = USN_fire_rise
+		}
+		visible = {
+			has_country_flag = USN_fire_rise
+        }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+				set_country_flag = USN_state_emergency
+			}
+	}
+	USN_rebuild_1 = {
+		priority = 1
+		icon = GFX_KKP_logo
+		cost = 20
+		days_remove = 10
+		fire_only_once = yes
+		allowed = {tag = USN}
+		available = {
+			has_country_flag = USN_state_emergency
+		}
+		visible = {
+			has_country_flag = USN_state_emergency
+        }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+	}
+	USN_rebuild_2 = {
+		priority = 1
+		icon = GFX_KKP_logo
+		cost = 20
+		days_remove = 10
+		fire_only_once = yes
+		allowed = {tag = USN}
+		available = {
+			has_country_flag = USN_state_emergency
+		}
+		visible = {
+			has_country_flag = USN_state_emergency
+        }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
 
+		}
+	}
+	USN_Apply_1 = {
+		priority = 1
+		icon = GFX_KKP_logo
+		cost = 20
+		days_remove = 10
+		fire_only_once = yes
+		allowed = {tag = USN}
+		available = {
+			has_country_flag = USN_state_emergency
+		}
+		visible = {
+			has_country_flag = USN_state_emergency
+        }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+
+		}
+	}
+	USN_Apply_2 = {
+		priority = 1
+		icon = GFX_KKP_logo
+		cost = 20
+		days_remove = 10
+		fire_only_once = yes
+		allowed = {tag = USN}
+		available = {
+			has_country_flag = USN_state_emergency
+		}
+		visible = {
+			has_country_flag = USN_state_emergency
+        }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+
+		}
+	}
+	USN_populace_1 = {
+		priority = 1
+		icon = GFX_KKP_logo
+		cost = 20
+		days_remove = 10
+		fire_only_once = yes
+		allowed = {tag = USN}
+		available = {
+			has_country_flag = USN_state_emergency
+		}
+		visible = {
+			has_country_flag = USN_state_emergency
+        }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+
+		}
+	}
+}

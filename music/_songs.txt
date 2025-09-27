@@ -206,3 +206,10 @@ music = {
         base = 0		
 	}
 }
+#超事件
+music = {
+	song = "老鹰之歌"
+	chance = {
+        factor = 0		
+	}
+}

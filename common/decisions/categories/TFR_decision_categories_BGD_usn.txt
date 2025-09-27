@@ -32,3 +32,18 @@ USN_quanli_pingheng = {
 	}
 	priority = 98
 }
+USN_fire_start = {
+    icon = GFX_gui_ppp_party_small
+
+    allowed = {
+       tag = USN
+    }
+
+    visible = {
+		NOT = {
+            has_global_flag = USN_fire_end
+        }
+    }
+
+    priority = 97
+}

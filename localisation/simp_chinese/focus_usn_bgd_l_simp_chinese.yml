@@ -49,6 +49,11 @@ USN_huiyi_zhengchao_1: "军官团的对峙"
 USN_youji_zhanshu: "游击队"
 USN_keji_jiaoliu: "科技交流"
 USN_zhengzhi_boyi: "政治博弈"
+USN_big_fire_idea4: "火势初步蔓延"
+USN_big_fire_idea3: "火势逐步扩大"
+USN_big_fire_idea2: "火势逐步失控"
+USN_big_fire_idea1: "火势彻底失控"
+USN_big_fire_idea: "人道主义的悲剧"
 ########################
 
 #决议###################
@@ -61,6 +66,26 @@ BGD_WAR_ATW: "给我干掉核武之师！"
 BGD_WAR_USC: "解决和美利坚宪政政府的战争"
 BGD_WAR_USB: "解决和美利坚联邦的战争"
 BGD_WAR_PTF: "解决和爱国者联盟的战争"
+#军事会议
+USN_WAST_A: "增强§Y资深军官§!影响力"
+USN_EAST_B: "增强§C年轻军官§!影响力"
+USN_MIDDIE_C: "增强§O维和本部§!的影响力"
+USN_lianbang_wuzhuang: "联邦武装"
+USN_lianbang_wuzhuang_dynamic: "联邦武装"
+USN_A_buji: "§Y优先重建舰队补给系统§!"
+USN_A_kuojian: "§Y扩建檀香山国际机场与希卡姆空军基地战略物资储备与快速装卸区§!"
+USN_B_anfang: "§C优先重建岸防雷导网系统§!"
+USN_B_jiagu: "§C提升卡内奥赫湾海军陆战队航空站的分散式/加固机库与地下掩体§!"
+USN_C_xinren: "§O优先取得当地民众信任§!"
+USN_C_jianshe: "§O建设卡拉埃洛阿机场多功能小型机库与隐蔽维护区§!"
+#加利福尼亚大火
+USN_state_emergency: "宣布进入紧急状态"
+USN_rebuild_1: "重建消防局"
+USN_rebuild_2: "重建加州消防系统"
+USN_Apply_1: "申请本土支援"
+USN_Apply_2: "申请国际维和部队入驻"
+USN_populace_1: "疏散本土受灾群众"
+USN_fire_mission: "火势蔓延"
 #bop
 USN_power_balance: "联邦党和闪耀党权力平衡"
 USN_pingheng_side: "政治均势"
@@ -230,6 +255,9 @@ The_New_Pacific_Charter: "美利坚共和国"
 BGD_Morfonica_Commander: "Morfonica成员将加入军官团"
 attack_Ready: "攻击就绪"
 USN_minzhen_wajie: "联邦派和解"
+USN_fire_rise: "烈焰升腾"
+USN_fire_end: "大火结束"
+USN_state_emergency: "紧急状态"
 ########################
 
 #将领###################

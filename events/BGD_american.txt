@@ -99,6 +99,10 @@ country_event = {
 				#	}
 				#}
 				#BGD = { country_event = { id = usnavy.3 } }
+				news_event =  {
+					id = bdrnews.1227
+					hours = 6
+				}
 			}
 		}
 	option = {
