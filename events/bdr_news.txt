@@ -327,5 +327,11 @@ news_event = {
 			scoped_play_song = "老鹰之歌"
 			}
 		}
+			USN = {
+				add_ideas = USN_big_fire_idea4
+				add_days_mission_timeout = {
+				mission = USN_fire_mission
+			}
+		}
 	}
 }

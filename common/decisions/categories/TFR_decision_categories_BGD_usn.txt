@@ -40,7 +40,9 @@ USN_fire_start = {
     }
 
     visible = {
-		has_completed_focus = USN_zhanwen_jiaogen
+		NOT = {
+            has_global_flag = USN_fire_end
+        }
     }
 
     priority = 97
