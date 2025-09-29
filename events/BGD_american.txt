@@ -1251,6 +1251,19 @@ country_event = {
             }
 		}
 	}
+country_event = {
+	#出山
+	id = usnavy.39
+	title = usnavy.39.t
+	desc = usnavy.39.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.39.a
+		add_stability = 0.05
+		}
+	}
 
 
 

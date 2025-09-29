@@ -329,9 +329,7 @@ news_event = {
 		}
 			USN = {
 				add_ideas = USN_big_fire_idea4
-				add_days_mission_timeout = {
-				mission = USN_fire_mission
+				activate_mission = USN_fire_mission
 			}
 		}
 	}
-}
