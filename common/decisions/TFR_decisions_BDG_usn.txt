@@ -1171,7 +1171,9 @@ USN_fire_start = {
 			has_country_flag = USN_fire_end
 		}
 		visible = {
-			has_country_flag = USN_fire_rise
+			NOT = {
+			has_country_flag = USN_fire_end
+			}
         }
 		#is_good = no
 		#selectable_mission = no
@@ -1336,6 +1338,7 @@ USN_fire_start = {
 		available = {
 			has_country_flag = USN_rebuild_1
 			has_country_flag = USN_rebuild_2
+		}
 		visible = {
 			has_country_flag = USN_rebuild_1
 			has_country_flag = USN_rebuild_2
@@ -1352,4 +1355,4 @@ USN_fire_start = {
 			}
 		}
 	}
-}
+
